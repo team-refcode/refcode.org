@@ -21,8 +21,10 @@
 .curriculum-expandToggle {
   padding-right: 1em;
   width: calc(100% - 1em);
+  text-align: right;
 }
 .curriculum-arrow {
+  display: inline-block;
   width: 0;
   height: 0;
   border-left: .6em solid transparent;
@@ -86,7 +88,7 @@
 }
 
 .curriculum-active {
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 
 .curriculum-active .curriculum-row1 {

@@ -1,0 +1,53 @@
+/* Site-wide styles */
+body {
+  font-family: sans-serif;
+  color: #555;
+}
+img {
+  max-width: 100%;
+}
+
+/* Header */
+.header {
+  border-bottom: solid 2px #bbb;
+}
+.header-logo {
+  height: 60px;
+}
+.header-h1 {
+  margin: 0;
+  font-family: monospace;
+  font-size: 4rem;
+}
+
+/* Header Nav*/
+.nav-links  {
+  text-align: right;
+}
+.nav-link {
+  display: inline-block;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+}
+
+
+
+/* Grid Classes */
+.grid-header-container {
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) minmax(380px, 5fr) minmax(60px, 1fr);
+  column-gap: 10px;
+}
+.grid-main-container {
+  display: grid;
+  grid-template-columns: minmax(60px, 1fr) minmax(380px, 5fr) minmax(60px, 1fr);
+  column-gap: 10px;
+}
+.grid-item--right {
+  justify-self: right;
+}

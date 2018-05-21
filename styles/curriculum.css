@@ -85,6 +85,23 @@
   border-top-color: #000;
 }
 
+.curriculum-active {
+  background-color: #f5f5f5;
+}
+
 .curriculum-active .curriculum-row1 {
-  background-color: #ddd;
+  background-color: #eee;
+}
+
+.curriculum-active .curriculum-arrow {
+  border-top-color: #222;
+
+  position: relative;
+  top: 1px;
+  left: 1px;
+
+}
+.curriculum-active.expanded  .curriculum-arrow {
+  border-top-color: transparent;
+  border-bottom-color: #222;
 }

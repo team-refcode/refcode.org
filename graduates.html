@@ -4,6 +4,7 @@
   <title>Refcode | Refugee Coding Class</title>
   <link href="styles/normalize.css" rel="stylesheet"/>
   <link href="styles/styles.css" rel="stylesheet"/>
+  <link href="styles/student.css" rel="stylesheet"/>
 </head>
 <body>
   <header class="header grid-header-container">
@@ -27,36 +28,62 @@
     <div class="grid-item-center">
       <h2>Refcode Graduates</h2>
       <p>Students who successfully completed all the course requirements are listed below. Professional referrals or references for any of the students listed below are available upon request.</p>
-      <figure>
+      <figure class="graduates-picture">
         <img src="media/graduation2017.jpg">
         <figcaption>Graduates from the Summer 2017 Refcode class. From left to right: Amber Byers (TA), Loren Klingman (TA), Mustafa Alsaeedi (Student and Lab Manager), Joan Abad, Brenton Strine (Instructor), Mobin Zahedi, Hemin Muradkhan</figcaption>
+        <style scoped>
+        .graduates-picture img {
+          clip-path: inset(20px 0px 220px 0px);
+          margin-top: -20px;
+          margin-bottom: -220px;
+        }
+        </style>
       </figure>
       <h3>2017</h3>
 
-      <h4>Mustafa Alsaeedi</h4>
-      <ul>
-        <li>Website: </li>
-        <li>GitHub Profile: </li>
-        <li>LinkedIn Profile: </li>
+      <div class="student">
+        <h4 class="student-name">Mustafa Alsaeedi</h4>
+        <div class="student-photo">
+          <img src="media/mustafa.jpg"/>
+        </div>
+        <ul class="student-links">
+          <li>Website: <a href="http://MustafaAlsaeedi.tk" rel="external">MustafaAlsaeedi.tk</a></li>
+          <li><a href="https://github.com/MustafaAlsaeedi" rel="external">GitHub Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/mustafa-a-b207a4150/" rel="external">LinkedIn Profile</a></li>
       </ul>
-      <h4>Joan Abad</h4>
-      <ul>
-        <li>Website: </li>
-        <li>GitHub Profile: </li>
-        <li>LinkedIn Profile: </li>
+    </div>
+      <div class="student">
+        <h4 class="student-name">Joan Abad</h4>
+        <div class="student-photo">
+          <img src="media/joan.jpg"/>
+        </div>
+        <ul class="student-links">
+          <li>Website: <a href="http://nande.ml" rel="external">nande.ml</a></li>
+          <li><a href="https://github.com/joanhdez89" rel="external">GitHub Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/joan-hernandez-abad-41335a93/" rel="external">LinkedIn Profile</a></li>
       </ul>
-      <h4>Mobin Zahedi</h4>
-      <ul>
-        <li>Website: </li>
-        <li>GitHub Profile: </li>
-        <li>LinkedIn Profile: </li>
+    </div>
+      <div class="student">
+        <h4 class="student-name">Mobin Zahedi</h4>
+        <div class="student-photo">
+          <img src="media/mobin.jpg"/>
+        </div>
+        <ul class="student-links">
+          <li>Website: <a href="http://mobinzahedi.ga" rel="external">mobinzahedi.ga</a></li>
+          <li><a href="https://github.com/mobinzahedi" rel="external">GitHub Profile</a></li>
+        </ul>
+      </div>
+      <div class="student">
+        <h4 class="student-name">Hemin Muradkhan</h4>
+        <div class="student-photo">
+          <img src="media/hemin.jpg"/>
+        </div>
+        <ul class="student-links">
+          <li>Website: <a href="http://kirkukcenter.ga" rel="external">kirkukcenter.ga</a></li>
+          <li><a href="https://github.com/kirkukcenter" rel="external">GitHub Profile</a></li>
+          <li><a href="https://www.linkedin.com/in/hemin-muradkhan-3b274a9b/" rel="external">LinkedIn Profile</a></li>
       </ul>
-      <h4>Hemin Muradkhan</h4>
-      <ul>
-        <li>Website: </li>
-        <li>GitHub Profile: </li>
-        <li>LinkedIn Profile: </li>
-      </ul>
+    </div>
     </div>
     <div class="grid-item-right"></div>
   </main>

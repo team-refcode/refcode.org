@@ -1,0 +1,110 @@
+<!doctype html>
+<html
+<head>
+  <title>Refcode | Refugee Coding Class</title>
+  <link href="styles/normalize.css" rel="stylesheet"/>
+  <link href="styles/styles.css" rel="stylesheet"/>
+  <link href="styles/student.css" rel="stylesheet"/>
+  <link href="styles/expandingSection.css" rel="stylesheet"/>
+</head>
+<body>
+  <header class="header grid-header-container">
+    <img src="media/logo.png" class="header-logo grid-item grid-item--right">
+    <h1 class="header-h1 grid-item">Refcode</h1>
+      <div class="grid-item-right"></div>
+  </header>
+
+                                                        <nav header class="nav grid-header-container">
+                                                          <div class="grid-item-left"></div>
+                                                          <div class="nav-links grid-item-center">
+                                                            <a class="nav-link" href="index.html">About Refcode</a>
+                                                            <a class="nav-link" href="graduates.html">Graduates</a>
+                                                            <a class="nav-link" href="curriculum.html">Curriculum</a>
+                                                            <a class="nav-link" href="volunteer.html">Volunteer</a>
+                                                          </div>
+                                                          <div class="grid-item-right"></div>
+                                                        </nav>
+  <main class="main grid-main-container">
+    <div class="grid-item-left"></div>
+    <div class="grid-item-center">
+      <h1>Volunteer for the Refugee Coding Class</h1>
+      <section>
+        <h2>Class TA</h2>
+        <p>Each class contains intensive workshops for students to learn how to use their computers, the internet, and specialized tools in advanced ways. Because students are coming from a range of backgrounds, they need a lot of help from Teacher's Assistants who are more comfortable using a computer, installing programs, managing account creation, sign ups, "forgot password" emails, and the like.</p>
+        <p>Class TAs do not need to already be familiar with code (though that helps) as long as they are good with computers and quick to pick up new things. They can learn as they go and try to stay a step ahead of the students, just enough to be able to help with the current task on hand.</p>
+        <p>TA requirements are:</p>
+        <ul>
+          <li>The commitment is 3 hours per week on the night of the class, but TAs are encouraged to monitor our chat room (Slack) to help answer questions students have throughout the week.</li>
+          <li>TAs need to be good with computers and quick to learn. Previous coding experience is a benefit.</li>
+          <li>TAs need to complete a Friends of Refugees orientation and a background check.</li>
+        </ul>
+        <p>If you are interested in volunteering to become a TA, please fill out this form.</p>
+        <div class="expandingSection">
+          <h4 class="expandingSection-header expandingSection-row1">TA Application Form</h4>
+          <div class="expandingSection-date expandingSection-row1"></div>
+          <div class="expandingSection-expandToggle expandingSection-row1 grid-item--right"><div class="expandingSection-arrow"></div></div>
+          <div class="expandingSection-content nopadding">
+            <iframe
+              class="googleForm"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSf6Hk2E2IEl5v3WBml5Hq2K4McMBLzQS7A41vbSZSsJbRpxMQ/viewform?embedded=true"
+              width="100%"
+              frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Tutor</h2>
+        <p>Tutors meet one-on-one with a refugee student for one hour per week outside of class. The time and place can be anywhere that works for both the student. If you meet at <a href="http://refugecoffeeco.com/">Refuge Coffee</a> then Friends of Refugees will pay for both the student and the tutor's drinks. </p>
+        <p>Tutors are not required to go to class (though they are always welcome to). An outline of what was covered in the previous class as well as what homework the student is working on that week will be provided for the tutor to go over before meeting with the student.</p>
+        <p>Tutoring sessions are flexible and can cover just about anything that the student needs help with. That may include class-related thigns like catching up on things that the student wasn't able to complete during class, working on their assigned homework, working on the course project (personal website) or exploring some code skill or technology that the student has found on their own and is interested. It may also mean working on things not related to class directly, such as giving career advice, helping the student connect with people and network, answering questions about American culture, helping with English, or improving their resume. The primary purpose of the tutoring sessions is to help students succeed in the class, but it is also an opportunity to connect to the refugee and support them as a friend.</p>
+        <p>Tutor requirements are:</p>
+        <ul>
+          <li>The commitment is 1 hour per week but tutors are encouraged to stay in contact with the student throughout the week via email, chat (Slack) or other online methods.</li>
+          <li>Tutors are not required to attend class, however if tutors don't come to class they should be have some experience coding so that they will be able to help even without the context provided by class.</li>
+          <li>Tutors should review the class outline and homework before meeting with the student.</li>
+          <li>Meeting time is flexible: any time outside of class that works for the student.</li>
+          <li>Meeting location should be somewhere convenient for the student: probably Clarkston. (Refuge Coffee is a great location and they will pay for both of your drinks if you let them know you're with the Friends of Refugees career coaching program.)</li>
+          <li>Tutors need to complete a Friends of Refugees orientation and a background check.</li>
+        </ul>
+        <p>If you are interested in volunteering to become a tutor, please fill out this form.</p>
+          <div class="expandingSection">
+            <h4 class="expandingSection-header expandingSection-row1">Tutor Application Form</h4>
+            <div class="expandingSection-date expandingSection-row1"></div>
+            <div class="expandingSection-expandToggle expandingSection-row1 grid-item--right"><div class="expandingSection-arrow"></div></div>
+            <div class="expandingSection-content nopadding">
+              <iframe
+                class="googleForm"
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeD2yIh3weuZQsR2hVoE61JqZEySjMRhMYjrpiRLNcw5RuCpw/viewform?embedded=true"
+                width="100%"
+                frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+          </div>
+        </section>
+        <p>See you at coding class!</p>
+    </div>
+    <div class="grid-item-right"></div>
+  </main>
+  <script>
+  var sections = document.querySelectorAll(".expandingSection");
+  sections.forEach(function(section){
+    section.addEventListener("click", function(e){
+      if(e.target.classList.contains("expandingSection-row1") || e.target === e.currentTarget){
+        e.currentTarget.classList.toggle("expanded");
+      }
+    });
+  });
+
+  var topRows = document.querySelectorAll(".expandingSection-row1");
+  topRows.forEach(function(row){
+    row.addEventListener("mouseover", function(e){
+        e.currentTarget.parentElement.classList.add("expandingSection-active");
+    });
+    row.addEventListener("mouseleave", function(e){
+        e.currentTarget.parentElement.classList.remove("expandingSection-active");
+    });
+  })
+
+  </script>
+</body>
+</html>

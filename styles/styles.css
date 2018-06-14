@@ -20,6 +20,17 @@ img {
   font-size: 4rem;
   color: #222;
 }
+.header-h1 {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+.title-ref {
+  color: #093265;
+}
+.title-code {
+  color: #eb532a;
+  border-color: #35826d
+}
+
 
 /* Header Nav*/
 .nav-links  {
@@ -51,4 +62,15 @@ img {
 }
 .grid-item--right {
   justify-self: right;
+}
+
+/* Utility */
+
+.nopadding.nopadding.nopadding {
+  padding: 0;
+}
+
+.googleForm {
+  min-height: 600px;
+  width: 100%;
 }

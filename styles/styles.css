@@ -57,7 +57,7 @@ img {
 }
 .grid-main-container {
   display: grid;
-  grid-template-columns: minmax(60px, 1fr) minmax(380px, 5fr) minmax(60px, 1fr);
+  grid-template-columns: minmax(60px, 1fr) minmax(380px, 800px) minmax(60px, 1fr);
   column-gap: 10px;
 }
 .grid-item--right {

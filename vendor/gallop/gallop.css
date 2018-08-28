@@ -1,0 +1,222 @@
+.gallop {
+    overflow: visible;
+    position: relative;
+    min-height: 100px;
+}
+.gallop>ul {
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.gallop>ul>li {
+    width: 100%;
+    min-height: 100px;
+    transition-property: margin-left;
+    transition-duration:.3s;
+    transition-timing-function: ease;
+    list-style: none;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: normal;
+    vertical-align: top;
+}
+.gallop li.left {
+    margin-left: -100%;
+    transition-property: margin-left;
+    transition-duration: .35s;
+    transition-timing-function: ease;
+}
+.gallop .controls {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+.gallop .controls .advance,
+.gallop .controls .retreat,
+.gallop .controls .autoplay,
+.gallop .controls .picker {
+    vertical-align: middle;
+    display: inline-block;
+    cursor: pointer;
+}
+.gallop .controls .picker {
+    border-radius: 15px;
+    height: 10px;
+    width: 10px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 9px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 11px;
+    overflow: hidden;
+}
+.gallop .controls .picker:hover,
+.gallop .controls .picker:focus,
+.gallop .picker.active {
+    border-width: 0;
+    height: 20px;
+    width: 20px;
+    font-size: 15px;
+    margin-left: -1px;
+    margin-right: 1px;
+    line-height: 21px;
+}
+.gallop .controls .advance,
+.gallop .controls .retreat {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    font-size: 20px;
+    line-height: 21px;
+}
+.gallop .controls .advance:hover,
+.gallop .controls .advance:focus,
+.gallop .controls .retreat:hover,
+.gallop .controls .retreat:focus,
+.gallop .controls .advance.active,
+.gallop .controls .retreat.active {
+    font-size: 40px;
+    vertical-align: middle;
+    line-height: 21px;
+}
+.gallop .controls .autoplay {
+    width: 3px;
+    height: 10px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-right-width: 3px;
+    border-right-style: solid;
+    margin: 5px 8px 5px 5px;
+}
+.gallop .controls .autoplay:hover,
+.gallop .controls .autoplay:focus {
+    width: 5px;
+    height: 20px;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-right-width: 5px;
+    border-right-style: solid;
+    margin: 0 4px 0 3px;
+
+}
+.gallop .controls .autoplay.off {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left-style: solid;
+    border-left-width: 14px;
+    border-right: none;
+    margin: 3px 3px 3px 5px;
+}
+.gallop .controls .autoplay.off:hover,
+.gallop .controls .autoplay.off:focus {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left-style: solid;
+    border-left-width: 20px;
+    border-right: none;
+    margin: 0 0 0 2px;
+}
+
+/* Default Theme                           */
+
+/* Default Theme: Index                    */
+/*     Index                               */
+/*     Theme Creation Instructions         */
+/*     Styles and Colors                   */
+/*         Slide background colors         */
+/*         Controls background color       */
+/*         Controls default color          */
+/*         Controls hover color            */
+/*     Controls positioning                */
+/*         put controls below the carousel */
+/*         make space for the controls     */
+
+/* Default Theme: Create your own theme*/
+
+    /*
+    First copy/paste the following code. Then change
+    `.gallop` to `.yourThemeName` everywhere and start
+    customizing. Remember to add class `yourThemeName`
+    to the actual carousel HTML!
+    */
+
+/* Default Theme: Styles and Colors        */
+
+    /* Slide background colors: lightblue / lightskyblue */
+    .gallop li:nth-child(even) {
+        background-color: #eee;
+    }
+    .gallop li:nth-child(odd) {
+        background-color: #dadada;
+    }
+    /* Controls background color: #fff; */
+    .gallop .controls {
+        background: #fff;
+    }
+    .gallop .controls .picker {
+        border-color: #fff;
+    }
+    /* Controls default color: lightseagreen */
+    .gallop .controls .advance,
+    .gallop .controls .retreat {
+        color: #ccc;
+    }
+    .gallop .controls .picker{
+        background-color: #ccc;
+    }
+    .gallop .controls .autoplay {
+        border-left-color: #ccc;
+        border-right-color: #ccc;
+    }
+    .gallop .controls .autoplay.off {
+        border-left-color: #ccc;
+    }
+    /* Controls hover color: lightgreen */
+    .gallop .controls .advance:hover,
+    .gallop .controls .advance:focus,
+    .gallop .controls .retreat:hover,
+    .gallop .controls .retreat:focus,
+    .gallop .controls .advance.active,
+    .gallop .controls .retreat.active {
+        color: #666;
+    }
+    .gallop .controls .picker:hover,
+    .gallop .controls .picker:focus,
+    .gallop .picker.active {
+        background-color: #666;
+    }
+    .gallop .controls .autoplay.off:hover,
+    .gallop .controls .autoplay.off:focus {
+        border-left-color: #666;
+    }
+    .gallop .controls .autoplay:hover,
+    .gallop .controls .autoplay:focus {
+        border-left-color: #666;
+        border-right-color: #666;
+    }
+
+/* Default Theme: Controls positioning     */
+
+    /* put controls below the carousel */
+    .gallop .controls {
+        position: absolute;
+        bottom: -26px;
+        right: 0;
+        left: 0;
+    }
+    /* make space for the controls */
+    .gallop { margin-bottom: 31px; }

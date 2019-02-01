@@ -3,7 +3,7 @@
 .expandingSection {
   border: solid 2px #bbb;
   border-radius: 4px;
-  margin: 1em;
+  margin: 1em 0;
 }
 .expanded .expandingSection {
   padding-bottom: 1em;

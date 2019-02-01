@@ -92,27 +92,6 @@
     <p>Before the first day of class on February 6, you will need to complete some preparatory work. When you are accepted to the class, the prep work will be given to you. Please be sure that you finish all prep work before the first day of class.</p>
     <div class="grid-item-right"></div>
   </main>
-
-  <script>
-  var sections = document.querySelectorAll(".expandingSection");
-  sections.forEach(function(section){
-    section.addEventListener("click", function(e){
-      if(e.target.classList.contains("expandingSection-row1") || e.target === e.currentTarget){
-        e.currentTarget.classList.toggle("expanded");
-      }
-    });
-  });
-
-  var topRows = document.querySelectorAll(".expandingSection-row1");
-  topRows.forEach(function(row){
-    row.addEventListener("mouseover", function(e){
-        e.currentTarget.parentElement.classList.add("expandingSection-active");
-    });
-    row.addEventListener("mouseleave", function(e){
-        e.currentTarget.parentElement.classList.remove("expandingSection-active");
-    });
-  })
-
-  </script>
+  <script src="js/expandingSection.js"></script>
 </body>
 </html>

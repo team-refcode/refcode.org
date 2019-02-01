@@ -144,26 +144,6 @@
     </div>
     <div class="grid-item-right"></div>
   </main>
-<script>
-var sections = document.querySelectorAll(".curriculum-section");
-sections.forEach(function(section){
-  section.addEventListener("click", function(e){
-    if(e.target.classList.contains("curriculum-row1") || e.target === e.currentTarget){
-      e.currentTarget.classList.toggle("expanded");
-    }
-  });
-});
-
-var topRows = document.querySelectorAll(".curriculum-row1");
-topRows.forEach(function(row){
-  row.addEventListener("mouseover", function(e){
-      e.currentTarget.parentElement.classList.add("curriculum-active");
-  });
-  row.addEventListener("mouseleave", function(e){
-      e.currentTarget.parentElement.classList.remove("curriculum-active");
-  });
-})
-
-</script>
+  <script src="js/expandingSection.js"></script>
 </body>
 </html>

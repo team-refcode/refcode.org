@@ -35,19 +35,21 @@ img {
 /* Header Nav*/
 .nav-links  {
   text-align: justify;
+  border-bottom: solid 2px #bbb;
+  margin-top: 1em;
 }
-.nav-link {
-  display: inline-block;
-  padding: 0;
-  font-family: monospace;
-  font-size: 1.5rem;
-}
-.nav-links:after {
+.nav-links:after { /* to allow one-line justify alignment */
   content: "";
   display: inline-block;
   width: 800px;
   height: 1px;
   font-size: 0;
+}
+.nav-link {
+  display: inline-block;
+  padding: 10px 0;
+  font-family: monospace;
+  font-size: 1.5rem;
 }
 
 .nav-link:hover {

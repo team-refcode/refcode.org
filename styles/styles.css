@@ -13,11 +13,12 @@ img {
 }
 .header-logo {
   height: 60px;
+  align-self: center;
 }
 .header-h1 {
   margin: 0;
   font-family: monospace;
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: #222;
 }
 .header-h1 {

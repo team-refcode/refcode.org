@@ -1,0 +1,41 @@
+<h1>Hello World</h1>
+<img src="shapes/circle.png">
+<img src="shapes/arrows/up.png">
+<img src="shapes/upside-down-v.png">
+<p>This is my self portrait</p>
+
+<style>
+h1 {
+  font-size: 3in;
+  margin-bottom: 1in;
+}
+img {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+p {
+  margin-top: 1in;
+  text-align: center;
+}
+</style>
+
+<script>
+var yellOuch = function () {
+  alert("OUCH!");
+};
+
+var underlineHeading = function () {
+  document.getElementsByTagName("h1")[0].style.textDecoration = "underline";
+};
+
+var undoUnderlineHeading = function () {
+  document.getElementsByTagName("h1")[0].style.textDecoration = "none";
+};
+
+
+document.images[0].onmouseover = yellOuch;
+document.getElementsByTagName("h1")[0].onmouseenter = underlineHeading;
+document.getElementsByTagName("h1")[0].onmouseleave = undoUnderlineHeading;
+
+</script>

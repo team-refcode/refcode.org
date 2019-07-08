@@ -8,5 +8,4 @@
 
 
 #### Issue
-<!-- Example: Solves #12 (replace number with issue number) --> 
-
+Solves: <!-- replace with link to your issue! --> 

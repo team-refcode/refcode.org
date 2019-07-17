@@ -6,7 +6,7 @@ var insertHere = function (endpoint){
     ajax.send();
     var here = document.currentScript;
     var newElement = document.createElement('div');
-    newElement.innerHTML = response;
+    newElement.innerHTML = ajax.response;
     here.parentNode.replaceChild(newElement, here);
 };    
 </script>

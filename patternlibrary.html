@@ -1,5 +1,14 @@
 <script>
 var insertHere = function (endpoint){
+    // fallback for users on local (e.g. protocol is file://)
+    if(document.location.protocol.match("file")) {
+      var thisScriptElement = document.currentScript;
+      var iframeEl = document.createElement('iframe')
+      iframeEl.setAttribute("src", endpoint);
+      thisScriptElement.parentNode.replaceChild(iframeEl, thisScriptElement); // replace the script element with the component container
+      return;
+    }
+
     // get the component
     var endpoint = endpoint || "No endpoint specified";
     var ajax = new XMLHttpRequest();

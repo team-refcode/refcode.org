@@ -1,0 +1,160 @@
+<script>
+var insertHere = function (endpoint){
+    // get the component
+    var endpoint = endpoint || "No endpoint specified";
+    var ajax = new XMLHttpRequest();
+    ajax.open('GET', endpoint, false);
+    ajax.send();
+
+    var r = ajax.response;
+
+    // insert component container
+    var thisScriptElement = document.currentScript;
+    var componentContainer = document.createElement('div')
+    componentContainer.setAttribute("class", "component");
+    var componentTitle = r.substring(r.indexOf("<h3>") + 4, r.indexOf("</h3>"));
+    componentContainer.innerHTML = `<h3>${componentTitle}</h3>`;
+    thisScriptElement.parentNode.replaceChild(componentContainer, thisScriptElement); // replace the script element with the component container
+
+    // insert demo section
+    var demoSection = document.createElement('div')
+    demoSection.setAttribute("class", "demo-container");
+    demoSection.innerHTML = "<h4>Live Demo</h4>";
+    var demoEl = document.createElement('div');
+    demoEl.innerHTML = r.replace("<h3>" + componentTitle + "</h3>", "");
+    demoSection.appendChild(demoEl);
+    componentContainer.appendChild(demoSection);
+
+    // insert code container
+    var codeContainer = document.createElement('div')
+    codeContainer.setAttribute("class", "code-container");
+    componentContainer.appendChild(codeContainer);
+
+    // insert CSS code section
+    var style = r.indexOf("<style>");
+    if (style !== -1) {
+        var styleContent = r.substring(style + 7, r.indexOf("</style>"));
+        var cssSection = document.createElement('div')
+        cssSection.setAttribute("class", "code code-css");
+        cssSection.innerHTML = "<h4>CSS Code for this component</h4>";
+        var cssEl = document.createElement('textarea');
+        cssEl.innerHTML = styleContent;
+        cssSection.appendChild(cssEl);
+        codeContainer.appendChild(cssSection);
+    }
+
+    // insert HTML code section
+    var html = r.indexOf("HTML -->");
+    if (html !== -1) {
+        var htmlContent = r.substring(html + 8);
+        var htmlSection = document.createElement('div')
+        htmlSection.setAttribute("class", "code code-html");
+        htmlSection.innerHTML = "<h4>HTML Code for this component</h4>";
+        var htmlEl = document.createElement('textarea');
+        htmlEl.innerHTML = htmlContent;
+        htmlSection.appendChild(htmlEl);
+        codeContainer.appendChild(htmlSection);
+    }
+
+    // insert META code section
+    var meta = r.indexOf("<!-- START Meta -->");
+    if (meta !== -1) {
+        var metaContent = r.substring(meta + 19, r.indexOf("<!-- END Meta -->"));
+        var metaSection = document.createElement('div')
+        metaSection.setAttribute("class", "code code-meta");
+        metaSection.innerHTML = "<h4>Meta Code for this component</h4>";
+        var metaEl = document.createElement('textarea');
+        metaEl.innerHTML = metaContent;
+        metaSection.appendChild(metaEl);
+        codeContainer.appendChild(metaSection);
+    }
+
+};
+</script>
+<style>
+    .demo-container {
+        margin: 10px 0;
+        border-radius: 3px;
+        border: solid 1px #d0d0d0;
+        background-image:
+        linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%),
+        linear-gradient(45deg, #fff 25%, #fafafa 25%, #fafafa 75%, #fff 75%);
+        background-size: 30px 30px;
+        background-position: 0 0, 15px 15px;
+    }
+    .demo-container > div {
+        padding: 1em;
+    }
+    .demo-container h4,
+    .code-container h4 {
+        font-weight: normal;
+        font-size: 1.2em;
+        margin-bottom: 0;
+        display: block;
+        font-family: sans-serif;
+        border-bottom: solid 1px #d0d0d0;
+
+        background: #fff;
+        color: #000;
+        padding: .5em 1em;
+        margin: 0;
+    }
+    .code-container {
+        margin: 10px 0;
+        display: grid;
+        grid-auto-flow: column;
+        grid-column-gap: 10px;
+    }
+    .code {
+        border-radius: 3px;
+        padding: 0;
+        border: solid 1px #d0d0d0;
+    }
+
+    .code textarea {
+        margin: 0;
+        background: #fafafa;
+        color: #000;
+        padding: 0 1em;
+        width: 100%;
+        height: 250px;
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+        font-size: 1em;
+        border-width: 0;
+        border-left: solid 1em #f0f0f0;
+        white-space: nowrap;
+    }
+</style>
+
+
+<h1>Refcode Pattern Library</h1>
+
+<nav>
+    <ul>
+        <li><a href="#atoms">Atoms</a></li>
+        <li><a href="#molecules">Molecules</a></li>
+        <li><a href="#organisms">Organisms</a></li>
+        <li><a href="#templates">Templates</a></li>
+    </ul>
+</nav>
+
+<section id="atoms">
+    <h2>Atoms</h2>
+    <script>insertHere("components/example.html");</script>
+</section>
+
+<section id="molecules">
+    <h2>Molecules</h2>
+    <script>insertHere("components/example.html");</script>
+    <script>insertHere("components/atoms/button.html");</script>
+</section>
+
+<section id="organisms">
+    <h2>Organisms</h2>
+    <script>insertHere("components/example.html");</script>
+</section>
+
+<section id="templates">
+    <h2>Templates</h2>
+    <script>insertHere("components/example.html");</script>
+</section>

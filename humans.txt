@@ -1,0 +1,20 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Brenton Strine (Advisor)
+    Mustafa Alsaeedi (Developer)
+    Sintayehu Mekonnen (Developer)
+    Tariku Kebede (Developer)
+    Nezira Usmael (Developer)
+    Yohannes Bahta (Developer)
+
+# THANKS
+
+    Brenton Strine
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

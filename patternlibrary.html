@@ -5,6 +5,7 @@ var insertHere = function (endpoint){
     var ajax = new XMLHttpRequest();
     ajax.open('GET', endpoint, false);
     ajax.send();
+
     var r = ajax.response;
 
     // insert component container
@@ -67,6 +68,7 @@ var insertHere = function (endpoint){
         metaSection.appendChild(metaEl);
         codeContainer.appendChild(metaSection);
     }
+
 };
 </script>
 <style>

@@ -264,3 +264,22 @@ textarea {
   }
 }
 
+.image-banner1{
+  background-image: url("http://placeimg.com/940/480/nature/sepia");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 755px;
+  margin-top: 230px;
+}
+.image-banner2{
+  background-image: url("http://placeimg.com/940/480/nature");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: inherit;
+  height: 755px;
+  margin-top: 230px;
+}

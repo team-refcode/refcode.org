@@ -1,20 +1,28 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Scrolling Image Banner</title>
-    <link rel="stylesheet" href="../../css/main.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="image-banner1">
 
-      </div>
-      <div class="image-banner2">
-      
-      </div>
-
-    </div>
-
-  </body>
-</html>
+<div class="component"  title="Scrolling Image Banner" version="1">
+  <style>
+.image-banner1{
+      background-image: url("http://placeimg.com/940/480/nature/sepia");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 755px;
+      margin-top: 230px;
+    }
+.image-banner2{
+      background-image: url("http://placeimg.com/940/480/nature");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: inherit;
+      height: 755px;
+      margin-top: 230px;
+    }
+  </style>
+  <markup>
+    <div class="image-banner1"></div>
+    <div class="image-banner2"></div>
+  </markup>
+  </div>

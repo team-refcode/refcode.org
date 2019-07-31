@@ -67,7 +67,7 @@
   </div>
   <div class="component"  title="Scrolling Image Banner" version="1">
     <style>
-  .image-banner1{
+.image-banner1{
         background-image: url("http://placeimg.com/940/480/nature/sepia");
         background-repeat: no-repeat;
         background-position: center;
@@ -76,7 +76,7 @@
         height: 755px;
         margin-top: 230px;
       }
-  .image-banner2{
+.image-banner2{
         background-image: url("http://placeimg.com/940/480/nature");
         background-repeat: no-repeat;
         background-position: center;
@@ -86,10 +86,37 @@
         height: 755px;
         margin-top: 230px;
       }
+.image-banner3{
+      background-image: url("http://placeimg.com/640/480/any");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: inherit;
+      height: 755px;
+      margin-top: 230px;
+          }
+.banner-text{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      font-size: 40px;
+      font-weight: bolder;
+      color: #26a9c3;
+      text-transform: uppercase;
+
+      }
     </style>
     <markup>
-      <div class="image-banner1"></div>
-      <div class="image-banner2"></div>
+      <div class="image-banner1">
+        <div class="banner-text">Nature</div>
+      </div>
+      <div class="image-banner2">
+        <div class="banner-text">Architecture</div>
+      </div>
+      <div class="image-banner3">
+        <div class="banner-text">Animal</div>
+      </div>
     </markup>
     </div>
 

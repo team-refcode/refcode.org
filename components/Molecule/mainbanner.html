@@ -1,5 +1,9 @@
 <div>
     <style>
+        .logo {
+            width: 150px;
+            border: solid 10px cornflowerblue;
+        }
        .container {
            display:flex;
            align-items: center;
@@ -25,6 +29,11 @@
            border-bottom: 2px solid;
            transition: color .5s, border-bottom .5s;
        }
+       p {
+           font-size: 15px;
+           text-align: center;
+           color: black;
+       }
         @media (max-width: 769px) {
             .main-nav li{
                 overflow: hidden;
@@ -41,7 +50,7 @@
     <markup>
         <nav>
         <div class="container">
-            <p><a href="#home"></a><img class="logo" src="./img/logo.png"  alt="logo">RefCode</p>
+            <h1><a href="#home"></a><img class="logo" src="./img/logo.png"  alt="logo">RefCode</h1>
             
             <ul class="main-nav">
                     <li><a href="#about">About</a></li>

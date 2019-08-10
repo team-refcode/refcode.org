@@ -123,6 +123,78 @@
 
   <section id="molecules">
     <h2>Molecules</h2>
+    <div class="component"  title="Navigation Component" version="1">
+
+        <style>
+    .navigation-components{
+        margin: 100px 100px;
+    }
+
+    #main-nav li{
+      text-align: center;
+    }
+    aside{
+        display: none;
+        background-color: whitesmoke;
+        float: right;
+        width: 25.5%;
+        border-left: 2px solid #9aa4a5;
+        border-bottom: 2px solid #9aa4a5;
+        border-top: 2px solid #9aa4a5;
+
+    }
+     nav{
+         width: 100%;
+     }
+    li{
+        list-style: none;
+        line-height: 2rem;
+        font-size: 1em;
+
+    }
+    li a {
+        text-decoration: none;
+        color: #444;
+
+    }
+
+      </style>
+
+      <markup>
+          <div class="container">
+              <nav id="main-nav">
+                <ul>
+                  <li><a href="#main">Page Names</a></li>
+                </ul>
+              </nav>
+
+         <div class="navigation-components">
+
+                <aside id="sub-nav">
+        <nav>
+            <ul>
+                <li><a href="#page1">Page-1</a></li><hr>
+                <li><a href="#page2">Page-2</a></li><hr>
+                <li><a href="#page3">Page-3</a></li><hr>
+                <li><a href="#page4">Page-4</a></li><hr>
+                <li><a href="#page5">Page-5</a></li><hr>
+                <li><a href="#page6">Page-6</a></li><hr>
+                <li><a href="#page7">Page-7</a></li>
+            </ul>
+
+        </nav>
+        </aside>
+        </div>
+      </markup>
+
+         <script>
+            var mainNav = document.getElementById("main-nav");
+            var subNav = document.getElementById("sub-nav");
+
+            mainNav.addEventListener('click', function(){
+               subNav.style.display = "block";
+            });
+        </script>
 
   </section>
 

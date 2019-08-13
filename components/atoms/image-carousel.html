@@ -1,80 +1,74 @@
 <div class="component" title="image-carousel" version="1">
-  <includes>
 
-  </includes>
-
-  <!-- <style>
-    .carousel-wrapper{
-      height:420px;
-      width:100%;
-      background-color: blue;
-      background-image:url(../../img/graduates&volunteers2019.jpg);
-      background-size: cover;
-      background-position:50% 50%;
-    }
-      h2,h1{
-        text-align: center;
-      }
-    .video-wrapper{
-      margin:auto;
-      width:550px;
-      height:350px;
-    }
-
-    iframe{
-      width:100%;
-      height:100%;
-    }
-
-    .carousel-txt{
-      height:200px;
-      width:400px;
-      color:white;
-      margin:auto;
-      padding-top:50px;
-    }
-
-    .carousel-txt h1,.carousel-txt p{
-      text-align:center;
-    }
-    .carousel-txt h1{
-      font-size: 4rem;
-    }
-    .carousel-txt p{
-      font-size: 2rem;
-      background-color: black;
-
-    }
-
-  </style> -->
   <style>
 
 
       .carousel-wrapper{
          height:220px;
          width:100%;
-         background-image:url(../../img/graduates&volunteers2019.jpg);
+         position:relative;
+         overflow: hidden;  
+       }
+
+       #carousel-image-wrapper{
+         display: grid;
+         grid-template-columns: repeat(3,100%);
+         height: 100%;
+         transition: 10s;
+       }
+       #carousel-image-wrapper,.carousel-image{
+        width:100%;
+        height:100%;
+       }
+
+       #carousel-image-1{
+        background-image:url(../../img/graduates3.jpg);
          background-size: cover;
          background-position:50%;
        }
+
+       #carousel-image-2{
+        background-image:url(../../img/graduates2.jpg);
+         background-size: cover;
+         background-position:0% 32%;
+       }
+       #carousel-image-3{
+        background-image:url(../../img/graduates1.jpg);
+         background-size: cover;
+         background-position:left;
+       }
+
+       .button-wrapper{
+         position:absolute;
+         bottom:0;
+         left:45%;
+       }
+
+       .dots{
+         display:inline-block;
+         width:15px;
+         height:15px;
+         border-radius:50%;
+         background-color: black;
+       }
+       
    
        .carousel-txt{
          color:brown;
-         margin:auto;
+         margin: auto;
          padding-top:100px;
+         
        }
    
-       .carousel-txt h1{
+       .carousel-txt h1,.carousel-txt p{
          margin:0;
          text-align:center;
        }
    
        .carousel-txt p{
-         text-align:center;
-         margin:0 auto;
          color: white;
-   
-       }
+        }
+
        .ref{
         background-color: black;
         padding:0 5px;
@@ -112,32 +106,66 @@
       font-size: 2rem;
     }
        }
+       
    
      </style>
 
   <markup>
     <div class="carousel-wrapper">
-      <div class="carousel-txt">
-        <h1>Welcome to</h1>
-        <p><span class="ref">Refcode( Refugee Code)</span><p>
+      <div id="carousel-image-wrapper">
+          <div id="carousel-image-1" class="carousel-image">
+              <div class="carousel-txt">
+                  <h1>Welcome to</h1>
+                  <p><span class="ref">Refcode( Refugee Code)</span><p>
+                </div>
+          </div>
+          <div id="carousel-image-2" class="carousel-image"></div>
+          <div id="carousel-image-3" class="carousel-image"></div>
       </div>
 
-    </div>
-    <div class="video-txt-wrapper">
+     
+
+      <div class="button-wrapper">
+         <span class="dots" id="0" onclick="slide(this)"></span>
+         <span class="dots" id="1" onclick="slide(this)"></span>
+         <span class="dots" id="2"onclick="slide(this)"></spna>
+       </div>
+     </div>
+
+
+    <div class="video-and-txt-wrapper">
       <div class="txt-wrapper">
           <h1>Refcode</h1>
              <p>Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of their computer literacy program. After going through this curriculum, students will learn the basics of how to build a website, and students will know a little bit about what working as a professional developer is like.</p>
              <p>Students will learn to use the tools that professional developers use to create websites. In this course, students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck (an FTP client), and Freenom.com (a domain registrar).</p>
              <h2>Professional Skills</h2>
-                <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban boards (with Trello), Slack chat, GitHub, and pair-programming.
+             <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban boards (with Trello), Slack chat, GitHub, and pair-programming.
                 Each student will work towards creating a personal website by the end of the class. The student will register their own domain name and upload it to a web hosting server (provided by Refugee Career Hub).
-                
-                </p>
-            </div>
+             </p>
+      </div>
+
         <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
     
   </markup>
+  <script>
+  let carousel_image_wrapper = document.getElementById('carousel-image-wrapper')
+  function slide(image){
+    carousel_image_wrapper.style.transform = `translateX(-${image.id}00%)`
+  }
+    setTimeout(function (){
+      // alert('hello')
+      carousel_image_wrapper.style.transform = `translateX(-100%)`
+
+    },2000)
+
+    setTimeout(function (){
+      // alert('hello')
+      carousel_image_wrapper.style.transform = `translateX(-200%)`
+
+    },12000)
+  
+  </script>
 </div>

@@ -177,7 +177,7 @@
 
   <section id="templates">
     <h2>Templates</h2>
-    <div class="component"  title="page_layout" version="1.0">
+    <div class="component"  title="page_layout" version="1.1">
       <style>
   /* =================================
   Base Styles
@@ -214,7 +214,7 @@
 ==================================== */
 
   .container {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(100px, auto);
@@ -232,10 +232,12 @@
 
   main {
     grid-area: main;
+    margin: 0 25px;
   }
 
   aside {
     grid-area: aside;
+    margin: 0 25px;
   }
 
   footer {
@@ -270,6 +272,13 @@
         "header header"
         "main aside"
         "footer footer";
+    }
+    main {
+      margin: 0 50px;
+    }
+
+    aside {
+      margin: 0 10px;
     }
   }
       </style>

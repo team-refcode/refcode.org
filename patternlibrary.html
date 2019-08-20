@@ -172,6 +172,106 @@
 
   <section id="organisms">
     <h2>Organisms</h2>
+    <div class="component"  title="footer" version="1.0">
+
+      <style>
+  /* =================================
+  Base Layout Styles
+==================================== */
+  .footer {
+    padding-top: .75em;
+    background: rgba(232, 236, 241, 1);
+  }
+  .main-footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 74px;
+    text-align: center;
+    padding: 2em 0;
+    background: rgba(54, 56, 57, .92);
+    text-align: left;
+    color: white;
+    font-family: arial;
+  }
+
+  .footer-button {
+    margin: 0 25px;
+  }
+
+  .social {
+    margin: 50px 25px;
+  }
+
+  button {
+    background-color: rgba(34, 157, 187, 1);
+    border: none;
+    color: white;
+    padding: 10px 42px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .social-icons {
+    padding: 0;
+  }
+
+  .social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+  }
+
+  .social-icons li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  /* =================================
+  media queries
+  ==================================== */
+
+  @media (min-width: 768px) {
+    .main-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-row: auto;
+    }
+
+    .footer-button {
+      margin: 0 50px;
+    }
+
+    .social {
+      margin: 0;
+    }
+  }
+      </style>
+
+      <markup>
+        <div class=footer>
+
+          <footer class="main-footer">
+
+            <div class="footer-button">
+              <h4>Example</h4>
+              <button type="button">Click here!</button>
+            </div>
+
+            <div class="social">
+              <h4>Connect with us!</h4>
+              <ul class="social-icons">
+              <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
+              <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
+              <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
+              </ul>
+            </div>
+
+          </footer>
+        </div>
+      </markup>
 
   </section>
 

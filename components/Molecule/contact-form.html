@@ -1,47 +1,53 @@
-<style>
+<div class="component"  title="Contact Form" version="1">
+
+  <style>
 
 form{
-  display: grid;
-  max-width: 50%;
-  margin: 100px 180px 0px;
-}
-label{
-  color: #747474;
-}
-input{
-  line-height: 1.5rem;
-  margin-bottom: 20px;
+      display: grid;
+      max-width: 50%;
+      margin: 100px 180px 0px;
+    }
 
-}
-textarea{
-  padding-bottom: 120px;
-}
+.contact-form label{
+      color: #747474;
+    }
+.contact-form input{
+      line-height: 1.5rem;
+      margin-bottom: 20px;
 
-button{
-  max-width: 110px;
-  margin-top: 20px;
-  padding: 15px;
-  background-color: #1ab2cf;
-  color: #ffffff;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-button:hover{
-  background-color: #009dbb;
-}
-</style>
+    }
+.contact-form textarea{
+      padding-bottom: 120px;
+    }
 
-    <form class="contact-form" action="" method="post">
+.form-button{
+      max-width: 110px;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #1ab2cf;
+      color: #ffffff;
+      font-size: 1em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+.form-button:hover{
+      background-color: #009dbb;
+    }
+  </style>
+    <markup>
 
-      <label for="">Your Name(required)</label>
-        <input type="text" name="user_name" value="">
-      <label for="">Your Email(required)</label>
-        <input type="email" name="user_email" value="">
-      <label for="">Subject</label>
-        <input type="text" name="user_subject" value="">
-      <label for="">Your Message</label>
-      <textarea name="user_message"></textarea>
-      <button class="send" type="submit" name="button">Send</button>
+        <form class="contact-form" action="" method="post">
 
-    </form>
+          <label for="">Your Name (required)</label>
+            <input type="text" name="user_name" value="">
+          <label for="">Your Email (required)</label>
+            <input type="email" name="user_email" value="">
+          <label for="">Subject</label>
+            <input type="text" name="user_subject" value="">
+          <label for="">Your Message</label>
+          <textarea name="user_message"></textarea>
+          <button class="form-button" type="submit" name="button">Send</button>
+
+        </form>
+  </markup>
+  </div>

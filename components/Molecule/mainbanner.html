@@ -1,0 +1,58 @@
+<div>
+    <style>
+       .container {
+           display:flex;
+           align-items: center;
+           justify-content: space-around;
+           max-width: 100%;
+           padding: 50px;
+           margin: auto;
+           background: linear-gradient(to right, #cc5333, #23074d);
+        }
+       .main-nav li {
+           font-size: 20px;
+           display: inline-block;
+           list-style-type: none;
+           margin-left: 15px;
+       }
+       .main-nav a {
+           display: flex;
+            text-decoration: none;
+            color: whitesmoke;
+       }
+       .main-nav a:hover {
+           color: cornflowerblue;
+           border-bottom: 2px solid;
+           transition: color .5s, border-bottom .5s;
+       }
+        @media (max-width: 769px) {
+            .main-nav li{
+                overflow: hidden;
+                width: 100%;
+                float: left;
+                display: block;
+                font-size: 1.4em;
+                text-align: center;
+                text-decoration: none;
+        } 
+       
+    }
+    </style>
+    <markup>
+        <nav>
+        <div class="container">
+            <p><a href="#home"></a><img class="logo" src="./img/logo.png"  alt="logo">RefCode</p>
+            
+            <ul class="main-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li> <a href="#volunteer">Volunteer</a></li>
+                    <li><a href="#apply">Apply</a></li>
+                    <li> <a href="#teamcode">TeamCode</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <li>  <a href="#donate">Donate</a></li>
+                </ul>
+            </div>
+        </nav>
+    </markup>
+</div>

@@ -1,7 +1,7 @@
 <div class="component" title="image-column" version="1.1">
     <markup>
         <div class="column-wrapper">
-            <div>
+            <div class="single-column">
                     <img src="http://placeimg.com/940/480/nature">
                     <h1>Lorum Ipsum 1</h1>
                     <p>
@@ -9,7 +9,7 @@
                     </p>
                     <button>Learn More</button>
             </div>
-            <div>
+            <div class="single-column">
                     <img src="http://placeimg.com/940/480/nature">
                     <h1>Lorum Ipsum 2</h1>
                     <p>
@@ -17,7 +17,7 @@
                     </p>
                     <button>Learn More</button>
             </div>
-            <div>
+            <div class="single-column">
                 <img src="http://placeimg.com/940/480/nature">
                 <h1>Lorum Ipsum 3</h1>
                     <p>
@@ -36,14 +36,14 @@
             margin:6px;
         
         }
-        .column-wrapper div { 
+        .single-column { 
             height:100%;
             flex: 1;
             margin:6px;
             background-color: aqua;
         
         }
-        .column-wrapper div img {
+        .single-column img {
             width:100%;
             
         }

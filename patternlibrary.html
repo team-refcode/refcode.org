@@ -166,27 +166,29 @@
           </ul>
       </aside>
     </div>
+<div class="component"  title="Contact Form" version="1">
 
-    <style>
+  <style>
 
-    form{
+form{
       display: grid;
       max-width: 50%;
       margin: 100px 180px 0px;
     }
-    label{
+.contact-form label{
       color: #747474;
     }
-    input{
+
+.contact-form input{
       line-height: 1.5rem;
       margin-bottom: 20px;
 
     }
-    textarea{
+.contact-form textarea{
       padding-bottom: 120px;
     }
 
-    button{
+.form-button{
       max-width: 110px;
       margin-top: 20px;
       padding: 15px;
@@ -196,10 +198,12 @@
       font-weight: bold;
       text-transform: uppercase;
     }
-    button:hover{
+.form-button:hover{
       background-color: #009dbb;
     }
-    </style>
+  </style>
+
+    <markup>
 
         <form class="contact-form" action="" method="post">
 
@@ -211,10 +215,12 @@
             <input type="text" name="user_subject" value="">
           <label for="">Your Message</label>
           <textarea name="user_message"></textarea>
-          <button class="send" type="submit" name="button">Send</button>
+          <button class="form-button" type="submit" name="button">Send</button>
 
         </form>
+  </markup>
 
+  </div>
 
   </section>
 

@@ -65,20 +65,261 @@
         <button class="button">Button</button>
       </markup>
   </div>
+  <div class="component"  title="Scrolling Image Banner" version="1">
+    <style>
+.image-banner1{
+        background-image: url("http://placeimg.com/940/480/nature");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 755px;
+      }
+.image-banner2{
+        background-image: url("http://placeimg.com/940/480/arch");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        position: inherit;
+        height: 755px;
+        margin-top: 230px;
+      }
+.image-banner3{
+      background-image: url("http://placeimg.com/640/480/animals");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: inherit;
+      height: 755px;
+      margin-top: 230px;
+          }
+.banner-text{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      font-size: 40px;
+      font-weight: bolder;
+      color: #26a9c3;
+      text-transform: uppercase;
+
+      }
+    </style>
+    <markup>
+      <div class="image-banner1">
+        <div class="banner-text">Nature</div>
+      </div>
+      <div class="image-banner2">
+        <div class="banner-text">Architecture</div>
+      </div>
+      <div class="image-banner3">
+        <div class="banner-text">Animal</div>
+      </div>
+    </markup>
+    </div>
+
   </section>
 
   <section id="molecules">
     <h2>Molecules</h2>
-
+    
+    
   </section>
 
   <section id="organisms">
     <h2>Organisms</h2>
+    <div class="component" title="image-column" version="1.1">
+      <markup>
+          <div class="column-wrapper">
+              <div>
+                      <img src="http://placeimg.com/940/480/nature">
+                      <h1>Lorum Ipsum 1</h1>
+                      <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      </p>
+                      <button>Learn More</button>
+              </div>
+              <div>
+                      <img src="http://placeimg.com/940/480/nature">
+                      <h1>Lorum Ipsum 2</h1>
+                      <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      </p>
+                      <button>Learn More</button>
+              </div>
+              <div>
+                  <img src="http://placeimg.com/940/480/nature">
+                  <h1>Lorum Ipsum 3</h1>
+                      <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      </p>
+                      <button>Learn More</button>
+              </div>
+          </div>
+      </markup>
+      <style>
+          .column-wrapper {
+              flex-wrap: wrap;
+              display:flex;
+              width:100%;
+              height:500px;
+              margin:6px;
+          
+          }
+          .column-wrapper div { 
+              height:100%;
+              flex: 1;
+              margin:6px;
+              background-color: aqua;
+          
+          }
+          .column-wrapper div img {
+              width:100%;
+              
+          }
+          
+      </style>
+  </div>
 
   </section>
 
   <section id="templates">
     <h2>Templates</h2>
+    <div class="component"  title="page_layout" version="1.1">
+      <style>
+  /* =================================
+  Base Styles
+==================================== */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #3a3a3a;
+  }
+
+  p {
+    font-size: .95em;
+    margin-bottom: 1.5em;
+  }
+
+  h2,
+  h3,
+  a {
+    color: #093a58;
+  }
+
+  h2,
+  h3 {
+    margin-top: 0;
+  }
+
+  /* =================================
+  Base Layout Styles
+==================================== */
+
+  .container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+    grid-gap: 50px;
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+    margin: 0 25px;
+  }
+
+  aside {
+    grid-area: aside;
+    margin: 0 25px;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  .header {
+    background-image: url(img/placeimg_968_190_nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .content {
+    margin-left: 50px;
+  }
+
+  .main-footer {
+    text-align: center;
+    padding: 2em 0;
+    background: #d9e4ea;
+  }
+
+  /* =================================
+  media queries
+  ==================================== */
+
+  @media (min-width: 992px) {
+    .container {
+      grid-template-columns: 5fr 2fr;
+      grid-template-rows: 200px minmax(200px, 1fr) 100px;
+      grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    }
+    main {
+      margin: 0 50px;
+    }
+
+    aside {
+      margin: 0 10px;
+    }
+  }
+      </style>
+      <markup>
+        <div class="container">
+          <header class="header"></header>
+          <main class="content">
+            <h2>Lorem ipsum!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </main>
+
+          <aside>
+            <ul>
+              <li> 1 </li>
+              <li> 2 </li>
+              <li> 3 </li>
+              <li> 4 </li>
+              <li> 5 </li>
+              <li> 6 </li>
+              <li> 7 </li>
+            </ul>
+          </aside>
+          <footer class="main-footer">
+            <span>placeholder for footer</span>
+          </footer>
+        </div>
+        <!--/.container-->
+      </markup>
+    </div>
 
   </section>
 </main>

@@ -123,173 +123,106 @@
 
   <section id="molecules">
     <h2>Molecules</h2>
+    <style>
 
+    .navigation-component{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px auto;
+        grid-gap: 10px;
+        grid-template-areas: "About-Us Nav" ;
+      }
+    aside{
+      grid-area: Nav;
+    }
+    li {
+      list-style: none;
+      font-size: 1em;
+      border-top: .5px solid #9aa4a5;
+      border-bottom: .5px solid #9aa4a5;
+      border-left: 1px solid #9aa4a5;
+      padding: 1rem;
+    }
+    li a {
+      text-decoration: none;
+      color: #444;
+    }
+    a:visited {
+      color: #9e9e9e;
+    }
+
+    </style>
+    <div class="navigation-component">
+
+      <aside>
+          <ul>
+              <li><a href="#page1">Page-1</a></li>
+              <li><a href="#page2">Page-2</a></li>
+              <li><a href="#page3">Page-3</a></li>
+              <li><a href="#page4">Page-4</a></li>
+              <li><a href="#page5">Page-5</a></li>
+              <li><a href="#page6">Page-6</a></li>
+              <li><a href="#page7">Page-7</a></li>
+          </ul>
+      </aside>
+    </div>
   </section>
 
   <section id="organisms">
     <h2>Organisms</h2>
-    <div class="component" title="image-carousel" version="1.0">
-
-        <style>
-            .carousel-wrapper{
-               height:220px;
-               width:100%;
-               position:relative;
-               overflow: hidden;  
-             }
-      
-             #carousel-image-wrapper{
-               display: grid;
-               grid-template-columns: repeat(3,100%);
-               height: 100%;
-               transition: 10s;
-             }
-
-             #carousel-image-wrapper,.carousel-image{
-              width:100%;
-              height:100%;
-             }
-      
-             #carousel-image-1{
-              background-image:url(img/graduates3.jpg);
-               background-size: cover;
-               background-position:50%;
-             }
-      
-             #carousel-image-2{
-              background-image:url(img/graduates2.jpg);
-               background-size: cover;
-               background-position:0% 32%;
-             }
-
-             #carousel-image-3{
-              background-image:url(img/graduates1.jpg);
-               background-size: cover;
-               background-position:left;
-             }
-      
-             .button-wrapper{
-               position:absolute;
-               bottom:0;
-               left:45%;
-             }
-      
-             .dots{
-               display:inline-block;
-               width:15px;
-               height:15px;
-               border-radius:50%;
-               background-color: black;
-             }
-             
-         
-             .carousel-txt{
-               color:brown;
-               margin: auto;
-               padding-top:100px;
-               }
-         
-             .carousel-txt h1,.carousel-txt p{
-               margin:0;
-               text-align:center;
-             }
-         
-             .carousel-txt p{
-               color: white;
-              }
-      
-             .ref{
-              background-color: black;
-              padding:0 5px;
-               }
-
-             iframe{
-               height:320px;
-               width:100%;
-             }
-         
-             @media screen and (min-width:570px){
-             .carousel-wrapper{
-              height:420px;
-             }
-        
-             .video-wrapper{
-              margin:auto;
-              width:550px;
-              height:350px;
-             }
-
-             iframe{
-              width:100%;
-              height:100%;
-            }
-        
-            .carousel-txt{
-              height:200px;
-              width:400px;
-              padding-top:200px;
-            }
-
-            .carousel-txt h1{
-              font-size: 4rem;
-            }
-
-            .carousel-txt p{
-              font-size: 2rem;
-            }
-              }
-             
-         
-           </style>
-      
-        <markup>
-          <div class="carousel-wrapper">
-            <div id="carousel-image-wrapper">
-                <div id="carousel-image-1" class="carousel-image">
-                    <div class="carousel-txt">
-                        <h1>Welcome to</h1>
-                        <p><span class="ref">Refcode( Refugee Code)</span><p>
-                      </div>
-                </div>
-                <div id="carousel-image-2" class="carousel-image"></div>
-                <div id="carousel-image-3" class="carousel-image"></div>
-            </div>
-      
-           
-      
-            <div class="button-wrapper">
-               <span class="dots" id="0" onclick="slide(this)"></span>
-               <span class="dots" id="1" onclick="slide(this)"></span>
-               <span class="dots" id="2"onclick="slide(this)"></spna>
-             </div>
-           </div>
-      
-      
-          <div class="video-and-txt-wrapper">
-            <div class="txt-wrapper">
-                <h1>Refcode</h1>
-                   <p>Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of their computer literacy program. After going through this curriculum, students will learn the basics of how to build a website, and students will know a little bit about what working as a professional developer is like.</p>
-                   <p>Students will learn to use the tools that professional developers use to create websites. In this course, students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck (an FTP client), and Freenom.com (a domain registrar).</p>
-                   <h2>Professional Skills</h2>
-                   <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban boards (with Trello), Slack chat, GitHub, and pair-programming.
-                      Each student will work towards creating a personal website by the end of the class. The student will register their own domain name and upload it to a web hosting server (provided by Refugee Career Hub).
-                   </p>
-            </div>
-      
-              <div class="video-wrapper">
-                  <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="component" title="image-column" version="1.1">
+      <markup>
+          <div class="column-wrapper">
+              <div>
+                      <img src="http://placeimg.com/940/480/nature">
+                      <h1>Lorum Ipsum 1</h1>
+                      <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      </p>
+                      <button>Learn More</button>
+              </div>
+              <div>
+                      <img src="http://placeimg.com/940/480/nature">
+                      <h1>Lorum Ipsum 2</h1>
+                      <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      </p>
+                      <button>Learn More</button>
+              </div>
+              <div>
+                  <img src="http://placeimg.com/940/480/nature">
+                  <h1>Lorum Ipsum 3</h1>
+                      <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                      </p>
+                      <button>Learn More</button>
               </div>
           </div>
-          
-        </markup>
-       
-      </div>
-
+      </markup>
+      <style>
+          .column-wrapper {
+              flex-wrap: wrap;
+              display:flex;
+              width:100%;
+              height:500px;
+              margin:6px;
+          }
+          .column-wrapper div { 
+              height:100%;
+              flex: 1;
+              margin:6px;
+              background-color: aqua;
+          }
+          .column-wrapper div img {
+              width:100%;
+          }
+      </style>
+    </div>
   </section>
 
   <section id="templates">
     <h2>Templates</h2>
-    <div class="component"  title="page_layout" version="1.0">
+    <div class="component"  title="page_layout" version="1.1">
       <style>
   /* =================================
   Base Styles
@@ -326,7 +259,7 @@
 ==================================== */
 
   .container {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(100px, auto);
@@ -344,10 +277,12 @@
 
   main {
     grid-area: main;
+    margin: 0 25px;
   }
 
   aside {
     grid-area: aside;
+    margin: 0 25px;
   }
 
   footer {
@@ -382,6 +317,13 @@
         "header header"
         "main aside"
         "footer footer";
+    }
+    main {
+      margin: 0 50px;
+    }
+
+    aside {
+      margin: 0 10px;
     }
   }
       </style>

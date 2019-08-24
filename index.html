@@ -13,26 +13,206 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="nav-content content-container">
+        <a href="#home"><img class="logo" src="img/logo.png" alt="logo"></a>
+
+        <div class="toggle">
+          <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li> <a href="#volunteer">Volunteer</a></li>
+          <li><a href="#graduates">Graduates</a></li>
+          <li> <a href="#services">Services</a></li>
+          <li> <a href="#contact">Contact us</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="carousel-wrapper">
+      <div id="carousel-image-wrapper">
+        <div id="carousel-image-1" class="carousel-image">
+          <div class="carousel-txt">
+            <h1>Welcome to</h1>
+            <p>
+              <span class="ref">Refcode( Refugee Code)</span>
+              <p>
+          </div>
+        </div>
+        <div id="carousel-image-2" class="carousel-image"></div>
+        <div id="carousel-image-3" class="carousel-image"></div>
+      </div>
+      <div class="button-wrapper">
+        <span class="dots" id="0" onclick="slide(this)"></span>
+        <span class="dots" id="1" onclick="slide(this)"></span>
+        <span class="dots" id="2" onclick="slide(this)"></spna>
+      </div>
+    </div>
+
+    <div class="content-container content-section">
+      <div class="txt-wrapper">
+        <h1 class="text-center">Refcode</h1>
+        <p>
+          Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of
+          their computer literacy program. After going through this curriculum, students will learn the basics of how to
+          build a website, and students will know a little bit about what working as a professional developer is like.
+        </p>
+        <p>
+          Students will learn to use the tools that professional developers use to create websites. In this course,
+          students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck
+          (an
+          FTP client), and Freenom.com (a domain registrar).
+        </p>
+        <p>
+          In this class we will learn about the strategies, workflows, and tools that professionals use to stay
+          organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings,
+          sprint
+          cycles, kanban boards (with Trello), Slack chat, GitHub, and pair-programming.
+          Each student will work towards creating a personal website by the end of the class. The student will register
+          their own domain name and upload it to a web hosting server (provided by Refugee Career Hub).
+        </p>
+      </div>
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+
+    <div class="image-banner image-banner-1 content-section">
+      <div class="banner-text">Nature</div>
+    </div>
+
+    <div class="content-container content-section">
+      <div class="column-wrapper">
+        <div class="single-column">
+          <img src="http://placeimg.com/940/480/nature">
+          <h1>Lorum Ipsum 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="single-column">
+          <img src="http://placeimg.com/940/480/nature">
+          <h1>Lorum Ipsum 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="single-column">
+          <img src="http://placeimg.com/940/480/nature">
+          <h1>Lorum Ipsum 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-banner image-banner-1 content-section">
+      <div class="banner-text">Nature</div>
+    </div>
+
+    <div class="content-container content-section">
+      <div class="column-wrapper">
+        <div class="single-column">
+          <img src="http://placeimg.com/940/480/nature">
+          <h1>Lorum Ipsum 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="single-column">
+          <img src="http://placeimg.com/940/480/nature">
+          <h1>Lorum Ipsum 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="single-column">
+          <img src="http://placeimg.com/940/480/nature">
+          <h1>Lorum Ipsum 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum
+          </p>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Footer Placeholder</footer>
+
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- Component Scrips -->
+  <script src="js/image-carousel.js"></script>
+
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>

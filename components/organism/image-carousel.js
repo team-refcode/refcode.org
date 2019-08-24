@@ -8,7 +8,3 @@
     carousel_image_wrapper.style.transform = "translateX(-200%)";
   },2000)
 
-  // setTimeout(function (){
-  //   // alert('hello')
-  //   carousel_image_wrapper.style.transform = `translateX(-200%)`
-  // },12000)

@@ -306,7 +306,7 @@ h5 {
 }
 
 /*
-* Main Banner
+* Main Banner v1.0
 */
 header {
   height: 88px;
@@ -395,7 +395,7 @@ ul a:hover {
 }
 
 /*
-* Image Carousel
+* Image Carousel v1.0
 */
 .carousel-wrapper {
   height: 220px;
@@ -428,15 +428,12 @@ ul a:hover {
   background-image: url(../img/graduates2.jpg);
   background-size: cover;
   background-position: 0% 32%;
-
 }
 
 #carousel-image-3 {
   background-image: url(../img/graduates1.jpg);
   background-size: cover;
   background-position: 0% 32%;
-
-
 }
 
 .button-wrapper {
@@ -496,7 +493,7 @@ ul a:hover {
 }
 
 /*
-* Text with Video
+* Text with Video v1.0
 */
 .video-wrapper iframe {
   height: 320px;
@@ -517,7 +514,7 @@ ul a:hover {
 }
 
 /*
-* Image Scrolling Banner
+* Image Scrolling Banner v1.0
 */
 .image-banner {
   background-repeat: no-repeat;
@@ -542,7 +539,7 @@ ul a:hover {
 }
 
 /*
-* Image Columns
+* Image Columns v1.1
 */
 .column-wrapper {
   display: grid;

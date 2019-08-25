@@ -436,20 +436,19 @@ ul a:hover {
   background-position: 0% 32%;
 }
 
-.button-wrapper {
+.carousel-button-wrapper {
   position: absolute;
   bottom: 0;
   left: 48%;
 }
 
-.dots {
+.carousel-dots {
   display: inline-block;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: black;
 }
-
 
 .carousel-txt {
   color: brown;

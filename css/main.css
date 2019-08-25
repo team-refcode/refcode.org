@@ -395,13 +395,13 @@ ul a:hover {
 }
 
 /*
-* Image Carousel v1.0
+* Image Carousel v1.1
 */
 .carousel-wrapper {
   height: 220px;
   width: 100%;
   position: relative;
-  /* overflow: hidden;   */
+  overflow: hidden;  
 }
 
 #carousel-image-wrapper {

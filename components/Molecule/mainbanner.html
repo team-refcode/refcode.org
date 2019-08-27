@@ -1,58 +1,107 @@
 <div>
     <style>
-       .container {
-           display:flex;
-           align-items: center;
+      body {
+          margin:0;
+          padding:0;
+      }
+      /* .logo {
+            width: 150px;
+            border: solid 10px cornflowerblue;
+            border-radius: 10px;
+            padding:5px;
+        } */
+        nav {
+            position: fixed;
+           align-items: right;
            justify-content: space-around;
-           max-width: 100%;
-           padding: 50px;
-           margin: auto;
+           margin: 10px;
            background: linear-gradient(to right, #cc5333, #23074d);
+           width: 100%;
+
         }
-       .main-nav li {
-           font-size: 20px;
-           display: inline-block;
-           list-style-type: none;
-           margin-left: 15px;
-       }
-       .main-nav a {
-           display: flex;
+        ul {
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+        } 
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+            font-family: "Times New Roman", Times, serif;
+        }
+        ul li:hover {
+           background: cornflowerblue;
+        }
+        ul li a {
             text-decoration: none;
-            color: whitesmoke;
-       }
-       .main-nav a:hover {
-           color: cornflowerblue;
+            color: white;
+        }
+        ul a:hover {
+           color: black;
            border-bottom: 2px solid;
            transition: color .5s, border-bottom .5s;
-       }
-        @media (max-width: 769px) {
-            .main-nav li{
-                overflow: hidden;
-                width: 100%;
-                float: left;
+        }
+        .toggle {
+            width:100%;
+            padding: 10px 20px;
+            background: #3b8eec;
+            box-sizing: border-box;
+            text-align: right;
+            color:white;
+            font-size: 20px;
+            display: none;
+        }
+        @media (max-width: 768px){
+            .toggle {
                 display: block;
-                font-size: 1.4em;
+            }
+            ul {
+                width: 100%;
+                display: none;
+            }
+            ul li {
+                display: block;
                 text-align: center;
-                text-decoration: none;
-        } 
+            }
+            .active {
+                display: block;
+            }
+            .logo {
+           display: none;
+        }
+
+        }
+        
        
-    }
     </style>
     <markup>
-        <nav>
-        <div class="container">
-            <p><a href="#home"></a><img class="logo" src="./img/logo.png"  alt="logo">RefCode</p>
-            
-            <ul class="main-nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#curriculum">Curriculum</a></li>
-                    <li> <a href="#volunteer">Volunteer</a></li>
-                    <li><a href="#apply">Apply</a></li>
-                    <li> <a href="#teamcode">TeamCode</a></li>
-                    <li> <a href="#contact">Contact</a></li>
-                    <li>  <a href="#donate">Donate</a></li>
-                </ul>
-            </div>
-        </nav>
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <header>
+            <nav>
+                    <a href="#home"><img class="logo" src=""  alt="logo"></a>                   
+
+                <div class="toggle">
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                </div>
+                 <ul>
+                            <li><a href="#about">About us</a></li>
+                            <li> <a href="#volunteer">Volunteer</a></li>
+                            <li><a href="#graduates">Graduates</a></li>
+                            <li> <a href="#services">Services</a></li>
+                            <li> <a href="#contact">Contact us</a></li>
+                        </ul>
+            </nav>
+        </header>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+        </script>
+
     </markup>
 </div>

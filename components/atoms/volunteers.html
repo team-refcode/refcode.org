@@ -1,0 +1,81 @@
+<div class="component" title="volunteers-component" version="1.1">
+  <style>
+  
+   .volunteers img{
+    width: 100%;
+   }
+
+   .volunteers,.volunteers h1, .volunteers h2,.volunteers p{
+      margin:0;
+      padding-bottom:0.5rem;
+
+   }
+   
+   @media screen and (min-width: 500px) and (max-width: 699px){
+    .volunteers-wrapper{
+     display:grid;
+     grid-template-columns:1fr 1fr;
+     grid-gap: 15px;
+
+   }
+
+   }
+
+    @media screen and (min-width:700px) and (max-width: 1000px){
+    .volunteers-wrapper{
+     display:grid;
+     grid-template-columns:1fr 1fr 1fr;
+     grid-gap: 15px;
+
+   }}
+
+  @media screen and (min-width: 1000px) {
+       
+   .volunteers{
+     display:grid;
+     grid-template-columns:1fr 2fr;
+     grid-gap: 15px;
+     width:65%;
+
+   }}
+
+  
+  
+  </style>
+
+  <markup>
+    <div class="volunteers-wrapper">
+    <div class="volunteers">
+      <img src="../../img/graduates3.jpg" alt="volunteer-image"/>
+      <div class="volunteers-description">
+        <h1>volunteer name</h1>
+        <h2>volunteer job</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+        </p>
+      </div>
+    </div> 
+    <div class="volunteers">
+        <img src="../../img/graduates3.jpg" alt="volunteer-image"/>
+        <div class="volunteers-description">
+          <h1>volunteer name</h1>
+          <h2>volunteer job</h2>
+          <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          </p>
+        </div>
+      </div>
+ <div class="volunteers">
+        <img src="../../img/graduates3.jpg" alt="volunteer-image"/>
+        <div class="volunteers-description">
+          <h1>volunteer name</h1>
+          <h2>volunteer job</h2>
+          <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          </p>
+        </div>
+      </div>
+    </div>
+  </markup>
+
+</div>

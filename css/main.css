@@ -192,9 +192,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -205,6 +205,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *:before,
   *:after {
@@ -215,16 +216,20 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
+
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -233,14 +238,17 @@ textarea {
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -248,18 +256,296 @@ textarea {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
   }
+}
+
+/*
+* Layout
+*/
+.content-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content-section {
+  margin-top: 5em;
+}
+
+/*
+* Utilities
+*/
+.text-center {
+  text-align: center;
+}
+
+/*
+* Typography
+*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+* Main Banner v1.0
+*/
+header {
+  height: 88px;
+}
+
+.logo {
+  width: 50px;
+  padding: 5px;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  background: linear-gradient(to right, rgba(204, 83, 51, 0.95), rgba(35, 7, 77, 0.95));
+  width: 100%;
+}
+
+nav .nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul li:hover {
+  background: cornflowerblue;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul a:hover {
+  color: black;
+  border-bottom: 2px solid;
+  transition: color .5s, border-bottom .5s;
+}
+
+.toggle {
+  width: 100%;
+  padding: 10px 20px;
+  background: #3b8eec;
+  box-sizing: border-box;
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    display: none;
+  }
+
+  ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/*
+* Image Carousel v1.1
+*/
+.carousel-wrapper {
+  height: 220px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;  
+}
+
+#carousel-image-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  height: 100%;
+  transition: 50s;
+  transition-timing-function: linear;
+}
+
+#carousel-image-wrapper,
+.carousel-image {
+  width: 100%;
+  height: 100%;
+}
+
+#carousel-image-1 {
+  background-image: url(../img/graduates3.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+#carousel-image-2 {
+  background-image: url(../img/graduates2.jpg);
+  background-size: cover;
+  background-position: 0% 32%;
+}
+
+#carousel-image-3 {
+  background-image: url(../img/graduates1.jpg);
+  background-size: cover;
+  background-position: 0% 32%;
+}
+
+.carousel-button-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
+
+.carousel-dots {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.carousel-txt {
+  color: brown;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.carousel-txt h1,
+.carousel-txt p {
+  margin: 0;
+  text-align: center;
+}
+
+.carousel-txt p {
+  color: white;
+}
+
+.ref {
+  background-color: black;
+  padding: 0 5px;
+}
+
+@media screen and (min-width:570px) {
+  .carousel-wrapper {
+    height: 420px;
+  }
+
+  .carousel-txt {
+    height: 200px;
+    width: 400px;
+    padding-top: 200px;
+  }
+
+  .carousel-txt h1 {
+    font-size: 4rem;
+  }
+
+  .carousel-txt p {
+    font-size: 2rem;
+  }
+}
+
+/*
+* Text with Video v1.0
+*/
+.video-wrapper iframe {
+  height: 320px;
+  width: 100%;
+}
+
+@media screen and (min-width:570px) {
+  .video-wrapper {
+    margin: auto;
+    width: 550px;
+    height: 350px;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*
+* Image Scrolling Banner v1.0
+*/
+.image-banner {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-banner-1 {
+  background-image: url("http://placeimg.com/940/480/nature");
+}
+
+.banner-text {
+  font-size: 40px;
+  font-weight: bolder;
+  color: #26a9c3;
+  text-transform: uppercase;
+}
+
+/*
+* Image Columns v1.1
+*/
+.column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3em;
+}
+
+.single-column img {
+  width: 100%;
 }

@@ -20,20 +20,23 @@
 
 <body>
   <!-- Main Banner v1.0 -->
-  <header>
+  <header class="main-banner">
     <nav>
       <div class="nav-content content-container">
-        <a href="#home"><img class="logo" src="img/logo.png" alt="logo"></a>
+        <a class="logo-link" href="index.html">
+          <img class="logo" src="img/logo.png" alt="logo">
+        </a>
 
         <div class="toggle">
           <i class="fa fa-bars menu" aria-hidden="true"></i>
         </div>
-        <ul>
-          <li><a href="#about">About us</a></li>
-          <li> <a href="#volunteer">Volunteer</a></li>
+        <ul class="main-banner-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
           <li><a href="#graduates">Graduates</a></li>
-          <li> <a href="#services">Services</a></li>
-          <li> <a href="#contact">Contact us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact us</a></li>
         </ul>
       </div>
     </nav>
@@ -199,27 +202,24 @@
     </div>
   </main>
 
-  <div class="footer">
+  <footer class="main-footer">
 
-    <footer class="main-footer">
+    <div class="footer-column">
+      <h4>Example</h4>
+      <button class="footer-button" type="button">Click here!</button>
+    </div>
 
-      <div class="footer-column">
-        <h4>Example</h4>
-        <button class="footer-button" type="button">Click here!</button>
-      </div>
+    <div class="footer-social footer-column">
+      <h4>Connect with us!</h4>
+      <ul class="social-icons">
+        <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
+        <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
+        <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
+      </ul>
+    </div>
 
-      <div class="footer-social footer-column">
-        <h4>Connect with us!</h4>
-        <ul class="social-icons">
-          <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
-          <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
-          <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
-        </ul>
-      </div>
+  </footer>
 
-    </footer>
-
-  </div>
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->

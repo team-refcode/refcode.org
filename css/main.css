@@ -278,6 +278,10 @@ textarea {
 /*
 * Layout
 */
+html {
+  scroll-behavior: smooth;
+}
+
 .content-container {
   max-width: 960px;
   margin: 0 auto;
@@ -292,6 +296,10 @@ textarea {
 
 .content-section {
   margin-top: 5em;
+}
+
+.page-section {
+  padding-top: 5em;
 }
 
 /*

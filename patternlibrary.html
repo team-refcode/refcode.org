@@ -469,7 +469,8 @@
     </figure>
     <figure class="figure">
       <img src="../img/img-16.png" alt="">
-      <figcaption <span>Girma</span>
+      <figcaption>
+        <span>Girma</span>
         <a href="">Website: </a>
         <a href="">GitHub Profile</a>
         <a href="">LinkedIn Profile</a>
@@ -625,7 +626,73 @@
     </figure>
   </div>
 </div>
-<markup>
+</markup>
+</div>
+<div class="component" title="fourColumnGrid" version="1.1">
+  <style>
+    .fourColumnGrid {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .fourColumnGrid img {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+
+    .fourColumnGrid figcaption {
+      text-align: center;
+      display: grid;
+    }
+
+    .fourColumnGrid figcaption a {
+      text-decoration: none;
+    }
+  </style>
+
+  <markup>
+    <div class="fourColumnGrid">
+      <figure class="col-1">
+        <img src="https://via.placeholder.com/150">
+        <figcaption>
+          <span>Name</span>
+          <a href="#">Website: example.com</a>
+          <a href="#">GitHub Profile</a>
+          <a href="#">LinkedIn Profile</a>
+        </figcaption>
+      </figure>
+
+      <figure class="col-2">
+        <img src="https://via.placeholder.com/150">
+        <figcaption>
+          <span>Name</span>
+          <a href="#">Website: example.com</a>
+          <a href="#">GitHub Profile</a>
+          <a href="#">LinkedIn Profile</a>
+        </figcaption>
+      </figure>
+      <figure class="col-3">
+        <img src="https://via.placeholder.com/150">
+        <figcaption>
+          <span>Name</span>
+          <a href="#">Website: example.com</a>
+          <a href="#">GitHub Profile</a>
+          <a href="#">LinkedIn Profile</a>
+        </figcaption>
+      </figure>
+      <figure class="col-4">
+        <img src="https://via.placeholder.com/150">
+        <figcaption>
+          <span>Name</span>
+          <a href="#">Website: example.com</a>
+          <a href="#">GitHub Profile</a>
+          <a href="#">LinkedIn Profile</a>
+        </figcaption>
+      </figure>
+  </markup>
+</div>
+</div>
     </section>
 
     <section id="organisms">

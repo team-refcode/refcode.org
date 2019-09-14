@@ -1,65 +1,39 @@
 <div class="component" title="fourColumnGrid" version="1.1">
   <style>
-    .fourColumnGrid {
-      display: grid;
-      margin: 0 auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+.fourColumnGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-
-    .fourColumnGrid img {
-      width: 100%;
-      margin-bottom: 1em;
+.fourColumnGrid img {
+    width: 100%;
     }
-
-    .fourColumnGrid figcaption {
-      text-align: center;
-      display: grid;
-    }
-
-    .fourColumnGrid figcaption a {
-      text-decoration: none;
-    }
+.col{
+    margin: 1em;
+  }
+@media(max-width: 680px){
+  	.fourColumnGrid{
+  		display: grid;
+  		grid-template-columns: 1fr 1fr;
+  	}
+  }
   </style>
 
   <markup>
     <div class="fourColumnGrid">
-      <figure class="col-1">
+      <div class="col">
         <img src="https://via.placeholder.com/150">
-        <figcaption>
-          <span>Name</span>
-          <a href="#">Website: example.com</a>
-          <a href="#">GitHub Profile</a>
-          <a href="#">LinkedIn Profile</a>
-        </figcaption>
-      </figure>
+      </div>
 
-      <figure class="col-2">
+      <div class="col">
         <img src="https://via.placeholder.com/150">
-        <figcaption>
-          <span>Name</span>
-          <a href="#">Website: example.com</a>
-          <a href="#">GitHub Profile</a>
-          <a href="#">LinkedIn Profile</a>
-        </figcaption>
-      </figure>
-      <figure class="col-3">
+      </div>
+      <div class="col">
         <img src="https://via.placeholder.com/150">
-        <figcaption>
-          <span>Name</span>
-          <a href="#">Website: example.com</a>
-          <a href="#">GitHub Profile</a>
-          <a href="#">LinkedIn Profile</a>
-        </figcaption>
-      </figure>
-      <figure class="col-4">
+      </div>
+      <div class="col">
         <img src="https://via.placeholder.com/150">
-        <figcaption>
-          <span>Name</span>
-          <a href="#">Website: example.com</a>
-          <a href="#">GitHub Profile</a>
-          <a href="#">LinkedIn Profile</a>
-        </figcaption>
-      </figure>
+      </div>
   </markup>
 </div>
 </div>

@@ -197,58 +197,70 @@
       }
       </style>
 
-      <markup>
-        <figure class="figure">
-          <img src="https://via.placeholder.com/150">
-          <figcaption>
-              <span>Name</span>
-              <a href="#">Website: example.com</a>
-              <a href="#">GitHub Profile</a>
-              <a href="#">LinkedIn Profile</a>
-          </figcaption>
-        </figure>
-      </markup>
-      </div>
-
-<div class="component" title="fourColumnGrid" version="1.1">
-  <style>
-.fourColumnGrid {
-    display: grid;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-.fourColumnGrid img {
-    width: 100%;
-    }
-.col{
-    margin: 1em;
-  }
-@media(max-width: 680px){
-  	.fourColumnGrid{
-  		display: grid;
-  		grid-template-columns: 1fr 1fr;
-  	}
-  }
-  </style>
-
   <markup>
-    <div class="fourColumnGrid">
-      <div class="col">
-        <img src="https://via.placeholder.com/150">
-      </div>
-
-      <div class="col">
-        <img src="https://via.placeholder.com/150">
-      </div>
-      <div class="col">
-        <img src="https://via.placeholder.com/150">
-      </div>
-      <div class="col">
-        <img src="https://via.placeholder.com/150">
-      </div>
+    <figure class="figure">
+      <img src="https://via.placeholder.com/150">
+      <figcaption>
+          <span>Name</span>
+          <a href="#">Website: example.com</a>
+          <a href="#">GitHub Profile</a>
+          <a href="#">LinkedIn Profile</a>
+      </figcaption>
+    </figure>
   </markup>
-</div>
-</div>
+  </div>
+
+  <div class="component" title="fourColumnGrid" version="1.1">
+    <style>
+  .fourColumnGrid {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 1em;
+
+      }
+  .fourColumnGrid img {
+      width: 100%;
+      }
+  @media(max-width: 680px){
+    	.fourColumnGrid{
+    		display: grid;
+    		grid-template-columns: 1fr 1fr;
+
+    	}
+      .col{
+          margin: 1em;
+        }
+    }
+  @media(max-width: 360px){
+      	.fourColumnGrid{
+      		display: grid;
+      		grid-template-columns: 1fr;
+      	}
+        .col{
+            margin: 1em;
+          }
+      }
+    </style>
+
+    <markup>
+      <div class="fourColumnGrid">
+        <div class="col">
+          <img src="https://via.placeholder.com/150">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/150">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/150">
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/150">
+        </div>
+    </markup>
+  </div>
+  </div>
+
     </section>
 
     <section id="organisms">

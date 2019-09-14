@@ -216,7 +216,7 @@
       display: grid;
       margin: 0 auto;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-column-gap: 1em;
+      gap: 1em;
 
       }
   .fourColumnGrid img {
@@ -226,7 +226,6 @@
     	.fourColumnGrid{
     		display: grid;
     		grid-template-columns: 1fr 1fr;
-
     	}
     }
   @media(max-width: 360px){
@@ -239,16 +238,16 @@
 
     <markup>
       <div class="fourColumnGrid">
-        <div class="col">
+        <div>
           <img src="https://via.placeholder.com/150">
         </div>
-        <div class="col">
+        <div>
           <img src="https://via.placeholder.com/150">
         </div>
-        <div class="col">
+        <div>
           <img src="https://via.placeholder.com/150">
         </div>
-        <div class="col">
+        <div>
           <img src="https://via.placeholder.com/150">
         </div>
     </markup>

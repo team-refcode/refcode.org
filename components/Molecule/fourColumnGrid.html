@@ -4,8 +4,7 @@
     display: grid;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;
-
+    gap: 1em;
     }
 .fourColumnGrid img {
     width: 100%;
@@ -14,35 +13,28 @@
   	.fourColumnGrid{
   		display: grid;
   		grid-template-columns: 1fr 1fr;
-
   	}
-    .col{
-        margin: 1em;
-      }
   }
 @media(max-width: 360px){
     	.fourColumnGrid{
     		display: grid;
     		grid-template-columns: 1fr;
     	}
-      .col{
-          margin: 1em;
-        }
     }
   </style>
 
   <markup>
     <div class="fourColumnGrid">
-      <div class="col">
+      <div>
         <img src="https://via.placeholder.com/150">
       </div>
-      <div class="col">
+      <div>
         <img src="https://via.placeholder.com/150">
       </div>
-      <div class="col">
+      <div>
         <img src="https://via.placeholder.com/150">
       </div>
-      <div class="col">
+      <div>
         <img src="https://via.placeholder.com/150">
       </div>
   </markup>

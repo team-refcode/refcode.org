@@ -782,6 +782,53 @@ Contact Page Styles
 .form-button:hover{
       background-color: #009dbb;
     }
+    /* =================================
+    graduates3 Page Styles
+    ==================================== */
+  .figure {
+      display: grid;
+      margin: 0 auto;
+  }
+
+  .figure img {
+      width: 100%;
+      /* margin: 1em; */
+  }
+.figure p{
+  text-align: center;
+}
+  .figure figcaption {
+      text-align: center;
+      margin-top: 1em;
+  }
+  .figure figcaption a {
+      text-decoration: none;
+      display: block;
+  }
+  .fourColumnGrid {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1em;
+      }
+  .fourColumnGrid img {
+      width: 100%;
+      }
+.fourColumnGrid figure{
+  margin: 0 20px;
+}
+  @media(max-width: 680px){
+    	.fourColumnGrid{
+    		display: grid;
+    		grid-template-columns: 1fr 1fr;
+    	}
+    }
+  @media(max-width: 360px){
+      	.fourColumnGrid{
+      		display: grid;
+      		grid-template-columns: 1fr;
+      	}
+      }
 /* =================================
 media queries
 ==================================== */

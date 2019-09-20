@@ -1,53 +1,56 @@
 <html>
+
 <head>
-<link href="patternlibrary.css" rel="stylesheet" type="text/css"></link>
+  <link href="patternlibrary.css" rel="stylesheet" type="text/css">
+  </link>
 </head>
+
 <body>
-<h1>Refcode Pattern Library</h1>
+  <h1>Refcode Pattern Library</h1>
 
-<nav>
+  <nav>
     <ul>
-        <li><a href="#atoms">Atoms</a></li>
-        <li><a href="#molecules">Molecules</a></li>
-        <li><a href="#organisms">Organisms</a></li>
-        <li><a href="#templates">Templates</a></li>
+      <li><a href="#atoms">Atoms</a></li>
+      <li><a href="#molecules">Molecules</a></li>
+      <li><a href="#organisms">Organisms</a></li>
+      <li><a href="#templates">Templates</a></li>
     </ul>
-</nav>
+  </nav>
 
-<main>
-  <section id="atoms">
-    <h2>Atoms</h2>
-    <div class="component" title="Example" version="1.2">
-      <includes>
-        <link href="***" rel="stylesheet"/>
-        <script src="***"></script>
-      </includes>
-      <style>
-        /* this is just an example */
-      </style>
-      <markup>
-        This is just an example.
-      </markup>
-    </div>
-    <div class="component" title="Circle Image" version="1.0">
-      <style>
-        .circleImage {
-          border-radius: 50%;
-          border: solid 5px #ebebeb;
-        }
-      </style>
-      <markup>
-        <img src="components/200x200.png" class="circleImage">
-      </markup>
-    </div>
-    <div class="component" title="Button" version="1.1">
-      <!-- Button v1.1 (Atom) -->
-      <includes>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
-      </includes>
+  <main>
+    <section id="atoms">
+      <h2>Atoms</h2>
+      <div class="component" title="Example" version="1.2">
+        <includes>
+          <link href="***" rel="stylesheet" />
+          <script src="***"></script>
+        </includes>
+        <style>
+          /* this is just an example */
+        </style>
+        <markup>
+          This is just an example.
+        </markup>
+      </div>
+      <div class="component" title="Circle Image" version="1.0">
+        <style>
+          .circleImage {
+            border-radius: 50%;
+            border: solid 5px #ebebeb;
+          }
+        </style>
+        <markup>
+          <img src="components/200x200.png" class="circleImage">
+        </markup>
+      </div>
+      <div class="component" title="Button" version="1.1">
+        <!-- Button v1.1 (Atom) -->
+        <includes>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        </includes>
 
-      <style>
-        .button {
+        <style>
+          .button {
             border-width: 1px;
             border-color: #ffffff;
             border-radius: 0;
@@ -66,567 +69,664 @@
             border: 1px solid transparent;
             text-align: center;
             cursor: pointer;
-        }
-        a.button {
-            text-decoration: none;
-        }
-      </style>
-
-      <markup>
-        <a href="#" class="button">Link</a>
-        <button class="button">Button</button>
-      </markup>
-  </div>
-  <div class="component"  title="Scrolling Image Banner" version="1">
-    <style>
-.image-banner1{
-        background-image: url("http://placeimg.com/940/480/nature");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        height: 755px;
-      }
-.image-banner2{
-        background-image: url("http://placeimg.com/940/480/arch");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        position: inherit;
-        height: 755px;
-        margin-top: 230px;
-      }
-.image-banner3{
-      background-image: url("http://placeimg.com/640/480/animals");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      position: inherit;
-      height: 755px;
-      margin-top: 230px;
           }
-.banner-text{
-      position: relative;
-      top: 50%;
-      left: 50%;
-      font-size: 40px;
-      font-weight: bolder;
-      color: #26a9c3;
-      text-transform: uppercase;
 
-      }
-    </style>
-    <markup>
-      <div class="image-banner1">
-        <div class="banner-text">Nature</div>
-      </div>
-      <div class="image-banner2">
-        <div class="banner-text">Architecture</div>
-      </div>
-      <div class="image-banner3">
-        <div class="banner-text">Animal</div>
-      </div>
-    </markup>
-    </div>
+          a.button {
+            text-decoration: none;
+          }
+        </style>
 
-  </section>
+        <markup>
+          <a href="#" class="button">Link</a>
+          <button class="button">Button</button>
+        </markup>
+      </div>
+      <div class="component" title="Scrolling Image Banner" version="1">
+        <style>
+          .image-banner1 {
+            background-image: url("http://placeimg.com/940/480/nature");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 755px;
+          }
 
-  <section id="molecules">
-    <h2>Molecules</h2>
-    <div class="component" title="navigation-component" version="1.1">
+          .image-banner2 {
+            background-image: url("http://placeimg.com/940/480/arch");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: inherit;
+            height: 755px;
+            margin-top: 230px;
+          }
+
+          .image-banner3 {
+            background-image: url("http://placeimg.com/640/480/animals");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: inherit;
+            height: 755px;
+            margin-top: 230px;
+          }
+
+          .banner-text {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            font-size: 40px;
+            font-weight: bolder;
+            color: #26a9c3;
+            text-transform: uppercase;
+
+          }
+        </style>
+        <markup>
+          <div class="image-banner1">
+            <div class="banner-text">Nature</div>
+          </div>
+          <div class="image-banner2">
+            <div class="banner-text">Architecture</div>
+          </div>
+          <div class="image-banner3">
+            <div class="banner-text">Animal</div>
+          </div>
+        </markup>
+      </div>
+    </section>
+
+    <section id="molecules">
+      <h2>Molecules</h2>
+      <div class="component" title="navigation-component" version="1.1">
 
         <style>
-        .aside-navigation li {
-           list-style: none;
-           font-size: 1.5em;
-           border-top: .5px solid #9aa4a5;
-           border-bottom: .5px solid #9aa4a5;
-           border-left: 1px solid #9aa4a5;
-           padding: 1rem;
-        }
+          .aside-navigation li {
+            list-style: none;
+            font-size: 1.5em;
+            border-top: .5px solid #9aa4a5;
+            border-bottom: .5px solid #9aa4a5;
+            border-left: 1px solid #9aa4a5;
+            padding: 1rem;
+          }
 
-        .aside-navigation a {
-           text-decoration: none;
-           color: #070606;
-        }
+          .aside-navigation a {
+            text-decoration: none;
+            color: #070606;
+          }
 
-        .aside-navigation a:focus{
-           color: #9e9e9e;
-        }
-
+          .aside-navigation a:focus {
+            color: #9e9e9e;
+          }
         </style>
         <markup>
           <aside class="aside-navigation">
 
-              <ul>
-                  <li><a href="#page1">Page-1</a></li>
-                  <li><a href="#page2">Page-2</a></li>
-                  <li><a href="#page3">Page-3</a></li>
-                  <li><a href="#page4">Page-4</a></li>
-                  <li><a href="#page5">Page-5</a></li>
-                  <li><a href="#page6">Page-6</a></li>
-                  <li><a href="#page7">Page-7</a></li>
-              </ul>
-            </aside>
-          </markup>
-          </div>
-
-
-
-  </section>
-
-  <section id="organisms">
-    <h2>Organisms</h2>
-    <div class="component"  title="footer" version="1.0">
-
+            <ul>
+              <li><a href="#page1">Page-1</a></li>
+              <li><a href="#page2">Page-2</a></li>
+              <li><a href="#page3">Page-3</a></li>
+              <li><a href="#page4">Page-4</a></li>
+              <li><a href="#page5">Page-5</a></li>
+              <li><a href="#page6">Page-6</a></li>
+              <li><a href="#page7">Page-7</a></li>
+            </ul>
+          </aside>
+        </markup>
+      </div>
+  <div class="component" title="figure" version="1.1">
       <style>
-  /* =================================
+      .figure {
+          display: grid;
+          margin: 0 auto;
+      }
+
+      .figure img {
+          width: 100%;
+          margin-bottom: 1em;
+      }
+
+      .figure figcaption {
+          text-align: center;
+      }
+      .figure figcaption a {
+          text-decoration: none;
+      }
+      </style>
+
+  <markup>
+    <figure class="figure">
+      <img src="https://via.placeholder.com/150">
+      <figcaption>
+          <span>Name</span>
+          <a href="#">Website: example.com</a>
+          <a href="#">GitHub Profile</a>
+          <a href="#">LinkedIn Profile</a>
+      </figcaption>
+    </figure>
+  </markup>
+  </div>
+
+  <div class="component" title="fourColumnGrid" version="1.1">
+    <style>
+  .fourColumnGrid {
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1em;
+
+      }
+  .fourColumnGrid img {
+      width: 100%;
+      }
+  @media(max-width: 680px){
+    	.fourColumnGrid{
+    		display: grid;
+    		grid-template-columns: 1fr 1fr;
+    	}
+    }
+  @media(max-width: 360px){
+      	.fourColumnGrid{
+      		display: grid;
+      		grid-template-columns: 1fr;
+      	}
+      }
+    </style>
+
+    <markup>
+      <div class="fourColumnGrid">
+        <div>
+          <img src="https://via.placeholder.com/150">
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150">
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150">
+        </div>
+        <div>
+          <img src="https://via.placeholder.com/150">
+        </div>
+    </markup>
+  </div>
+  </div>
+
+    </section>
+
+    <section id="organisms">
+      <h2>Organisms</h2>
+ <div class="component" title="footer" version="1.0">
+
+  <style>
+      /* =================================
   Base Layout Styles
 ==================================== */
-  .footer {
-    padding-top: .75em;
-    background: rgba(232, 236, 241, 1);
-  }
+          .footer {
+            padding-top: .75em;
+            background: rgba(232, 236, 241, 1);
+          }
 
-  .main-footer {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-gap: 25px;
-    padding: 2em 0;
-    background: rgba(54, 56, 57, .92);
-    text-align: left;
-    color: white;
-    font-family: arial;
-  }
+          .main-footer {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 25px;
+            padding: 2em 0;
+            background: rgba(54, 56, 57, .92);
+            text-align: left;
+            color: white;
+            font-family: arial;
+          }
 
-  .footer-column {
-    margin: 0 25px;
-  }
+          .footer-column {
+            margin: 0 25px;
+          }
 
-  .social {
-    margin-top: 42px;
-  }
+          .social {
+            margin-top: 42px;
+          }
 
-  .footer-button {
-    background-color: rgba(34, 157, 187, 1);
-    border: none;
-    color: white;
-    padding: 10px 42px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-  }
+          .footer-button {
+            background-color: rgba(34, 157, 187, 1);
+            border: none;
+            color: white;
+            padding: 10px 42px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+          }
 
-  .social-icons {
-    padding: 0;
-  }
+          .social-icons {
+            padding: 0;
+          }
 
-  .social-icons li {
-    display: inline-block;
-    list-style-type: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-  }
+          .social-icons li {
+            display: inline-block;
+            list-style-type: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+          }
 
-  .social-icons li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
+          .social-icons li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
 
-  /* =================================
+          /* =================================
   media queries
   ==================================== */
 
-  @media (min-width: 768px) {
-    .main-footer {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-row: auto;
-    }
+          @media (min-width: 768px) {
+            .main-footer {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-row: auto;
+            }
 
-    .footer-column {
-      margin: 0 50px;
-    }
-  }
-      </style>
-
-      <markup>
-        <div class=footer>
-
-          <footer class="main-footer">
-
-            <div class="footer-column">
-              <h4>Example</h4>
-              <button class="footer-button" type="button">Click here!</button>
-            </div>
-
-            <div class="social footer-column">
-              <h4>Connect with us!</h4>
-              <ul class="social-icons">
-              <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
-              <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
-              <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
-              </ul>
-            </div>
-
-          </footer>
-        </div>
-      </markup>
-      </div>
-    <div class="component" title="image-column" version="1.1">
-      <markup>
-          <div class="column-wrapper">
-              <div>
-                      <img src="http://placeimg.com/940/480/nature">
-                      <h1>Lorum Ipsum 1</h1>
-                      <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                      </p>
-                      <button>Learn More</button>
-              </div>
-              <div>
-                      <img src="http://placeimg.com/940/480/nature">
-                      <h1>Lorum Ipsum 2</h1>
-                      <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                      </p>
-                      <button>Learn More</button>
-              </div>
-              <div>
-                  <img src="http://placeimg.com/940/480/nature">
-                  <h1>Lorum Ipsum 3</h1>
-                      <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                      </p>
-                      <button>Learn More</button>
-              </div>
-          </div>
-      </markup>
-      <style>
-          .column-wrapper {
-              flex-wrap: wrap;
-              display:flex;
-              width:100%;
-              height:500px;
-              margin:6px;
-
+            .footer-column {
+              margin: 0 50px;
+            }
           }
-          .column-wrapper div {
-              height:100%;
+        </style>
+
+        <markup>
+          <div class=footer>
+
+            <footer class="main-footer">
+
+              <div class="footer-column">
+                <h4>Example</h4>
+                <button class="footer-button" type="button">Click here!</button>
+              </div>
+
+              <div class="social footer-column">
+                <h4>Connect with us!</h4>
+                <ul class="social-icons">
+                  <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
+                  <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
+                  <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
+                </ul>
+              </div>
+
+            </footer>
+          </div>
+        </markup>
+
+        <div class="component" title="image-column" version="1.1">
+          <markup>
+            <div class="column-wrapper">
+              <div>
+                <img src="http://placeimg.com/940/480/nature">
+                <h1>Lorum Ipsum 1</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <button>Learn More</button>
+              </div>
+              <div>
+                <img src="http://placeimg.com/940/480/nature">
+                <h1>Lorum Ipsum 2</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <button>Learn More</button>
+              </div>
+              <div>
+                <img src="http://placeimg.com/940/480/nature">
+                <h1>Lorum Ipsum 3</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </markup>
+          <style>
+            .column-wrapper {
+              flex-wrap: wrap;
+              display: flex;
+              width: 100%;
+              height: 500px;
+              margin: 6px;
+
+            }
+
+            .column-wrapper div {
+              height: 100%;
               flex: 1;
-              margin:6px;
+              margin: 6px;
               background-color: aqua;
 
-          }
-          .column-wrapper div img {
-              width:100%;
-
-          }
-
-      </style>
-  </div>
-  <div class="component" title="image-carousel" version="1.1">
-    <style>
-        .carousel-wrapper{
-            height:220px;
-            width:100%;
-            position:relative;
-            overflow: hidden;
-          }
-        #carousel-image-wrapper{
-            display: grid;
-            grid-template-columns: repeat(3,100%);
-            height: 100%;
-            transition: 50s;
-            transition-timing-function: linear;
-          }
-        #carousel-image-wrapper,.carousel-image{
-            width:100%;
-            height:100%;
-          }
-
-        #carousel-image-1{
-            background-image:url(./img/graduates3.jpg);
-            background-size: cover;
-            background-position:50%;
-          }
-
-        #carousel-image-2{
-            background-image:url(./img/graduates2.jpg);
-            background-size: cover;
-            background-position:0% 32%;
-
-          }
-        #carousel-image-3{
-            background-image:url(./img/graduates1.jpg);
-            background-size: cover;
-            background-position:0% 32%;
-
-
-          }
-
-        .button-wrapper{
-            position:absolute;
-            bottom:0;
-            left:48%;
-          }
-
-          .dots{
-            display:inline-block;
-            width:15px;
-            height:15px;
-            border-radius:50%;
-            background-color: black;
-          }
-
-
-          .carousel-txt{
-            color:brown;
-            margin: auto;
-            padding-top:100px;
             }
 
-          .carousel-txt h1,.carousel-txt p{
-            margin:0;
-            text-align:center;
-          }
+            .column-wrapper div img {
+              width: 100%;
 
-          .carousel-txt p{
-            color: white;
-          }
-
-          .ref{
-          background-color: black;
-          padding:0 5px;
             }
-
-      @media screen and (min-width:570px){
-        .carousel-wrapper{
-          height:420px;
-          }
-        .carousel-txt{
-          height:200px;
-          width:400px;
-          padding-top:200px;
-        }
-        .carousel-txt h1{
-          font-size: 4rem;
-        }
-        .carousel-txt p{
-          font-size: 2rem;
-        }
-          }
-
-    </style>
-
-    <markup>
-      <div class="carousel-wrapper">
-          <div id="carousel-image-wrapper">
-              <div id="carousel-image-1" class="carousel-image">
-                  <div class="carousel-txt">
-                      <h1>Welcome to</h1>
-                      <p><span class="ref">Refcode( Refugee Code)</span><p>
-                  </div>
-              </div>
-              <div id="carousel-image-2" class="carousel-image"></div>
-              <div id="carousel-image-3" class="carousel-image"></div>
-          </div>
-          <div class="button-wrapper">
-              <span class="dots" id="0" onclick="slide(this)"></span>
-              <span class="dots" id="1" onclick="slide(this)"></span>
-              <span class="dots" id="2"onclick="slide(this)"></spna>
-          </div>
+          </style>
         </div>
-     </markup>
-     <includes>
-     </includes>
-  </div>
-  <div class="component" title="text-with-video" version="1.1">
-    <style>
-       .video-wrapper iframe{
-           height:320px;
-           width:100%;
-       }
+        <div class="component" title="image-carousel" version="1.1">
+          <style>
+            .carousel-wrapper {
+              height: 220px;
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+            }
 
-       @media screen and (min-width:570px){
-        .video-wrapper{
-          margin:auto;
-          width:550px;
-          height:350px;
-          }
-        .video-wrapper iframe{
-          width:100%;
-          height:100%;
-        }
+            #carousel-image-wrapper {
+              display: grid;
+              grid-template-columns: repeat(3, 100%);
+              height: 100%;
+              transition: 50s;
+              transition-timing-function: linear;
+            }
+
+            #carousel-image-wrapper,
+            .carousel-image {
+              width: 100%;
+              height: 100%;
+            }
+
+            #carousel-image-1 {
+              background-image: url(./img/graduates3.jpg);
+              background-size: cover;
+              background-position: 50%;
+            }
+
+            #carousel-image-2 {
+              background-image: url(./img/graduates2.jpg);
+              background-size: cover;
+              background-position: 0% 32%;
+
+            }
+
+            #carousel-image-3 {
+              background-image: url(./img/graduates1.jpg);
+              background-size: cover;
+              background-position: 0% 32%;
 
 
-       }
+            }
 
-    </style>
-    <markup>
-      <div class="video-txt-wrapper">
-        <div class="txt-wrapper">
-            <h1>Refcode</h1>
-               <p>Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of their computer literacy program. After going through this curriculum, students will learn the basics of how to build a website, and students will know a little bit about what working as a professional developer is like.</p>
-               <p>Students will learn to use the tools that professional developers use to create websites. In this course, students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck (an FTP client), and Freenom.com (a domain registrar).</p>
-               <h2>Professional Skills</h2>
-                  <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban boards (with Trello), Slack chat, GitHub, and pair-programming.
+            .button-wrapper {
+              position: absolute;
+              bottom: 0;
+              left: 48%;
+            }
+
+            .dots {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: black;
+            }
+
+
+            .carousel-txt {
+              color: brown;
+              margin: auto;
+              padding-top: 100px;
+            }
+
+            .carousel-txt h1,
+            .carousel-txt p {
+              margin: 0;
+              text-align: center;
+            }
+
+            .carousel-txt p {
+              color: white;
+            }
+
+            .ref {
+              background-color: black;
+              padding: 0 5px;
+            }
+
+            @media screen and (min-width:570px) {
+              .carousel-wrapper {
+                height: 420px;
+              }
+
+              .carousel-txt {
+                height: 200px;
+                width: 400px;
+                padding-top: 200px;
+              }
+
+              .carousel-txt h1 {
+                font-size: 4rem;
+              }
+
+              .carousel-txt p {
+                font-size: 2rem;
+              }
+            }
+          </style>
+
+          <markup>
+            <div class="carousel-wrapper">
+              <div id="carousel-image-wrapper">
+                <div id="carousel-image-1" class="carousel-image">
+                  <div class="carousel-txt">
+                    <h1>Welcome to</h1>
+                    <p><span class="ref">Refcode( Refugee Code)</span>
+                      <p>
+                  </div>
+                </div>
+                <div id="carousel-image-2" class="carousel-image"></div>
+                <div id="carousel-image-3" class="carousel-image"></div>
+              </div>
+              <div class="button-wrapper">
+                <span class="dots" id="0" onclick="slide(this)"></span>
+                <span class="dots" id="1" onclick="slide(this)"></span>
+                <span class="dots" id="2" onclick="slide(this)"></spna>
+              </div>
+            </div>
+          </markup>
+          <includes>
+          </includes>
+        </div>
+        <div class="component" title="text-with-video" version="1.1">
+          <style>
+            .video-wrapper iframe {
+              height: 320px;
+              width: 100%;
+            }
+
+            @media screen and (min-width:570px) {
+              .video-wrapper {
+                margin: auto;
+                width: 550px;
+                height: 350px;
+              }
+
+              .video-wrapper iframe {
+                width: 100%;
+                height: 100%;
+              }
+
+
+            }
+          </style>
+          <markup>
+            <div class="video-txt-wrapper">
+              <div class="txt-wrapper">
+                <h1>Refcode</h1>
+                <p>Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of their computer literacy program. After going through this curriculum, students will learn the basics of how to build a
+                  website, and students will know a little bit about what working as a professional developer is like.</p>
+                <p>Students will learn to use the tools that professional developers use to create websites. In this course, students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck (an FTP client),
+                  and Freenom.com (a domain registrar).</p>
+                <h2>Professional Skills</h2>
+                <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban
+                  boards (with Trello), Slack chat, GitHub, and pair-programming.
                   Each student will work towards creating a personal website by the end of the class. The student will register their own domain name and upload it to a web hosting server (provided by Refugee Career Hub).
 
-                  </p>
+                </p>
               </div>
-          <div class="video-wrapper">
-              <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-      </div>
-    </markup>
-  </div>
-  </section>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </markup>
+        </div>
 
-  <section id="templates">
-    <h2>Templates</h2>
-    <div class="component"  title="page_layout" version="1.1">
-      <style>
-  /* =================================
+    </section>
+
+    <section id="templates">
+      <h2>Templates</h2>
+      <div class="component" title="page_layout" version="1.1">
+        <style>
+          /* =================================
   Base Styles
 ==================================== */
 
-  * {
-    box-sizing: border-box;
-  }
+          * {
+            box-sizing: border-box;
+          }
 
-  body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    color: #3a3a3a;
-  }
+          body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #3a3a3a;
+          }
 
-  p {
-    font-size: .95em;
-    margin-bottom: 1.5em;
-  }
+          p {
+            font-size: .95em;
+            margin-bottom: 1.5em;
+          }
 
-  h2,
-  h3,
-  a {
-    color: #093a58;
-  }
+          h2,
+          h3,
+          a {
+            color: #093a58;
+          }
 
-  h2,
-  h3 {
-    margin-top: 0;
-  }
+          h2,
+          h3 {
+            margin-top: 0;
+          }
 
-  /* =================================
+          /* =================================
   Base Layout Styles
 ==================================== */
 
-  .container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(100px, auto);
-    grid-gap: 50px;
-    grid-template-areas:
-      "header"
-      "main"
-      "aside"
-      "footer";
-  }
+          .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 50px;
+            grid-template-areas:
+              "header"
+              "main"
+              "aside"
+              "footer";
+          }
 
-  header {
-    grid-area: header;
-  }
+          header {
+            grid-area: header;
+          }
 
-  main {
-    grid-area: main;
-    margin: 0 25px;
-  }
+          main {
+            grid-area: main;
+            margin: 0 25px;
+          }
 
-  aside {
-    grid-area: aside;
-    margin: 0 25px;
-  }
+          aside {
+            grid-area: aside;
+            margin: 0 25px;
+          }
 
-  footer {
-    grid-area: footer;
-  }
+          footer {
+            grid-area: footer;
+          }
 
-  .header {
-    background-image: url(img/placeimg_968_190_nature.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+          .header {
+            background-image: url(img/placeimg_968_190_nature.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
-  .content {
-    margin-left: 50px;
-  }
+          .content {
+            margin-left: 50px;
+          }
 
-  .main-footer {
-    text-align: center;
-    padding: 2em 0;
-    background: #d9e4ea;
-  }
+          .main-footer {
+            text-align: center;
+            padding: 2em 0;
+            background: #d9e4ea;
+          }
 
-  /* =================================
+          /* =================================
   media queries
   ==================================== */
 
-  @media (min-width: 992px) {
-    .container {
-      grid-template-columns: 5fr 2fr;
-      grid-template-rows: 200px minmax(200px, 1fr) 100px;
-      grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer";
-    }
-    main {
-      margin: 0 50px;
-    }
+          @media (min-width: 992px) {
+            .container {
+              grid-template-columns: 5fr 2fr;
+              grid-template-rows: 200px minmax(200px, 1fr) 100px;
+              grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer";
+            }
 
-    aside {
-      margin: 0 10px;
-    }
-  }
-      </style>
-      <markup>
-        <div class="container">
-          <header class="header"></header>
-          <main class="content">
-            <h2>Lorem ipsum!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </main>
+            main {
+              margin: 0 50px;
+            }
 
-          <aside>
-            <ul>
-              <li> 1 </li>
-              <li> 2 </li>
-              <li> 3 </li>
-              <li> 4 </li>
-              <li> 5 </li>
-              <li> 6 </li>
-              <li> 7 </li>
-            </ul>
-          </aside>
-          <footer class="main-footer">
-            <span>placeholder for footer</span>
-          </footer>
-        </div>
-        <!--/.container-->
-      </markup>
-    </div>
+            aside {
+              margin: 0 10px;
+            }
+          }
+        </style>
+        <markup>
+          <div class="container">
+            <header class="header"></header>
+            <main class="content">
+              <h2>Lorem ipsum!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </main>
 
-  </section>
-</main>
-<script src="patternlibrary.js"></script>
-<script src="./components/organism/image-carousel.js"></script>
+            <aside>
+              <ul>
+                <li> 1 </li>
+                <li> 2 </li>
+                <li> 3 </li>
+                <li> 4 </li>
+                <li> 5 </li>
+                <li> 6 </li>
+                <li> 7 </li>
+              </ul>
+            </aside>
+            <footer class="main-footer">
+              <span>placeholder for footer</span>
+            </footer>
+          </div>
+          <!--/.container-->
+        </markup>
+      </div>
+
+    </section>
+  </main>
+  <script src="patternlibrary.js"></script>
+  <script src="./components/organism/image-carousel.js"></script>
 
 </body>
+
 </html>

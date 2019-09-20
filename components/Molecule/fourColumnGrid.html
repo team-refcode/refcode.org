@@ -1,0 +1,42 @@
+<div class="component" title="fourColumnGrid" version="1.1">
+  <style>
+.fourColumnGrid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    }
+.fourColumnGrid img {
+    width: 100%;
+    }
+@media(max-width: 680px){
+  	.fourColumnGrid{
+  		display: grid;
+  		grid-template-columns: 1fr 1fr;
+  	}
+  }
+@media(max-width: 360px){
+    	.fourColumnGrid{
+    		display: grid;
+    		grid-template-columns: 1fr;
+    	}
+    }
+  </style>
+
+  <markup>
+    <div class="fourColumnGrid">
+      <div>
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/150">
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/150">
+      </div>
+  </markup>
+</div>
+</div>

@@ -605,7 +605,7 @@ nav .nav-content {
   background: rgba(232, 236, 241, 1);
 } */
 
-.main-footer {
+.footer-main {
   background: #363839;
   border-top: 1em solid #e9eaee;
   grid-template-columns: 1fr;
@@ -622,7 +622,7 @@ nav .nav-content {
   margin: 0 25px;
 }
 
-.footer-social {
+.footer_social {
   margin-top: 42px;
 }
 
@@ -636,18 +636,18 @@ nav .nav-content {
   font-size: 16px;
 }
 
-.social-icons {
+.footer_social-icons {
   padding: 0;
 }
 
-.social-icons li {
+.footer_social-icons li {
   display: inline-block;
   list-style-type: none;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
 
-.social-icons li img {
+.footer_social-icons li img {
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -658,7 +658,7 @@ media queries
 ==================================== */
 
 @media (min-width: 768px) {
-  .main-footer {
+  .footer-main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-row: auto;

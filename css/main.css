@@ -850,3 +850,15 @@ media queries
     margin: 0 10px;
   }
 }
+/* =================================
+Team Code Page Styles
+==================================== */
+.aside-navigation__teamcode li{
+  list-style: none;
+  font-size: 1em;
+  border-top: .2px solid #9aa4a5;
+  border-bottom: .2px solid #9aa4a5;
+  border-left: 1px solid #9aa4a5;
+  padding: 1rem;
+
+}

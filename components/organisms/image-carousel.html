@@ -1,0 +1,117 @@
+<div class="component" title="image-carousel" version="1.1">
+  <style>
+      .carousel-wrapper{
+          height:220px;
+          width:100%;
+          position:relative;
+          /* overflow: hidden;   */
+        }
+      #carousel-image-wrapper{
+          display: grid;
+          grid-template-columns: repeat(3,100%);
+          height: 100%;
+          transition: 50s;
+          transition-timing-function: linear;
+        }
+      #carousel-image-wrapper,.carousel-image{
+          width:100%;
+          height:100%;
+        }
+
+      #carousel-image-1{
+          background-image:url(../../img/graduates3.jpg);
+          background-size: cover;
+          background-position:50%;
+        }
+
+      #carousel-image-2{
+          background-image:url(../../img/graduates2.jpg);
+          background-size: cover;
+          background-position:0% 32%;
+
+        }
+      #carousel-image-3{
+          background-image:url(../../img/graduates1.jpg);
+          background-size: cover;
+          background-position:0% 32%;
+          
+
+        }
+
+      .button-wrapper{
+          position:absolute;
+          bottom:0;
+          left:48%;
+        }
+
+        .dots{
+          display:inline-block;
+          width:15px;
+          height:15px;
+          border-radius:50%;
+          background-color: black;
+        }
+        
+    
+        .carousel-txt{
+          color:brown;
+          margin: auto;
+          padding-top:100px;
+          }
+    
+        .carousel-txt h1,.carousel-txt p{
+          margin:0;
+          text-align:center;
+        }
+    
+        .carousel-txt p{
+          color: white;
+        }
+
+        .ref{
+        background-color: black;
+        padding:0 5px;
+          }
+
+    @media screen and (min-width:570px){
+      .carousel-wrapper{
+        height:420px;
+        }
+      .carousel-txt{
+        height:200px;
+        width:400px;
+        padding-top:200px;
+      }
+      .carousel-txt h1{
+        font-size: 4rem;
+      }
+      .carousel-txt p{
+        font-size: 2rem;
+      }
+        }
+   
+  </style>
+
+  <markup>
+    <div class="carousel-wrapper">
+        <div id="carousel-image-wrapper">
+            <div id="carousel-image-1" class="carousel-image">
+                <div class="carousel-txt">
+                    <h1>Welcome to</h1>
+                    <p><span class="ref">Refcode( Refugee Code)</span><p>
+                </div>
+            </div>
+            <div id="carousel-image-2" class="carousel-image"></div>
+            <div id="carousel-image-3" class="carousel-image"></div>
+        </div>
+        <div class="button-wrapper">
+            <span class="dots" id="0" onclick="slide(this)"></span>
+            <span class="dots" id="1" onclick="slide(this)"></span>
+            <span class="dots" id="2" onclick="slide(this)"></spna>
+        </div>
+      </div>
+   </markup>
+   <includes>
+      <script src="./image-carousel.js"></script>
+   </includes>
+</div>

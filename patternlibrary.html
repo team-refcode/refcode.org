@@ -177,83 +177,77 @@
           </aside>
         </markup>
       </div>
-  <div class="component" title="figure" version="1.1">
-      <style>
-      .figure {
+      <div class="component" title="figure" version="1.1">
+        <style>
+        .figure {
+            display: grid;
+            margin: 0 auto;
+        }
+
+        .figure img {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        .figure figcaption {
+            text-align: center;
+        }
+        .figure figcaption a {
+            text-decoration: none;
+        }
+        </style>
+        <markup>
+          <figure class="figure">
+            <img src="https://via.placeholder.com/150">
+            <figcaption>
+                <span>Name</span>
+                <a href="#">Website: example.com</a>
+                <a href="#">GitHub Profile</a>
+                <a href="#">LinkedIn Profile</a>
+            </figcaption>
+          </figure>
+        </markup>
+      </div>
+      <div class="component" title="fourColumnGrid" version="1.1">
+        <style>
+        .fourColumnGrid {
           display: grid;
           margin: 0 auto;
-      }
-
-      .figure img {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 1em;
+        }
+        .fourColumnGrid img {
           width: 100%;
-          margin-bottom: 1em;
-      }
-
-      .figure figcaption {
-          text-align: center;
-      }
-      .figure figcaption a {
-          text-decoration: none;
-      }
-      </style>
-
-  <markup>
-    <figure class="figure">
-      <img src="https://via.placeholder.com/150">
-      <figcaption>
-          <span>Name</span>
-          <a href="#">Website: example.com</a>
-          <a href="#">GitHub Profile</a>
-          <a href="#">LinkedIn Profile</a>
-      </figcaption>
-    </figure>
-  </markup>
-  </div>
-
-  <div class="component" title="fourColumnGrid" version="1.1">
-    <style>
-  .fourColumnGrid {
-      display: grid;
-      margin: 0 auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 1em;
-
-      }
-  .fourColumnGrid img {
-      width: 100%;
-      }
-  @media(max-width: 680px){
-    	.fourColumnGrid{
-    		display: grid;
-    		grid-template-columns: 1fr 1fr;
-    	}
-    }
-  @media(max-width: 360px){
-      	.fourColumnGrid{
-      		display: grid;
-      		grid-template-columns: 1fr;
-      	}
-      }
-    </style>
-
-    <markup>
-      <div class="fourColumnGrid">
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-    </markup>
-  </div>
-  </div>
-
+        }
+        @media(max-width: 680px){
+        	.fourColumnGrid{
+        		display: grid;
+        		grid-template-columns: 1fr 1fr;
+        	}
+        }
+        @media(max-width: 360px){
+        	.fourColumnGrid{
+        		display: grid;
+        		grid-template-columns: 1fr;
+        	}
+        }
+        </style>
+        <markup>
+          <div class="fourColumnGrid">
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+        </markup>
+      </div>
     </section>
 
     <section id="organisms">

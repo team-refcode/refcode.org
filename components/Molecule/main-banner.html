@@ -1,17 +1,16 @@
-<div>
+<div class="component" title="main-banner" version="1.2">
     <style>
         body {
             margin: 0;
             padding: 0;
         }
 
-        .logo {
-            width: 50px;
-            padding: 5px;
+        .logo-link {
+            width: 70px;
         }
 
         header {
-            height: 88px;
+            height: 92px;
         }
 
         nav {
@@ -20,35 +19,33 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            background: linear-gradient(to right, #cc5333, #23074d);
             width: 100%;
 
         }
 
-        ul {
-            width: 80%;
+        .main-banner-nav-list{
             margin: 0 auto;
             padding: 10px;
         }
 
-        ul li {
+        .main-banner-nav-list li {
             list-style: none;
             display: inline-block;
             padding: 20px;
             font-size: 20px;
-            font-family: "Times New Roman", Times, serif;
+            font-family: 'Lexend Deca'
         }
 
-        ul li:hover {
+        .main-banner-nav-list li:hover {
             background: cornflowerblue;
         }
 
-        ul li a {
+        .main-banner-nav-list li a {
             text-decoration: none;
-            color: white;
+            color:#333;
         }
 
-        ul a:hover {
+        .main-banner-nav-list a:hover {
             color: black;
             border-bottom: 2px solid;
             transition: color .5s, border-bottom .5s;
@@ -60,7 +57,7 @@
             background: #3b8eec;
             box-sizing: border-box;
             text-align: right;
-            color: white;
+            color:#333;
             font-size: 20px;
             display: none;
         }
@@ -70,12 +67,12 @@
                 display: block;
             }
 
-            ul {
+            .main-banner-nav-list {
                 width: 100%;
                 display: none;
             }
 
-            ul li {
+            .main-banner-nav-list li {
                 display: block;
                 text-align: center;
             }
@@ -84,7 +81,7 @@
                 display: block;
             }
 
-            .logo {
+            .logo-link {
                 display: none;
             }
 
@@ -92,19 +89,20 @@
     </style>
     <markup>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         <header>
             <nav>
-                <a href="#home"><img class="logo" src="../../img/logo.png" alt="logo"></a>
+                <a href="#home"><img class="logo-link" src="https://via.placeholder.com/200x200" alt="logo"></a>
 
                 <div class="toggle">
                     <i class="fa fa-bars menu" aria-hidden="true"></i>
                 </div>
-                <ul>
-                    <li><a href="#about">About us</a></li>
-                    <li> <a href="#volunteer">Volunteer</a></li>
-                    <li><a href="#graduates">Graduates</a></li>
-                    <li> <a href="#services">Services</a></li>
-                    <li> <a href="#contact">Contact us</a></li>
+                <ul class="main-banner-nav-list">
+                    <li><a href="#link-1">Link-1</a></li>
+                    <li> <a href="#volunteer">Link-2</a></li>
+                    <li><a href="#graduates">Link-3</a></li>
+                    <li> <a href="#services">Link-4</a></li>
+                    <li> <a href="#contact">Link-5</a></li>
                 </ul>
             </nav>
         </header>

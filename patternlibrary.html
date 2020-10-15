@@ -39,7 +39,7 @@
             border: solid 5px #ebebeb;
           }
         </style>
-        <markup>
+        <markup demoStyles="width: 212px;">
           <img src="components/200x200.png" class="circleImage">
         </markup>
       </div>
@@ -129,55 +129,9 @@
           <div class="image-banner1">
             <div class="banner-text">Nature</div>
           </div>
-          <div class="image-banner2">
-            <div class="banner-text">Architecture</div>
-          </div>
-          <div class="image-banner3">
-            <div class="banner-text">Animal</div>
-          </div>
         </markup>
       </div>
-    </section>
-
-    <section id="molecules">
-      <h2>Molecules</h2>
-      <div class="component" title="navigation-component" version="1.1">
-
-        <style>
-          .aside-navigation li {
-            list-style: none;
-            font-size: 1.5em;
-            border-top: .5px solid #9aa4a5;
-            border-bottom: .5px solid #9aa4a5;
-            border-left: 1px solid #9aa4a5;
-            padding: 1rem;
-          }
-
-          .aside-navigation a {
-            text-decoration: none;
-            color: #070606;
-          }
-
-          .aside-navigation a:focus {
-            color: #9e9e9e;
-          }
-        </style>
-        <markup>
-          <aside class="aside-navigation">
-
-            <ul>
-              <li><a href="#page1">Page-1</a></li>
-              <li><a href="#page2">Page-2</a></li>
-              <li><a href="#page3">Page-3</a></li>
-              <li><a href="#page4">Page-4</a></li>
-              <li><a href="#page5">Page-5</a></li>
-              <li><a href="#page6">Page-6</a></li>
-              <li><a href="#page7">Page-7</a></li>
-            </ul>
-          </aside>
-        </markup>
-      </div>
-  <div class="component" title="figure" version="1.1">
+      <div class="component" title="figure" version="1.1">
       <style>
       .figure {
           display: grid;
@@ -197,62 +151,262 @@
       }
       </style>
 
-  <markup>
-    <figure class="figure">
-      <img src="https://via.placeholder.com/150">
-      <figcaption>
-          <span>Name</span>
-          <a href="#">Website: example.com</a>
-          <a href="#">GitHub Profile</a>
-          <a href="#">LinkedIn Profile</a>
-      </figcaption>
-    </figure>
-  </markup>
-  </div>
+      <markup demoStyles="width:150px;">
+        <figure class="figure">
+          <img src="https://via.placeholder.com/150">
+          <figcaption>
+              <span>Name</span>
+              <a href="#">Website: example.com</a>
+              <a href="#">GitHub Profile</a>
+              <a href="#">LinkedIn Profile</a>
+          </figcaption>
+        </figure>
+      </markup>
+      </div>
+    </section>
 
-  <div class="component" title="fourColumnGrid" version="1.1">
-    <style>
-  .fourColumnGrid {
-      display: grid;
-      margin: 0 auto;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 1em;
+    <section id="molecules">
+      <h2>Molecules</h2>
+      <div class="component" title="navigation-component" version="1.1">
+        <style>
+          .aside-navigation li {
+            list-style: none;
+            font-size: 1.5em;
+            border-top: .5px solid #9aa4a5;
+            border-bottom: .5px solid #9aa4a5;
+            border-left: 1px solid #9aa4a5;
+            padding: 1rem;
+          }
 
-      }
-  .fourColumnGrid img {
-      width: 100%;
-      }
-  @media(max-width: 680px){
-    	.fourColumnGrid{
-    		display: grid;
-    		grid-template-columns: 1fr 1fr;
-    	}
-    }
-  @media(max-width: 360px){
-      	.fourColumnGrid{
-      		display: grid;
-      		grid-template-columns: 1fr;
-      	}
-      }
-    </style>
+          .aside-navigation a {
+            text-decoration: none;
+            color: #070606;
+          }
 
-    <markup>
-      <div class="fourColumnGrid">
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-        <div>
-          <img src="https://via.placeholder.com/150">
-        </div>
-    </markup>
-  </div>
-  </div>
+          .aside-navigation a:focus {
+            color: #9e9e9e;
+          }
+        </style>
+        <markup demoStyles="width: 300px;">
+          <aside class="aside-navigation">
+
+            <ul>
+              <li><a href="#page1">Page-1</a></li>
+              <li><a href="#page2">Page-2</a></li>
+              <li><a href="#page3">Page-3</a></li>
+              <li><a href="#page4">Page-4</a></li>
+              <li><a href="#page5">Page-5</a></li>
+              <li><a href="#page6">Page-6</a></li>
+              <li><a href="#page7">Page-7</a></li>
+            </ul>
+          </aside>
+        </markup>
+      </div>
+
+      <div class="component" title="figure" version="1.1">
+        <style>
+        .figure {
+            display: grid;
+            margin: 0 auto;
+        }
+
+        .figure img {
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        .figure figcaption {
+            text-align: center;
+        }
+        .figure figcaption a {
+            text-decoration: none;
+        }
+        </style>
+        <markup>
+          <figure class="figure">
+            <img src="https://via.placeholder.com/150">
+            <figcaption>
+                <span>Name</span>
+                <a href="#">Website: example.com</a>
+                <a href="#">GitHub Profile</a>
+                <a href="#">LinkedIn Profile</a>
+            </figcaption>
+          </figure>
+        </markup>
+      </div>
+      <div class="component" title="fourColumnGrid" version="1.1">
+        <style>
+        .fourColumnGrid {
+          display: grid;
+          margin: 0 auto;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 1em;
+        }
+        .fourColumnGrid img {
+          width: 100%;
+        }
+        @media(max-width: 680px){
+        	.fourColumnGrid{
+        		display: grid;
+        		grid-template-columns: 1fr 1fr;
+        	}
+        }
+        @media(max-width: 360px){
+        	.fourColumnGrid{
+        		display: grid;
+        		grid-template-columns: 1fr;
+        	}
+        }
+        </style>
+        <markup>
+          <div class="fourColumnGrid">
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+        </markup>
+      </div>
+
+
+      <div class="component" title="main-banner" id="main-banner" version="1.2">
+          <style>
+            .main-banner {
+              height: 92px;
+            }
+
+            .logo-link {
+              width: 70px;
+              padding: 0;
+              grid-area: logo-link;
+            }
+
+            .logo {
+              width: 100%;
+            }
+
+            .nav-container {
+              position: absolute;
+              z-index: 1;
+              background: linear-gradient(to right, rgba(204, 83, 51, 0.95), rgba(35, 7, 77, 0.95));
+              width: 100%;
+            }
+            .nav-content {
+              display: grid;
+              grid-template-columns: 50px auto;
+              align-items: center;
+              grid-template-areas: "logo-link main-banner-nav-list";
+            }
+
+            .main-banner-nav-list {
+              width: 80%;
+              margin: 0 auto;
+              padding: 10px;
+              grid-area: main-banner-nav-list;
+            }
+
+            .main-banner-nav-list li {
+              list-style: none;
+              display: inline-block;
+              padding: 20px;
+              font-size: 20px;
+              font-family: "Times New Roman", Times, serif;
+            }
+
+            .main-banner-nav-list li:hover {
+              background: cornflowerblue;
+            }
+
+            .main-banner-nav-list li a {
+              text-decoration: none;
+              color: white;
+            }
+
+            .main-banner-nav-list a:hover {
+              color: black;
+              border-bottom: 2px solid;
+              transition: color .5s, border-bottom .5s;
+            }
+
+            .main-banner .toggle {
+              height: 88px;
+              width: 100%;
+              padding: 10px 20px;
+              box-sizing: border-box;
+              text-align: right;
+              color: white;
+              font-size: 20px;
+              display: none;
+              grid-area: toggle;
+            }
+
+            @media (max-width: 768px) {
+              .nav-content {
+                grid-template-areas: "logo-link toggle";
+              }
+
+              .main-banner .toggle {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                font-size: 2em;
+              }
+
+              .main-banner-nav-list {
+                display: none;
+                position: absolute;
+                background: black;
+                width: auto;
+                right: 0;
+                top: 88px;
+              }
+
+              .main-banner-nav-list.open {
+                display: block;
+              }
+
+              .main-banner-nav-list li {
+                display: block;
+                text-align: right;
+              }
+
+              .active {
+                display: block;
+              }
+            }
+          </style>
+          <markup>
+            <header class="main-banner">
+              <nav class="nav-container">
+                <div class="nav-content content-container">
+                  <a class="logo-link" href="">
+                    <img class="logo" src="https://via.placeholder.com/50" alt="logo">
+                  </a>
+
+                  <div class="toggle">
+                    <i class="fa fa-bars menu" aria-hidden="true"></i>
+                  </div>
+                  <ul class="main-banner-nav-list">
+                    <li><a href="">Link 1</a></li>
+                    <li><a href="">Link 2</a></li>
+                    <li><a href="">Link 3</a></li>
+                    <li><a href="">Link 4</a></li>
+                    <li><a href="">Link 5</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
+          </markup>
+          <includes>
+          </includes>
+      </div>
 
     </section>
 

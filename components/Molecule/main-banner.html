@@ -1,121 +1,131 @@
-<div>
+<div class="component" title="main-banner" id="main-banner" version="1.2">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
+      .main-banner {
+        height: 92px;
+      }
+
+      .logo-link {
+        width: 70px;
+        padding: 0;
+        grid-area: logo-link;
+      }
+
+      .logo {
+        width: 100%;
+      }
+
+      .nav-container {
+        position: absolute;
+        z-index: 1;
+        background: linear-gradient(to right, rgba(204, 83, 51, 0.95), rgba(35, 7, 77, 0.95));
+        width: 100%;
+      }
+      .nav-content {
+        display: grid;
+        grid-template-columns: 50px auto;
+        align-items: center;
+        grid-template-areas: "logo-link main-banner-nav-list";
+      }
+
+      .main-banner-nav-list {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+        grid-area: main-banner-nav-list;
+      }
+
+      .main-banner-nav-list li {
+        list-style: none;
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .main-banner-nav-list li:hover {
+        background: cornflowerblue;
+      }
+
+      .main-banner-nav-list li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .main-banner-nav-list a:hover {
+        color: black;
+        border-bottom: 2px solid;
+        transition: color .5s, border-bottom .5s;
+      }
+
+      .main-banner .toggle {
+        height: 88px;
+        width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        text-align: right;
+        color: white;
+        font-size: 20px;
+        display: none;
+        grid-area: toggle;
+      }
+
+      @media (max-width: 768px) {
+        .nav-content {
+          grid-template-areas: "logo-link toggle";
         }
 
-        .logo {
-            width: 50px;
-            padding: 5px;
+        .main-banner .toggle {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          font-size: 2em;
         }
 
-        header {
-            height: 88px;
+        .main-banner-nav-list {
+          display: none;
+          position: absolute;
+          background: black;
+          width: auto;
+          right: 0;
+          top: 88px;
         }
 
-        nav {
-            position: fixed;
-            z-index: 1;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            background: linear-gradient(to right, #cc5333, #23074d);
-            width: 100%;
-
+        .main-banner-nav-list.open {
+          display: block;
         }
 
-        ul {
-            width: 80%;
-            margin: 0 auto;
-            padding: 10px;
+        .main-banner-nav-list li {
+          display: block;
+          text-align: right;
         }
 
-        ul li {
-            list-style: none;
-            display: inline-block;
-            padding: 20px;
-            font-size: 20px;
-            font-family: "Times New Roman", Times, serif;
+        .active {
+          display: block;
         }
-
-        ul li:hover {
-            background: cornflowerblue;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        ul a:hover {
-            color: black;
-            border-bottom: 2px solid;
-            transition: color .5s, border-bottom .5s;
-        }
-
-        .toggle {
-            width: 100%;
-            padding: 10px 20px;
-            background: #3b8eec;
-            box-sizing: border-box;
-            text-align: right;
-            color: white;
-            font-size: 20px;
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .toggle {
-                display: block;
-            }
-
-            ul {
-                width: 100%;
-                display: none;
-            }
-
-            ul li {
-                display: block;
-                text-align: center;
-            }
-
-            .active {
-                display: block;
-            }
-
-            .logo {
-                display: none;
-            }
-
-        }
+      }
     </style>
     <markup>
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <header>
-            <nav>
-                <a href="#home"><img class="logo" src="../../img/logo.png" alt="logo"></a>
+      <header class="main-banner">
+        <nav class="nav-container">
+          <div class="nav-content content-container">
+            <a class="logo-link" href="">
+              <img class="logo" src="https://via.placeholder.com/50" alt="logo">
+            </a>
 
-                <div class="toggle">
-                    <i class="fa fa-bars menu" aria-hidden="true"></i>
-                </div>
-                <ul>
-                    <li><a href="#about">About us</a></li>
-                    <li> <a href="#volunteer">Volunteer</a></li>
-                    <li><a href="#graduates">Graduates</a></li>
-                    <li> <a href="#services">Services</a></li>
-                    <li> <a href="#contact">Contact us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.menu').click(function () {
-                    $('ul').toggleClass('active');
-                })
-            })
-        </script>
-
+            <div class="toggle">
+              <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            <ul class="main-banner-nav-list">
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+              <li><a href="">Link 4</a></li>
+              <li><a href="">Link 5</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     </markup>
+    <includes>
+    </includes>
 </div>

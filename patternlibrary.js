@@ -14,8 +14,10 @@ atomComponents.forEach(function(component){
   var version = component.getAttribute("version");
   var meta = (component.querySelector("includes"));
   var css = removeLeading((component.querySelector("style") || false).innerHTML);
-  var markup = removeLeading((component.querySelector("markup") || false).innerHTML);
-
+  var markupEl = (component.querySelector("markup") || false);
+  var demoStyles = markupEl.getAttribute("demoStyles") || "";
+      demoStyles = "border: dashed 1px blue;margin: 0 auto;" + demoStyles;
+  var markup = removeLeading(markupEl.innerHTML);
   // start building HTML string to insert into component container
   var componentHTML = "";
 
@@ -34,7 +36,7 @@ atomComponents.forEach(function(component){
       componentHTML += css;
       componentHTML += `</style>`;
     }
-    if (markup) {componentHTML += markup;}
+    if (markup) {componentHTML += `<div style="${demoStyles}">${markup}</div>`;}
     componentHTML += `</div>`;
   componentHTML += `</div>`;
 

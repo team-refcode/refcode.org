@@ -1,10 +1,6 @@
-  const carousel_image_wrapper = document.getElementById('carousel-image-wrapper')
-  function slide(image){
-    carousel_image_wrapper.style.transform = `translateX(-${image.id}00%)`
-    carousel_image_wrapper.style.transition = "0s";
+const carouselImageWrapper = document.querySelector('.carousel-image-wrapper')
 
-  }
-  setTimeout(function (){
-    carousel_image_wrapper.style.transform = "translateX(-200%)";
-  },2000)
-
+var goToSlide = function (x) {
+  const offset = --x * 100;
+  carouselImageWrapper.style.transform = `translateX(-${offset}%)`;
+}

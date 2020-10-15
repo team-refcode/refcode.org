@@ -1,3 +1,4 @@
+/* image-carousel 1.2 */
 const carouselImageWrapper = document.querySelector('.carousel-image-wrapper')
 
 var goToSlide = function (x) {

@@ -376,6 +376,145 @@
           <includes>
           </includes>
       </div>
+      <div class="component" title="image-carousel" version="1.2">
+        <style>
+            .carousel-wrapper {
+              height: 220px;
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+            }
+            .carousel-image-wrapper {
+              display: grid;
+              grid-template-columns: repeat(3, 100%);
+              height: 100%;
+              transition: .5s;
+              transition-timing-function: linear;
+            }
+            .carousel-image-wrapper .right-arrow,
+            .carousel-image-wrapper .left-arrow {
+              position: absolute;
+              height: 420px;
+              line-height: 420px;
+              vertical-align: middle;
+              font-size: 60px;
+              color: white;
+              text-shadow: 2px 4px #2229;
+              cursor: pointer;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+              transform-origin: bottom;
+            }
+            .carousel-image-wrapper .right-arrow:hover,
+            .carousel-image-wrapper .left-arrow:hover {
+              text-shadow: 4px 6px lightseagreen;
+            }
+            .carousel-image-wrapper .right-arrow {
+              right: 1rem;
+            }
+            .carousel-image-wrapper .right-arrow:after {
+              content: "→";
+            }
+            .carousel-image-wrapper .left-arrow {
+              left: 1rem;
+              animation-duration: 4s;
+            }
+            .carousel-image-wrapper .left-arrow:after {
+              content: "←";
+            }
+            .bounce {
+              animation-name: bounce;
+              animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            }
+            @keyframes bounce {
+              0%   { transform: translateX(0); }
+              30%  { transform: translateX(0); }
+              10%  { transform: translateX(-10px); }
+              50%  { transform: translateX(0); }
+              57%  { transform: translateX(-3px); }
+              64%  { transform: translateX(0); }
+              100% { transform: translateX(0); }
+            }
+
+            .carousel-image-wrapper,
+            .carousel-image {
+              width: 100%;
+              height: 100%;
+            }
+            .carousel-image {
+              position: relative;
+            }
+            .carousel-image > p {
+              font-family: "Lexend Deca", sans-serif;
+              color: #fff;
+              font-size: 25px;
+              padding: 0em 1em;
+              background-color: #2229;
+              position: absolute;
+              bottom: 0;
+              display: inline;
+              margin: 0;
+              left: 10%;
+              right: 10%;
+              bottom: 1em;
+            }
+            .carousel-image > p > b {
+              color: lightseagreen;
+            }
+
+            #carousel-image-1 {
+              background-image: url("https://via.placeholder.com/800x420");
+              background-size: cover;
+              background-position: 50%;
+            }
+
+            #carousel-image-2 {
+              background-image: url("https://via.placeholder.com/800x420");
+              background-size: cover;
+              background-position: 0% 32%;
+            }
+
+            #carousel-image-3 {
+              background-image: url("https://via.placeholder.com/800x420");
+              background-size: cover;
+              background-position: 0% 32%;
+            }
+
+            @media screen and (min-width:570px) {
+              .carousel-wrapper {
+                height: 420px;
+              }
+            }
+        </style>
+        <markup>
+          <div class="carousel-wrapper">
+            <div class="carousel-image-wrapper">
+              <div id="carousel-image-1" class="carousel-image">
+                <p>
+                  Lorem <b>ipsum</b> dolor sit amet, consectetur adipiscing elit. Vivamus eget arcu ultricies, tempor velit non, sagittis lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget arcu ultricies, tempor velit non, sagittis lectus.
+                </p>
+                <div class="right-arrow bounce" onclick="goToSlide(2)"></div>
+              </div>
+              <div id="carousel-image-2" class="carousel-image">
+                <p>
+                  Vestibulum eu <b>felis ligula</b>. Proin vitae lorem eu odio viverra commodo. Aliquam elementum nisi et velit commodo auctor. Integer mattis, nulla nec laoreet semper, mi lectus accumsan metus, quis cursus tortor eros ultrices diam.
+                </p>
+                <div class="left-arrow bounce" onclick="goToSlide(1)"></div>
+                <div class="right-arrow bounce" onclick="goToSlide(3)"></div>
+              </div>
+              <div id="carousel-image-3" class="carousel-image">
+                <p>
+                  Praesent <b>sagittis</b> neque eget sapien sodales, non imperdiet nulla vehicula. Nunc feugiat, diam ac ornare dapibus, metus nulla maximus nibh, eu efficitur dui lacus ac orci. Mauris mattis gravida lorem.
+                </p>
+                <div class="left-arrow bounce" onclick="goToSlide(2)"></div>
+              </div>
+            </div>
+          </div>
+         </markup>
+         <includes>
+            <script src="js/image-carousel.js"></script>
+         </includes>
+      </div>
 
     </section>
 

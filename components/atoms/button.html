@@ -1,11 +1,10 @@
 <div class="component" title="Button" version="1.2">
   <includes>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
   </includes>
 
   <style>
-    button {
+    button, .button {
         border-width: 1px;
         border-color: #ffffff;
         border-radius: 0;
@@ -24,9 +23,14 @@
         text-align: center;
         cursor: pointer;
     }
+
+    a.button {
+        text-decoration: none;
+    }
   </style>
 
   <markup>
-    <button class="button">Learn More</button>
+    <a href="#" class="button">Link</a>
+    <button class="button">Button</button>
   </markup>
 </div>

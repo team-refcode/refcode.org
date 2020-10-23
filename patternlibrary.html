@@ -516,6 +516,108 @@
          </includes>
       </div>
 
+      <div class="component" title="Journey Path" version="1.1">
+        <includes>
+        </includes>
+        <style>
+          .journeyPath {
+            padding: 5em 0;
+            max-width: 960px;
+            margin: 0 auto;
+          }
+
+          /* all steps */
+          .step {
+            position: relative;
+            padding: 2em 2em 1em 2em;
+          }
+          .step > p {
+            margin-top: 1.5em;
+            margin-bottom: 0;
+          }
+
+          /* right steps */
+          .step:nth-child(odd) {
+            width: 40%;
+            margin-left: 50%;
+            border-left: solid 6px black;
+          }
+          .step:nth-child(odd):before {
+            content: "";
+            color: transparent;
+            position: absolute;
+            top: 2em;
+            width: 30px;
+            background-color: black;
+            height: 30px;
+            border-radius: 50%;
+            left: -18px;
+          }
+
+          /* left steps */
+          .step:nth-child(even) {
+            width: calc(50% + 6px);
+            border-right: solid 6px black;
+            position: relative;
+            text-align: right;
+            padding-left: 10%;
+
+          }
+          .step:nth-child(even):before {
+            content: "";
+            color: transparent;
+            position: absolute;
+            top: 2em;
+            width: 30px;
+            background-color: black;
+            height: 30px;
+            border-radius: 50%;
+            right: -18px;
+          }
+
+          /* first step */
+          .step:nth-child(1) {
+            padding-top: 0;
+          }
+          .step:nth-child(1) > h3 {
+            margin-top: 0;
+          }
+          .step:nth-child(1):before {
+            top: 0;
+          }
+
+          /* last step */
+          .step:nth-last-child(1) {
+            padding-bottom: 0;
+          }
+        </style>
+
+        <markup>
+          <div class="journeyPath">
+            <div class="step">
+              <h3>Maecenas vitae porta</h3>
+              <p>Maecenas id mi interdum, posuere nunc at, ullamcorper odio. Nullam diam felis, commodo sed luctus vitae, convallis quis leo. Integer non erat faucibus, feugiat dui quis, condimentum velit. Nulla hendrerit gravida tempor. Aliquam sagittis fermentum aliquam. Nulla id magna facilisis, placerat magna pellentesque, facilisis velit. Morbi interdum orci felis, sed varius turpis dignissim a. In ipsum mauris, faucibus a efficitur id, pulvinar non elit. Sed rhoncus quis leo nec tincidunt.</p>
+            </div>
+            <div class="step">
+              <h3>Sed orci nulla</h3>
+              <p>Nulla vel lacinia mauris. Maecenas vitae porta lorem, non ornare elit. Sed orci nulla, consequat non volutpat sit amet, bibendum ut est. Aenean placerat lectus eget ipsum luctus convallis. </p>
+            </div>
+            <div class="step">
+              <h3>Aenean quis porttitor sem</h3>
+              <p>Quisque vitae massa neque. Quisque lacus nunc, fringilla id aliquam non, ultrices non velit. Nam ac cursus elit, a dignissim odio. Aenean quis porttitor sem. Curabitur vehicula arcu non dictum condimentum. Sed mattis elementum lacus, venenatis fringilla dui suscipit eget. Curabitur dignissim vehicula sodales. Pellentesque non dapibus lorem. Integer consectetur eleifend pharetra.</p>
+            </div>
+            <div class="step">
+              <h3>Maecenas dignissim</h3>
+              <p>Vivamus dapibus efficitur accumsan. In eget lacus iaculis, tempus odio at, ultrices magna. Maecenas dignissim lectus mauris, sit amet aliquet felis scelerisque ut. Vivamus in orci hendrerit, consequat mi ut, convallis sem. Mauris at orci malesuada, molestie enim at, maximus lacus. Donec at auctor lorem. Donec quis lacinia tortor. Pellentesque vehicula laoreet ipsum ut imperdiet. Morbi ut magna tempus, faucibus massa non, sagittis metus.</p>
+            </div>
+            <div class="step last">
+              <h3>Lectus imperdiet ultrices</h3>
+              <p>In non arcu tempus, aliquam justo eget, sodales lacus. Sed suscipit sem mauris, fermentum sodales ligula auctor ac. Mauris finibus tortor auctor lectus imperdiet ultrices. Duis tincidunt dignissim lectus quis semper. Phasellus consectetur rhoncus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare egestas ante. Proin neque justo, mattis at massa id, sodales fermentum nunc. Maecenas sed massa eu nisl molestie eleifend.</p>
+            </div>
+          </div>
+        </markup>
+      </div>
+
     </section>
 
     <section id="organisms">

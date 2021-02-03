@@ -81,56 +81,37 @@
           <button class="button">Button</button>
         </markup>
       </div>
-      <div class="component" title="Scrolling Image Banner" version="1">
+      <div class="component"  title="Scrolling Image Banner" version="1.1">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         <style>
-          .image-banner1 {
+      .image-banner{
             background-image: url("http://placeimg.com/940/480/nature");
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: inherit;
             background-size: cover;
             background-attachment: fixed;
             height: 755px;
           }
-
-          .image-banner2 {
-            background-image: url("http://placeimg.com/940/480/arch");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            position: inherit;
-            height: 755px;
-            margin-top: 230px;
-          }
-
-          .image-banner3 {
-            background-image: url("http://placeimg.com/640/480/animals");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            position: inherit;
-            height: 755px;
-            margin-top: 230px;
-          }
-
-          .banner-text {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            font-size: 40px;
-            font-weight: bolder;
-            color: #26a9c3;
-            text-transform: uppercase;
-
-          }
+      
+      .banner-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+      }
         </style>
         <markup>
-          <div class="image-banner1">
-            <div class="banner-text">Nature</div>
+          <div class="image-banner">
+            <div class="banner-text">Header</div>
           </div>
         </markup>
-      </div>
+        </div>
+      
       <div class="component" title="figure" version="1.1">
       <style>
       .figure {

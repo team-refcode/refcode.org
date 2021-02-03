@@ -81,36 +81,39 @@
           <button class="button">Button</button>
         </markup>
       </div>
+
       <div class="component"  title="Scrolling Image Banner" version="1.1">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         <style>
-      .image-banner{
+          .image-banner {
             background-image: url("http://placeimg.com/940/480/nature");
             background-repeat: no-repeat;
             background-position: inherit;
             background-size: cover;
             background-attachment: fixed;
             height: 755px;
+            position: relative;
           }
 
-      .banner-text{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 40px;
-        font-weight: bolder;
-        color: white;
-        text-align: center;
-        font-family: 'Lexend Deca', sans-serif;
-      }
+          .banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            font-family: 'Lexend Deca', sans-serif;
+          }
         </style>
         <markup>
           <div class="image-banner">
             <div class="banner-text">Header</div>
           </div>
         </markup>
-        </div>
+      </div>
+
 
       <div class="component" title="figure" version="1.1">
       <style>
@@ -255,7 +258,7 @@
         </markup>
       </div>
 
-      <div class="component" title="main-banner" id="main-banner" version="1.3">
+      <div class="component" title="main-banner" id="main-banner" version="1.7">
         <style>
           .main-banner {
             height: 92px;
@@ -277,15 +280,15 @@
           }
           .nav-content {
             display: grid;
-            grid-template-columns: 50px auto;
+            grid-template-columns: 70px auto;
             align-items: center;
             grid-template-areas: "logo-link main-banner-nav-list";
           }
 
           .main-banner-nav-list {
-            margin: 0 auto;
             padding: 10px;
             grid-area: main-banner-nav-list;
+            margin: 0;
           }
 
           .main-banner-nav-list li {
@@ -293,22 +296,23 @@
             display: inline-block;
             padding: 20px;
             font-size: 20px;
-            font-family: 'Lexend Deca', sans-serif;
+            font-family: "Lexend Deca", sans-serif;
           }
 
-          .main-banner-nav-list li:hover {
-            background: cornflowerblue;
-          }
 
           .main-banner-nav-list li a {
             text-decoration: none;
-            color:#333;
+            padding-bottom: 5px;
+            color: #333;
           }
 
-          .main-banner-nav-list a:hover {
+          .main-banner-nav-list a.current {
+            border-bottom: 1px solid #444;
+          }
+
+          .main-banner-nav-list.main-banner-nav-list li:hover a {/* EASB */
             color: black;
-            border-bottom: 2px solid;
-            transition: color .5s, border-bottom .5s;
+            border-bottom: 1px solid lightseagreen;
           }
 
           .main-banner .toggle {
@@ -363,7 +367,7 @@
             <nav class="nav-container">
               <div class="nav-content content-container">
                 <a class="logo-link" href="">
-                  <img class="logo" src="https://via.placeholder.com/50" alt="logo">
+                  <img class="logo" src="https://via.placeholder.com/50" alt="logo" />
                 </a>
 
                 <div class="toggle">
@@ -372,7 +376,7 @@
                 <ul class="main-banner-nav-list">
                   <li><a href="">Link 1</a></li>
                   <li><a href="">Link 2</a></li>
-                  <li><a href="">Link 3</a></li>
+                  <li><a href="" class="current">Current Link 3</a></li>
                   <li><a href="">Link 4</a></li>
                   <li><a href="">Link 5</a></li>
                 </ul>
@@ -381,9 +385,13 @@
           </header>
         </markup>
         <includes>
-          <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+          />
         </includes>
-    </div>
+      </div>
+
 
       <div class="component" title="image-carousel" version="1.2">
         <style>

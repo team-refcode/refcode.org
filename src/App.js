@@ -10,16 +10,16 @@ export default function App() {
     <Router>
         <Switch>
           <Route exact path="/" render={() => {
-            window.location.href="prevIndex.html"
+            window.location.href="index.html"
             }} />
               <Route exact path="/index.html" render={() => {
-            window.location.href="prevIndex.html"
+            window.location.href="index.html"
             }} />
           <Route path="/react">
             <Graduates />
           </Route>
-        
-        
+
+
         </Switch>
     </Router>
   );

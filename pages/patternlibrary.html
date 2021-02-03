@@ -1,0 +1,1124 @@
+<html>
+
+<head>
+  <link href="patternlibrary.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
+  </link>
+</head>
+
+<body>
+  <h1>Refcode Pattern Library</h1>
+  <nav>
+    <ul>
+      <li><a href="#atoms">Atoms</a></li>
+      <li><a href="#molecules">Molecules</a></li>
+      <li><a href="#organisms">Organisms</a></li>
+      <li><a href="#templates">Templates</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="atoms">
+      <h2>Atoms</h2>
+      <div class="component" title="Example" version="1.2">
+        <includes>
+          <link href="***" rel="stylesheet" />
+          <script src="***"></script>
+        </includes>
+        <style>
+          /* this is just an example */
+        </style>
+        <markup>
+          This is just an example.
+        </markup>
+      </div>
+      <div class="component" title="Circle Image" version="1.0">
+        <style>
+          .circleImage {
+            border-radius: 50%;
+            border: solid 5px #ebebeb;
+          }
+        </style>
+        <markup demoStyles="width: 212px;">
+          <img src="components/200x200.png" class="circleImage">
+        </markup>
+      </div>
+      <div class="component" title="Button" version="1.1">
+        <!-- Button v1.1 (Atom) -->
+        <includes>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+        </includes>
+
+        <style>
+          .button {
+            border-width: 1px;
+            border-color: #ffffff;
+            border-radius: 0;
+            background: #1ab2cf;
+            text-transform: uppercase;
+            color: #ffffff;
+            border-style: solid;
+            padding: 9px 20px;
+            line-height: 14px;
+            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            zoom: 1;
+            border: 1px solid transparent;
+            text-align: center;
+            cursor: pointer;
+          }
+
+          a.button {
+            text-decoration: none;
+          }
+        </style>
+
+        <markup>
+          <a href="#" class="button">Link</a>
+          <button class="button">Button</button>
+        </markup>
+      </div>
+      <div class="component" title="Scrolling Image Banner" version="1">
+        <style>
+          .image-banner1 {
+            background-image: url("http://placeimg.com/940/480/nature");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 755px;
+          }
+
+          .image-banner2 {
+            background-image: url("http://placeimg.com/940/480/arch");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: inherit;
+            height: 755px;
+            margin-top: 230px;
+          }
+
+          .image-banner3 {
+            background-image: url("http://placeimg.com/640/480/animals");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: inherit;
+            height: 755px;
+            margin-top: 230px;
+          }
+
+          .banner-text {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            font-size: 40px;
+            font-weight: bolder;
+            color: #26a9c3;
+            text-transform: uppercase;
+
+          }
+        </style>
+        <markup>
+          <div class="image-banner1">
+            <div class="banner-text">Nature</div>
+          </div>
+        </markup>
+      </div>
+      <div class="component" title="figure" version="1.1">
+      <style>
+      .figure {
+          display: grid;
+          margin: 0 auto;
+      }
+
+      .figure img {
+          width: 100%;
+          margin-bottom: 1em;
+      }
+
+      .figure figcaption {
+          text-align: center;
+      }
+      .figure figcaption a {
+          text-decoration: none;
+      }
+      </style>
+
+      <markup demoStyles="width:150px;">
+        <figure class="figure">
+          <img src="https://via.placeholder.com/150">
+          <figcaption>
+              <span>Name</span>
+              <a href="#">Website: example.com</a>
+              <a href="#">GitHub Profile</a>
+              <a href="#">LinkedIn Profile</a>
+          </figcaption>
+        </figure>
+      </markup>
+      </div>
+    </section>
+
+    <section id="molecules">
+      <h2>Molecules</h2>
+      <div class="component" title="navigation-component" version="1.1">
+        <style>
+          .aside-navigation li {
+            list-style: none;
+            font-size: 1.5em;
+            border-top: .5px solid #9aa4a5;
+            border-bottom: .5px solid #9aa4a5;
+            border-left: 1px solid #9aa4a5;
+            padding: 1rem;
+          }
+
+          .aside-navigation a {
+            text-decoration: none;
+            color: #070606;
+          }
+
+          .aside-navigation a:focus {
+            color: #9e9e9e;
+          }
+        </style>
+        <markup demoStyles="width: 300px;">
+          <aside class="aside-navigation">
+
+            <ul>
+              <li><a href="#page1">Page-1</a></li>
+              <li><a href="#page2">Page-2</a></li>
+              <li><a href="#page3">Page-3</a></li>
+              <li><a href="#page4">Page-4</a></li>
+              <li><a href="#page5">Page-5</a></li>
+              <li><a href="#page6">Page-6</a></li>
+              <li><a href="#page7">Page-7</a></li>
+            </ul>
+          </aside>
+        </markup>
+      </div>
+      <div class="component" title="twoColumnGrid" version="1.0">
+        <style>
+            .twoColumnGrid {
+                display: grid;
+                grid-template-columns: 60% 40%;
+                gap: 1em;
+                }
+      
+            .twoColumnGrid img {
+                width: 100%;
+                }
+      
+            @media(max-width: 500px){
+                .twoColumnGrid{
+                  grid-template-columns: 1fr
+                }
+                }
+        </style>
+      
+        <markup>
+          <div class="twoColumnGrid">
+            <div>
+              <img src="https://via.placeholder.com/120x100">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/80x100">
+            </div>
+        </markup>
+      </div>
+      </div>
+      <div class="component" title="fourColumnGrid" version="1.1">
+        <style>
+        .fourColumnGrid {
+          display: grid;
+          margin: 0 auto;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          gap: 1em;
+        }
+        .fourColumnGrid img {
+          width: 100%;
+        }
+        @media(max-width: 680px){
+        	.fourColumnGrid{
+        		display: grid;
+        		grid-template-columns: 1fr 1fr;
+        	}
+        }
+        @media(max-width: 360px){
+        	.fourColumnGrid{
+        		display: grid;
+        		grid-template-columns: 1fr;
+        	}
+        }
+        </style>
+        <markup>
+          <div class="fourColumnGrid">
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+            <div>
+              <img src="https://via.placeholder.com/150">
+            </div>
+          </div>
+        </markup>
+      </div>
+      
+      <div class="component" title="main-banner" id="main-banner" version="1.3">
+        <style>
+          .main-banner {
+            height: 92px;
+          }
+    
+          .logo-link {
+            width: 70px;
+            grid-area: logo-link;
+          }
+    
+          .logo {
+            width: 100%;
+          }
+    
+          .nav-container {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+          }
+          .nav-content {
+            display: grid;
+            grid-template-columns: 50px auto;
+            align-items: center;
+            grid-template-areas: "logo-link main-banner-nav-list";
+          }
+    
+          .main-banner-nav-list {
+            margin: 0 auto;
+            padding: 10px;
+            grid-area: main-banner-nav-list;
+          }
+    
+          .main-banner-nav-list li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Lexend Deca', sans-serif;
+          }
+    
+          .main-banner-nav-list li:hover {
+            background: cornflowerblue;
+          }
+    
+          .main-banner-nav-list li a {
+            text-decoration: none;
+            color:#333;
+          }
+    
+          .main-banner-nav-list a:hover {
+            color: black;
+            border-bottom: 2px solid;
+            transition: color .5s, border-bottom .5s;
+          }
+    
+          .main-banner .toggle {
+            height: 88px;
+            width: 100%;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            text-align: right;
+            color: white;
+            font-size: 20px;
+            display: none;
+            grid-area: toggle;
+          }
+    
+          @media (max-width: 768px) {
+            .nav-content {
+              grid-template-areas: "logo-link toggle";
+            }
+    
+            .main-banner .toggle {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              font-size: 2em;
+            }
+    
+            .main-banner-nav-list {
+              display: none;
+              position: absolute;
+              background: black;
+              width: auto;
+              right: 0;
+              top: 88px;
+            }
+    
+            .main-banner-nav-list.open {
+              display: block;
+            }
+    
+            .main-banner-nav-list li {
+              display: block;
+              text-align: right;
+            }
+    
+            .active {
+              display: block;
+            }
+          }
+        </style>
+        <markup>
+          <header class="main-banner">
+            <nav class="nav-container">
+              <div class="nav-content content-container">
+                <a class="logo-link" href="">
+                  <img class="logo" src="https://via.placeholder.com/50" alt="logo">
+                </a>
+    
+                <div class="toggle">
+                  <i class="fa fa-bars menu" aria-hidden="true"></i>
+                </div>
+                <ul class="main-banner-nav-list">
+                  <li><a href="">Link 1</a></li>
+                  <li><a href="">Link 2</a></li>
+                  <li><a href="">Link 3</a></li>
+                  <li><a href="">Link 4</a></li>
+                  <li><a href="">Link 5</a></li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        </markup>
+        <includes>
+          <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
+        </includes>
+    </div>
+    
+      <div class="component" title="image-carousel" version="1.2">
+        <style>
+            .carousel-wrapper {
+              height: 220px;
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+            }
+            .carousel-image-wrapper {
+              display: grid;
+              grid-template-columns: repeat(3, 100%);
+              height: 100%;
+              transition: .5s;
+              transition-timing-function: linear;
+            }
+            .carousel-image-wrapper .right-arrow,
+            .carousel-image-wrapper .left-arrow {
+              position: absolute;
+              height: 420px;
+              line-height: 420px;
+              vertical-align: middle;
+              font-size: 60px;
+              color: white;
+              text-shadow: 2px 4px #2229;
+              cursor: pointer;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+              transform-origin: bottom;
+            }
+            .carousel-image-wrapper .right-arrow:hover,
+            .carousel-image-wrapper .left-arrow:hover {
+              text-shadow: 4px 6px lightseagreen;
+            }
+            .carousel-image-wrapper .right-arrow {
+              right: 1rem;
+            }
+            .carousel-image-wrapper .right-arrow:after {
+              content: "→";
+            }
+            .carousel-image-wrapper .left-arrow {
+              left: 1rem;
+              animation-duration: 4s;
+            }
+            .carousel-image-wrapper .left-arrow:after {
+              content: "←";
+            }
+            .bounce {
+              animation-name: bounce;
+              animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+            }
+            @keyframes bounce {
+              0%   { transform: translateX(0); }
+              30%  { transform: translateX(0); }
+              10%  { transform: translateX(-10px); }
+              50%  { transform: translateX(0); }
+              57%  { transform: translateX(-3px); }
+              64%  { transform: translateX(0); }
+              100% { transform: translateX(0); }
+            }
+
+            .carousel-image-wrapper,
+            .carousel-image {
+              width: 100%;
+              height: 100%;
+            }
+            .carousel-image {
+              position: relative;
+            }
+            .carousel-image > p {
+              font-family: "Lexend Deca", sans-serif;
+              color: #fff;
+              font-size: 25px;
+              padding: 0em 1em;
+              background-color: #2229;
+              position: absolute;
+              bottom: 0;
+              display: inline;
+              margin: 0;
+              left: 10%;
+              right: 10%;
+              bottom: 1em;
+            }
+            .carousel-image > p > b {
+              color: lightseagreen;
+            }
+
+            #carousel-image-1 {
+              background-image: url("https://via.placeholder.com/800x420");
+              background-size: cover;
+              background-position: 50%;
+            }
+
+            #carousel-image-2 {
+              background-image: url("https://via.placeholder.com/800x420");
+              background-size: cover;
+              background-position: 0% 32%;
+            }
+
+            #carousel-image-3 {
+              background-image: url("https://via.placeholder.com/800x420");
+              background-size: cover;
+              background-position: 0% 32%;
+            }
+
+            @media screen and (min-width:570px) {
+              .carousel-wrapper {
+                height: 420px;
+              }
+            }
+        </style>
+        <markup>
+          <div class="carousel-wrapper">
+            <div class="carousel-image-wrapper">
+              <div id="carousel-image-1" class="carousel-image">
+                <p>
+                  Lorem <b>ipsum</b> dolor sit amet, consectetur adipiscing elit. Vivamus eget arcu ultricies, tempor velit non, sagittis lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget arcu ultricies, tempor velit non, sagittis lectus.
+                </p>
+                <div class="right-arrow bounce" onclick="goToSlide(2)"></div>
+              </div>
+              <div id="carousel-image-2" class="carousel-image">
+                <p>
+                  Vestibulum eu <b>felis ligula</b>. Proin vitae lorem eu odio viverra commodo. Aliquam elementum nisi et velit commodo auctor. Integer mattis, nulla nec laoreet semper, mi lectus accumsan metus, quis cursus tortor eros ultrices diam.
+                </p>
+                <div class="left-arrow bounce" onclick="goToSlide(1)"></div>
+                <div class="right-arrow bounce" onclick="goToSlide(3)"></div>
+              </div>
+              <div id="carousel-image-3" class="carousel-image">
+                <p>
+                  Praesent <b>sagittis</b> neque eget sapien sodales, non imperdiet nulla vehicula. Nunc feugiat, diam ac ornare dapibus, metus nulla maximus nibh, eu efficitur dui lacus ac orci. Mauris mattis gravida lorem.
+                </p>
+                <div class="left-arrow bounce" onclick="goToSlide(2)"></div>
+              </div>
+            </div>
+          </div>
+         </markup>
+         <includes>
+            <script src="../js/image-carousel.js"></script>
+         </includes>
+      </div>
+
+      <div class="component" title="Journey Path" version="1.1">
+        <includes>
+        </includes>
+        <style>
+          .journeyPath {
+            padding: 5em 0;
+            max-width: 960px;
+            margin: 0 auto;
+          }
+
+          /* all steps */
+          .step {
+            position: relative;
+            padding: 2em 2em 1em 2em;
+          }
+          .step > p {
+            margin-top: 1.5em;
+            margin-bottom: 0;
+          }
+
+          /* right steps */
+          .step:nth-child(odd) {
+            width: 40%;
+            margin-left: 50%;
+            border-left: solid 6px black;
+          }
+          .step:nth-child(odd):before {
+            content: "";
+            color: transparent;
+            position: absolute;
+            top: 2em;
+            width: 30px;
+            background-color: black;
+            height: 30px;
+            border-radius: 50%;
+            left: -18px;
+          }
+
+          /* left steps */
+          .step:nth-child(even) {
+            width: calc(50% + 6px);
+            border-right: solid 6px black;
+            position: relative;
+            text-align: right;
+            padding-left: 10%;
+
+          }
+          .step:nth-child(even):before {
+            content: "";
+            color: transparent;
+            position: absolute;
+            top: 2em;
+            width: 30px;
+            background-color: black;
+            height: 30px;
+            border-radius: 50%;
+            right: -18px;
+          }
+
+          /* first step */
+          .step:nth-child(1) {
+            padding-top: 0;
+          }
+          .step:nth-child(1) > h3 {
+            margin-top: 0;
+          }
+          .step:nth-child(1):before {
+            top: 0;
+          }
+
+          /* last step */
+          .step:nth-last-child(1) {
+            padding-bottom: 0;
+          }
+        </style>
+
+        <markup>
+          <div class="journeyPath">
+            <div class="step">
+              <h3>Maecenas vitae porta</h3>
+              <p>Maecenas id mi interdum, posuere nunc at, ullamcorper odio. Nullam diam felis, commodo sed luctus vitae, convallis quis leo. Integer non erat faucibus, feugiat dui quis, condimentum velit. Nulla hendrerit gravida tempor. Aliquam sagittis fermentum aliquam. Nulla id magna facilisis, placerat magna pellentesque, facilisis velit. Morbi interdum orci felis, sed varius turpis dignissim a. In ipsum mauris, faucibus a efficitur id, pulvinar non elit. Sed rhoncus quis leo nec tincidunt.</p>
+            </div>
+            <div class="step">
+              <h3>Sed orci nulla</h3>
+              <p>Nulla vel lacinia mauris. Maecenas vitae porta lorem, non ornare elit. Sed orci nulla, consequat non volutpat sit amet, bibendum ut est. Aenean placerat lectus eget ipsum luctus convallis. </p>
+            </div>
+            <div class="step">
+              <h3>Aenean quis porttitor sem</h3>
+              <p>Quisque vitae massa neque. Quisque lacus nunc, fringilla id aliquam non, ultrices non velit. Nam ac cursus elit, a dignissim odio. Aenean quis porttitor sem. Curabitur vehicula arcu non dictum condimentum. Sed mattis elementum lacus, venenatis fringilla dui suscipit eget. Curabitur dignissim vehicula sodales. Pellentesque non dapibus lorem. Integer consectetur eleifend pharetra.</p>
+            </div>
+            <div class="step">
+              <h3>Maecenas dignissim</h3>
+              <p>Vivamus dapibus efficitur accumsan. In eget lacus iaculis, tempus odio at, ultrices magna. Maecenas dignissim lectus mauris, sit amet aliquet felis scelerisque ut. Vivamus in orci hendrerit, consequat mi ut, convallis sem. Mauris at orci malesuada, molestie enim at, maximus lacus. Donec at auctor lorem. Donec quis lacinia tortor. Pellentesque vehicula laoreet ipsum ut imperdiet. Morbi ut magna tempus, faucibus massa non, sagittis metus.</p>
+            </div>
+            <div class="step last">
+              <h3>Lectus imperdiet ultrices</h3>
+              <p>In non arcu tempus, aliquam justo eget, sodales lacus. Sed suscipit sem mauris, fermentum sodales ligula auctor ac. Mauris finibus tortor auctor lectus imperdiet ultrices. Duis tincidunt dignissim lectus quis semper. Phasellus consectetur rhoncus facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare egestas ante. Proin neque justo, mattis at massa id, sodales fermentum nunc. Maecenas sed massa eu nisl molestie eleifend.</p>
+            </div>
+          </div>
+        </markup>
+      </div>
+
+    </section>
+
+    <section id="organisms">
+      <h2>Organisms</h2>
+ <div class="component" title="footer" version="1.0">
+
+  <style>
+      /* =================================
+  Base Layout Styles
+==================================== */
+          .footer {
+            padding-top: .75em;
+            background: rgba(232, 236, 241, 1);
+          }
+
+          .footer-main {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 25px;
+            padding: 2em 0;
+            background: rgba(54, 56, 57, .92);
+            text-align: left;
+            color: white;
+            font-family: arial;
+          }
+
+          .footer-column {
+            margin: 0 25px;
+          }
+
+          .footer_social {
+            margin-top: 42px;
+          }
+
+          .footer-button {
+            background-color: rgba(34, 157, 187, 1);
+            border: none;
+            color: white;
+            padding: 10px 42px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+          }
+
+          .footer_social-icons {
+            padding: 0;
+          }
+
+          .footer_social-icons li {
+            display: inline-block;
+            list-style-type: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+          }
+
+          .footer_social-icons li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+          }
+
+          /* =================================
+  media queries
+  ==================================== */
+
+          @media (min-width: 768px) {
+            .footer-main {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-template-row: auto;
+            }
+
+            .footer-column {
+              margin: 0 50px;
+            }
+          }
+        </style>
+
+        <markup>
+          <div class="footer">
+
+            <footer class="footer-main">
+
+              <div class="footer-column">
+                <h4>Example</h4>
+                <button class="footer-button" type="button">Click here!</button>
+              </div>
+
+              <div class="footer_social footer-column">
+                <h4>Connect with us!</h4>
+                <ul class="footer_social-icons">
+                  <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
+                  <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
+                  <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
+                </ul>
+              </div>
+
+            </footer>
+          </div>
+        </markup>
+
+        <div class="component" title="image-column" version="1.1">
+          <markup>
+            <div class="column-wrapper">
+              <div>
+                <img src="http://placeimg.com/940/480/nature">
+                <h1>Lorum Ipsum 1</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <button>Learn More</button>
+              </div>
+              <div>
+                <img src="http://placeimg.com/940/480/nature">
+                <h1>Lorum Ipsum 2</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <button>Learn More</button>
+              </div>
+              <div>
+                <img src="http://placeimg.com/940/480/nature">
+                <h1>Lorum Ipsum 3</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </markup>
+          <style>
+            .column-wrapper {
+              flex-wrap: wrap;
+              display: flex;
+              width: 100%;
+              height: 500px;
+              margin: 6px;
+
+            }
+
+            .column-wrapper div {
+              height: 100%;
+              flex: 1;
+              margin: 6px;
+              background-color: aqua;
+
+            }
+
+            .column-wrapper div img {
+              width: 100%;
+
+            }
+          </style>
+        </div>
+        <div class="component" title="image-carousel" version="1.1">
+          <style>
+            .carousel-wrapper {
+              height: 220px;
+              width: 100%;
+              position: relative;
+              overflow: hidden;
+            }
+
+            #carousel-image-wrapper {
+              display: grid;
+              grid-template-columns: repeat(3, 100%);
+              height: 100%;
+              transition: 50s;
+              transition-timing-function: linear;
+            }
+
+            #carousel-image-wrapper,
+            .carousel-image {
+              width: 100%;
+              height: 100%;
+            }
+
+            #carousel-image-1 {
+              background-image: url(./img/graduates3.jpg);
+              background-size: cover;
+              background-position: 50%;
+            }
+
+            #carousel-image-2 {
+              background-image: url(./img/graduates2.jpg);
+              background-size: cover;
+              background-position: 0% 32%;
+
+            }
+
+            #carousel-image-3 {
+              background-image: url(./img/graduates1.jpg);
+              background-size: cover;
+              background-position: 0% 32%;
+
+
+            }
+
+            .button-wrapper {
+              position: absolute;
+              bottom: 0;
+              left: 48%;
+            }
+
+            .dots {
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: black;
+            }
+
+
+            .carousel-txt {
+              color: brown;
+              margin: auto;
+              padding-top: 100px;
+            }
+
+            .carousel-txt h1,
+            .carousel-txt p {
+              margin: 0;
+              text-align: center;
+            }
+
+            .carousel-txt p {
+              color: white;
+            }
+
+            .ref {
+              background-color: black;
+              padding: 0 5px;
+            }
+
+            @media screen and (min-width:570px) {
+              .carousel-wrapper {
+                height: 420px;
+              }
+
+              .carousel-txt {
+                height: 200px;
+                width: 400px;
+                padding-top: 200px;
+              }
+
+              .carousel-txt h1 {
+                font-size: 4rem;
+              }
+
+              .carousel-txt p {
+                font-size: 2rem;
+              }
+            }
+          </style>
+
+          <markup>
+            <div class="carousel-wrapper">
+              <div id="carousel-image-wrapper">
+                <div id="carousel-image-1" class="carousel-image">
+                  <div class="carousel-txt">
+                    <h1>Welcome to</h1>
+                    <p><span class="ref">Refcode( Refugee Code)</span>
+                      <p>
+                  </div>
+                </div>
+                <div id="carousel-image-2" class="carousel-image"></div>
+                <div id="carousel-image-3" class="carousel-image"></div>
+              </div>
+              <div class="button-wrapper">
+                <span class="dots" id="0" onclick="slide(this)"></span>
+                <span class="dots" id="1" onclick="slide(this)"></span>
+                <span class="dots" id="2" onclick="slide(this)"></spna>
+              </div>
+            </div>
+          </markup>
+          <includes>
+          </includes>
+        </div>
+        <div class="component" title="text-with-video" version="1.1">
+          <style>
+            .video-wrapper iframe {
+              height: 320px;
+              width: 100%;
+            }
+
+            @media screen and (min-width:570px) {
+              .video-wrapper {
+                margin: auto;
+                width: 550px;
+                height: 350px;
+              }
+
+              .video-wrapper iframe {
+                width: 100%;
+                height: 100%;
+              }
+
+
+            }
+          </style>
+          <markup>
+            <div class="video-txt-wrapper">
+              <div class="txt-wrapper">
+                <h1>Refcode</h1>
+                <p>Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of their computer literacy program. After going through this curriculum, students will learn the basics of how to build a
+                  website, and students will know a little bit about what working as a professional developer is like.</p>
+                <p>Students will learn to use the tools that professional developers use to create websites. In this course, students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck (an FTP client),
+                  and Freenom.com (a domain registrar).</p>
+                <h2>Professional Skills</h2>
+                <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban
+                  boards (with Trello), Slack chat, GitHub, and pair-programming.
+                  Each student will work towards creating a personal website by the end of the class. The student will register their own domain name and upload it to a web hosting server (provided by Refugee Career Hub).
+
+                </p>
+              </div>
+              <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </markup>
+        </div>
+
+    </section>
+
+    <section id="templates">
+      <h2>Templates</h2>
+      <div class="component" title="page_layout" version="1.1">
+        <style>
+          /* =================================
+  Base Styles
+==================================== */
+
+          * {
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            color: #3a3a3a;
+          }
+
+          p {
+            font-size: .95em;
+            margin-bottom: 1.5em;
+          }
+
+          h2,
+          h3,
+          a {
+            color: #093a58;
+          }
+
+          h2,
+          h3 {
+            margin-top: 0;
+          }
+
+          /* =================================
+  Base Layout Styles
+==================================== */
+
+          .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: minmax(100px, auto);
+            grid-gap: 50px;
+            grid-template-areas:
+              "header"
+              "main"
+              "aside"
+              "footer";
+          }
+
+          header {
+            grid-area: header;
+          }
+
+          main {
+            grid-area: main;
+            margin: 0 25px;
+          }
+
+          aside {
+            grid-area: aside;
+            margin: 0 25px;
+          }
+
+          footer {
+            grid-area: footer;
+          }
+
+          .header {
+            background-image: url(img/placeimg_968_190_nature.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .content {
+            margin-left: 50px;
+          }
+
+          .main-footer {
+            text-align: center;
+            padding: 2em 0;
+            background: #d9e4ea;
+          }
+
+          /* =================================
+  media queries
+  ==================================== */
+
+          @media (min-width: 992px) {
+            .container {
+              grid-template-columns: 5fr 2fr;
+              grid-template-rows: 200px minmax(200px, 1fr) 100px;
+              grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer";
+            }
+
+            main {
+              margin: 0 50px;
+            }
+
+            aside {
+              margin: 0 10px;
+            }
+          }
+        </style>
+        <markup>
+          <div class="container">
+            <header class="header"></header>
+            <main class="content">
+              <h2>Lorem ipsum!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </main>
+
+            <aside>
+              <ul>
+                <li> 1 </li>
+                <li> 2 </li>
+                <li> 3 </li>
+                <li> 4 </li>
+                <li> 5 </li>
+                <li> 6 </li>
+                <li> 7 </li>
+              </ul>
+            </aside>
+            <footer class="main-footer">
+              <span>placeholder for footer</span>
+            </footer>
+          </div>
+          <!--/.container-->
+        </markup>
+      </div>
+
+    </section>
+  </main>
+  <script src="patternlibrary.js"></script>
+  <script src="./components/organism/image-carousel.js"></script>
+
+</body>
+
+</html>

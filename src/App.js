@@ -4,22 +4,17 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Graduates from './Graduates'
+import VolunteerOpportunities from './VolunteerOpportunities'
 export default function App() {
   return (
     <Router>
         <Switch>
           <Route exact path="/" render={() => {
-            window.location.href="prevIndex.html"
-            }} />
-              <Route exact path="/index.html" render={() => {
-            window.location.href="prevIndex.html"
+            window.location.href="index.html"
             }} />
           <Route path="/react">
-            <Graduates />
+            <VolunteerOpportunities />
           </Route>
-        
-        
         </Switch>
     </Router>
   );

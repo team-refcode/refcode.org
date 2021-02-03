@@ -1,126 +1,133 @@
-<div class="component" title="main-banner" id="main-banner" version="1.3">
-    <style>
-      .main-banner {
-        height: 92px;
-      }
+<div class="component" title="main-banner" id="main-banner" version="1.7">
+  <style>
+    .main-banner {
+      height: 92px;
+    }
 
-      .logo-link {
-        width: 70px;
-        grid-area: logo-link;
-      }
+    .logo-link {
+      width: 70px;
+      grid-area: logo-link;
+    }
 
-      .logo {
-        width: 100%;
-      }
+    .logo {
+      width: 100%;
+    }
 
-      .nav-container {
-        position: absolute;
-        z-index: 1;
-        width: 100%;
-      }
+    .nav-container {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+    }
+    .nav-content {
+      display: grid;
+      grid-template-columns: 70px auto;
+      align-items: center;
+      grid-template-areas: "logo-link main-banner-nav-list";
+    }
+
+    .main-banner-nav-list {
+      padding: 10px;
+      grid-area: main-banner-nav-list;
+      margin: 0;
+    }
+
+    .main-banner-nav-list li {
+      list-style: none;
+      display: inline-block;
+      padding: 20px;
+      font-size: 20px;
+      font-family: "Lexend Deca", sans-serif;
+    }
+
+
+    .main-banner-nav-list li a {
+      text-decoration: none;
+      padding-bottom: 5px;
+      color: #333;
+    }
+
+    .main-banner-nav-list a.current {
+      border-bottom: 1px solid #444;
+    }
+
+    .main-banner-nav-list.main-banner-nav-list li:hover a {/* EASB */
+      color: black;
+      border-bottom: 1px solid lightseagreen;
+    }
+
+    .main-banner .toggle {
+      height: 88px;
+      width: 100%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      text-align: right;
+      color: white;
+      font-size: 20px;
+      display: none;
+      grid-area: toggle;
+    }
+
+    @media (max-width: 768px) {
       .nav-content {
-        display: grid;
-        grid-template-columns: 50px auto;
-        align-items: center;
-        grid-template-areas: "logo-link main-banner-nav-list";
-      }
-
-      .main-banner-nav-list {
-        margin: 0 auto;
-        padding: 10px;
-        grid-area: main-banner-nav-list;
-      }
-
-      .main-banner-nav-list li {
-        list-style: none;
-        display: inline-block;
-        padding: 20px;
-        font-size: 20px;
-        font-family: 'Lexend Deca', sans-serif;
-      }
-
-      .main-banner-nav-list li a {
-        text-decoration: none;
-        padding-bottom: 5px;
-        color:#333;
-      }
-
-      .main-banner-nav-list li:hover a {
-        color: black;
-        border-bottom: 2px solid;
-        transition: color .5s, border-bottom .5s;
+        grid-template-areas: "logo-link toggle";
       }
 
       .main-banner .toggle {
-        height: 88px;
-        width: 100%;
-        padding: 10px 20px;
-        box-sizing: border-box;
-        text-align: right;
-        color: white;
-        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 2em;
+      }
+
+      .main-banner-nav-list {
         display: none;
-        grid-area: toggle;
+        position: absolute;
+        background: black;
+        width: auto;
+        right: 0;
+        top: 88px;
       }
 
-      @media (max-width: 768px) {
-        .nav-content {
-          grid-template-areas: "logo-link toggle";
-        }
-
-        .main-banner .toggle {
-          display: flex;
-          align-items: center;
-          justify-content: flex-end;
-          font-size: 2em;
-        }
-
-        .main-banner-nav-list {
-          display: none;
-          position: absolute;
-          background: black;
-          width: auto;
-          right: 0;
-          top: 88px;
-        }
-
-        .main-banner-nav-list.open {
-          display: block;
-        }
-
-        .main-banner-nav-list li {
-          display: block;
-          text-align: right;
-        }
-
-        .active {
-          display: block;
-        }
+      .main-banner-nav-list.open {
+        display: block;
       }
-    </style>
-    <markup>
-      <header class="main-banner">
-        <nav class="nav-container">
-          <div class="nav-content content-container">
-            <a class="logo-link" href="">
-              <img class="logo" src="https://via.placeholder.com/50" alt="logo">
-            </a>
 
-            <div class="toggle">
-              <i class="fa fa-bars menu" aria-hidden="true"></i>
-            </div>
-            <ul class="main-banner-nav-list">
-              <li><a href="">Link 1</a></li>
-              <li><a href="">Link 2</a></li>
-              <li><a href="">Link 3</a></li>
-              <li><a href="">Link 4</a></li>
-              <li><a href="">Link 5</a></li>
-            </ul>
+      .main-banner-nav-list li {
+        display: block;
+        text-align: right;
+      }
+
+      .active {
+        display: block;
+      }
+    }
+  </style>
+  <markup>
+    <header class="main-banner">
+      <nav class="nav-container">
+        <div class="nav-content content-container">
+          <a class="logo-link" href="">
+            <img class="logo" src="https://via.placeholder.com/50" alt="logo" />
+          </a>
+
+          <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
           </div>
-        </nav>
-      </header>
-    </markup>
-    <includes>
-      <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
-    </includes>
+          <ul class="main-banner-nav-list">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="" class="current">Current Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+            <li><a href="">Link 5</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </markup>
+  <includes>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+  </includes>
 </div>

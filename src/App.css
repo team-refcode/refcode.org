@@ -10,27 +10,24 @@
   justify-content: space-around;
   margin:auto;
   width:90%;
-  }
+}
 
 .grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, 100%);
+  grid-gap: 20px;
+  padding: 50px 0;
 }
-
 
 
 @media only screen and (min-width: 550px) {
   .grid{
     grid-template-columns: repeat(auto-fit, 48%);
-    gap:4%;
-    padding:0 5%;
   }
 }
 
 @media only screen and (min-width: 1000px) {
   .grid{
     grid-template-columns: repeat(auto-fit, 30%);
-    gap:5%;
-    padding:0 5%;
   }
 }

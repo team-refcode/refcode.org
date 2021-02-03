@@ -81,56 +81,37 @@
           <button class="button">Button</button>
         </markup>
       </div>
-      <div class="component" title="Scrolling Image Banner" version="1">
+      <div class="component"  title="Scrolling Image Banner" version="1.1">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         <style>
-          .image-banner1 {
+      .image-banner{
             background-image: url("http://placeimg.com/940/480/nature");
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: inherit;
             background-size: cover;
             background-attachment: fixed;
             height: 755px;
           }
 
-          .image-banner2 {
-            background-image: url("http://placeimg.com/940/480/arch");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            position: inherit;
-            height: 755px;
-            margin-top: 230px;
-          }
-
-          .image-banner3 {
-            background-image: url("http://placeimg.com/640/480/animals");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            position: inherit;
-            height: 755px;
-            margin-top: 230px;
-          }
-
-          .banner-text {
-            position: relative;
-            top: 50%;
-            left: 50%;
-            font-size: 40px;
-            font-weight: bolder;
-            color: #26a9c3;
-            text-transform: uppercase;
-
-          }
+      .banner-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 40px;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+      }
         </style>
         <markup>
-          <div class="image-banner1">
-            <div class="banner-text">Nature</div>
+          <div class="image-banner">
+            <div class="banner-text">Header</div>
           </div>
         </markup>
-      </div>
+        </div>
+
       <div class="component" title="figure" version="1.1">
       <style>
       .figure {
@@ -209,18 +190,18 @@
                 grid-template-columns: 60% 40%;
                 gap: 1em;
                 }
-      
+
             .twoColumnGrid img {
                 width: 100%;
                 }
-      
+
             @media(max-width: 500px){
                 .twoColumnGrid{
                   grid-template-columns: 1fr
                 }
                 }
         </style>
-      
+
         <markup>
           <div class="twoColumnGrid">
             <div>
@@ -273,22 +254,22 @@
           </div>
         </markup>
       </div>
-      
+
       <div class="component" title="main-banner" id="main-banner" version="1.3">
         <style>
           .main-banner {
             height: 92px;
           }
-    
+
           .logo-link {
             width: 70px;
             grid-area: logo-link;
           }
-    
+
           .logo {
             width: 100%;
           }
-    
+
           .nav-container {
             position: absolute;
             z-index: 1;
@@ -300,13 +281,13 @@
             align-items: center;
             grid-template-areas: "logo-link main-banner-nav-list";
           }
-    
+
           .main-banner-nav-list {
             margin: 0 auto;
             padding: 10px;
             grid-area: main-banner-nav-list;
           }
-    
+
           .main-banner-nav-list li {
             list-style: none;
             display: inline-block;
@@ -314,22 +295,22 @@
             font-size: 20px;
             font-family: 'Lexend Deca', sans-serif;
           }
-    
+
           .main-banner-nav-list li:hover {
             background: cornflowerblue;
           }
-    
+
           .main-banner-nav-list li a {
             text-decoration: none;
             color:#333;
           }
-    
+
           .main-banner-nav-list a:hover {
             color: black;
             border-bottom: 2px solid;
             transition: color .5s, border-bottom .5s;
           }
-    
+
           .main-banner .toggle {
             height: 88px;
             width: 100%;
@@ -341,19 +322,19 @@
             display: none;
             grid-area: toggle;
           }
-    
+
           @media (max-width: 768px) {
             .nav-content {
               grid-template-areas: "logo-link toggle";
             }
-    
+
             .main-banner .toggle {
               display: flex;
               align-items: center;
               justify-content: flex-end;
               font-size: 2em;
             }
-    
+
             .main-banner-nav-list {
               display: none;
               position: absolute;
@@ -362,16 +343,16 @@
               right: 0;
               top: 88px;
             }
-    
+
             .main-banner-nav-list.open {
               display: block;
             }
-    
+
             .main-banner-nav-list li {
               display: block;
               text-align: right;
             }
-    
+
             .active {
               display: block;
             }
@@ -384,7 +365,7 @@
                 <a class="logo-link" href="">
                   <img class="logo" src="https://via.placeholder.com/50" alt="logo">
                 </a>
-    
+
                 <div class="toggle">
                   <i class="fa fa-bars menu" aria-hidden="true"></i>
                 </div>
@@ -403,7 +384,7 @@
           <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         </includes>
     </div>
-    
+
       <div class="component" title="image-carousel" version="1.2">
         <style>
             .carousel-wrapper {
@@ -540,7 +521,7 @@
           </div>
          </markup>
          <includes>
-            <script src="../js/image-carousel.js"></script>
+            <script src="js/image-carousel.js"></script>
          </includes>
       </div>
 

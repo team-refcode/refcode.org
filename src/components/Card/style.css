@@ -1,0 +1,12 @@
+.card{
+height: 500px;
+background: #FFFFFF;
+border: 1px solid #F0F0F0;
+box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.fillout-button-wrapper{
+  display:flex;
+  justify-content: center;
+}
+

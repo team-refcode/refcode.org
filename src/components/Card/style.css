@@ -1,0 +1,50 @@
+.card {
+  height: 500px;
+  background: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+.card-header {
+  padding: 20px;
+  border-bottom: solid 1px #F0F0F0;
+}
+.card-pills {
+  padding: 20px 0 0 20px;
+}
+.card-body {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  max-height: 255px;
+  overflow: scroll;
+}
+.card-footer {
+  padding: 20px;
+  background: yellow;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(transparent, white, white, white, white);
+}
+.title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 15px;
+}
+.program {
+  font-size: 14px;
+  line-height: 14px;
+  color: #999;
+}
+
+.description-heading {
+  padding: 20px 0;
+  font-size: 14px;
+  color: #999;
+}
+h1, h2, h3 {
+  font-weight: normal;
+  font-family: 'Lexend Deca', sans-serif;
+}

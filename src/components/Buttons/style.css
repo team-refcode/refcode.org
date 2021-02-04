@@ -1,0 +1,45 @@
+.pill-button{
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 10px;
+}
+
+.pill-button--306F9C{
+  background-color: #306F9C;
+}
+
+.pill-button--0D7D18{
+  background-color: #0D7D18;
+}
+
+.pill-button--B26F20{
+  background-color: #B26F20;
+}
+
+.pill-button--B22020{
+  background-color: #B22020;
+}
+
+.pill-button--412986{
+  background-color: #412986;
+}
+
+.pill-button--333333{
+  background-color: #333333;
+}
+
+.fillout-button{
+  background-color: #20B2AA;
+  height: 38px;
+  width: 207px;
+  color: white;
+  border: none;
+  margin: auto;
+}

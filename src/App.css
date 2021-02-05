@@ -1,0 +1,33 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+.flex-col{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin:auto;
+  width:90%;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, 100%);
+  grid-gap: 20px;
+  padding: 50px 0;
+}
+
+
+@media only screen and (min-width: 550px) {
+  .grid{
+    grid-template-columns: repeat(auto-fit, 48%);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .grid{
+    grid-template-columns: repeat(auto-fit, 30%);
+  }
+}

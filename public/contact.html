@@ -1,0 +1,95 @@
+<!doctype html>
+<html><head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87359524-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'UA-87359524-2');
+</script>
+<title>Refcode Contact</title>
+<link href="styles/normalize.css" rel="stylesheet" />
+<link href="styles/styles.css" rel="stylesheet" />
+<link href="styles/curriculum.css" rel="stylesheet" />
+<link href="styles/expandingSection.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header grid-header-container">
+    <img src="media/logo.png" class="header-logo grid-item grid-item--right" />
+    <h1 class="header-h1 grid-item">Refcode</h1>
+    <div class="grid-item-right"></div>
+  </header>
+
+  <nav header class="nav grid-header-container">
+    <div class="grid-item-left"></div>
+    <div class="nav-links grid-item-center">
+      <a class="nav-link" href="index.html">About Refcode</a>
+      <a class="nav-link" href="apply.html">Apply</a>
+      <a class="nav-link" href="graduates.html">Graduates</a>
+      <a class="nav-link" href="curriculum.html">Curriculum</a>
+      <a class="nav-link" href="volunteer.html">Volunteer</a>
+      <a class="nav-link" href="teamcode.html">Teamcode</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </div>
+    <div class="grid-item-right"></div>
+  </nav>
+  <main class="main grid-main-container">
+    <div class="grid-item-left"></div>
+    <div class="grid-item-center">
+      <p>Refcode is run by Brenton Strine. You can reach him using the form below.</p>
+
+
+
+      <div class="expandingSection expanded">
+        <h4 class="expandingSection-header expandingSection-row1">Contact Refcode</h4>
+        <div class="expandingSection-date expandingSection-row1"></div>
+        <div class="expandingSection-expandToggle expandingSection-row1 grid-item--right">
+          <div class="expandingSection-arrow"></div>
+        </div>
+        <div class="expandingSection-content nopadding">
+          <form action="https://formspree.io/brenton.strin.e+refcode@gmail.com" method="POST">
+            <p style="padding: .5em 2em;"></p>
+            <label class="quickinput">Name<br /> <input type="text" name="name"></label>
+            <label class="quickinput">Your Email<br /> <input type="email" name="email"></label>
+            <label class="quicklabel" for="comment">Comment</label>
+            <textarea class="quicktextarea" name="comment" id="comment"></textarea>
+            <div class="quickinput quickinput-right">
+              <input style="padding: 1em 2.5em" type="submit" value="Send">
+            </div>
+            <style scoped>
+              .quickinput {
+                margin: 0 2em 2em 2em;
+                display: inline-block;
+              }
+
+              .quicklabel {
+                margin: 0 2em 0 2em;
+                display: block;
+              }
+
+              .quicktextarea {
+                margin: 0 2em 2em 2em;
+                width: calc(100% - 4em);
+                height: 5em;
+                display: block;
+              }
+
+              .quickinput-right {
+                float: right;
+              }
+            </style>
+          </form>
+        </div>
+      </div>
+      </section>
+  </main>
+  <script src="js/expandingSection.js"></script>
+</body>
+
+</html>

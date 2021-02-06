@@ -1,9 +1,10 @@
+<div class="component" title="footer" version="2"></div>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lexend+Deca&display=swap" rel="stylesheet">
+
 <div class="footer">
   <footer class="footer-container">
-    <div>
-      <hr class="hr-1" />
-    </div>
-
     <div class="footer-main-1">
       <h2>Explore</h2>
 
@@ -34,7 +35,7 @@
     </div>
 
     <div>
-      <hr class="hr-2" />
+      <hr class="hr-1" />
     </div>
 
     <div class="footer-main-2">
@@ -89,7 +90,7 @@
     <div class="footer-main-3">
       Refcode in partnership with
       <a class="underline-footer" href="https://tektontraining.org/">
-        Tektan Career Training
+        Tekton Career Training
       </a>
       is a 501(c)3 nonprofit
     </div>
@@ -125,39 +126,38 @@
     font-size: 12px;
   }
 
-  .underline-footer {
+  .footer .underline-footer {
     text-decoration: underline;
     margin-left: 5px;
     margin-right: 5px;
   }
 
-  li {
+  .footer li {
     list-style-type: none;
     margin: 0 0 12px 0;
   }
 
-  a {
+  .footer a {
     text-decoration: none;
     color: #444;
   }
 
-  h2 {
+  .footer h2 {
     font-family: "Lexend Deca", sans-serif;
   }
 
-  .main_column {
+  .footer .main_column {
     font-family: Lato, sans-serif;
   }
 
-  .hr-1 {
-    width: 100%;
-    height: 1px;
-    background-color: #444;
-  }
-
-  .hr-2 {
+  .footer .hr-1 {
     width: 90%;
     height: 1px;
     background-color: #444;
+    border: none;
+  }
+
+  .footer a:hover {
+    border-bottom: solid 1px #444;
   }
 </style>

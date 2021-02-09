@@ -13,7 +13,6 @@
       <li><a href="#atoms">Atoms</a></li>
       <li><a href="#molecules">Molecules</a></li>
       <li><a href="#organisms">Organisms</a></li>
-      <li><a href="#templates">Templates</a></li>
     </ul>
   </nav>
 
@@ -533,10 +532,13 @@
          </includes>
       </div>
 
-      <div class="component" title="Journey Path" version="1.1">
+      <div class="component" title="Journey Path" version="1.2">
         <includes>
         </includes>
         <style>
+          .journeyPath  * {
+            box-sizing: border-box;
+          }
           .journeyPath {
             padding: 5em 0;
             max-width: 960px;
@@ -639,102 +641,170 @@
 
     <section id="organisms">
       <h2>Organisms</h2>
- <div class="component" title="footer" version="1.0">
 
-  <style>
-      /* =================================
-  Base Layout Styles
-==================================== */
-          .footer {
-            padding-top: .75em;
-            background: rgba(232, 236, 241, 1);
-          }
-
-          .footer-main {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            grid-gap: 25px;
-            padding: 2em 0;
-            background: rgba(54, 56, 57, .92);
-            text-align: left;
-            color: white;
-            font-family: arial;
-          }
-
-          .footer-column {
-            margin: 0 25px;
-          }
-
-          .footer_social {
-            margin-top: 42px;
-          }
-
-          .footer-button {
-            background-color: rgba(34, 157, 187, 1);
-            border: none;
-            color: white;
-            padding: 10px 42px;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-          }
-
-          .footer_social-icons {
-            padding: 0;
-          }
-
-          .footer_social-icons li {
-            display: inline-block;
-            list-style-type: none;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-          }
-
-          .footer_social-icons li img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-          }
-
-          /* =================================
-  media queries
-  ==================================== */
-
-          @media (min-width: 768px) {
-            .footer-main {
-              display: grid;
-              grid-template-columns: 1fr 1fr 1fr;
-              grid-template-row: auto;
-            }
-
-            .footer-column {
-              margin: 0 50px;
-            }
-          }
-        </style>
-
+      <div class="component" title="footer" version="2.1">
+        <includes>
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
+        </includes>
         <markup>
           <div class="footer">
+            <footer class="footer-container">
+              <div class="footer-main-1">
+                <h2>Explore</h2>
 
-            <footer class="footer-main">
+                <div>
+                  <ul class="main_column">
+                    <li>
+                      <a href="#">Our Story</a>
+                    </li>
+                    <li>
+                      <a href="#">Mission & Vision</a>
+                    </li>
+                    <li>
+                      <a href="#">Partnership with Tekton</a>
+                    </li>
+                  </ul>
+                </div>
 
-              <div class="footer-column">
-                <h4>Example</h4>
-                <button class="footer-button" type="button">Click here!</button>
+                <div>
+                  <ul class="main_column">
+                    <li>
+                      <a href="#">Cohorts and Graduates</a>
+                    </li>
+                    <li>
+                      <a href="#">Photo Albums</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              <div class="footer_social footer-column">
-                <h4>Connect with us!</h4>
-                <ul class="footer_social-icons">
-                  <li><a href="http://www.facebook.com"><img src='img/icon_facebook.png' /></a></li>
-                  <li><a href="http://www.twitter.com"><img src='img/icon_instagram.png' /></a></li>
-                  <li><a href="http://www.youtube.com"><img src='img/icon_twitter.png' /></a></li>
-                </ul>
+              <div>
+                <hr class="hr-1" />
               </div>
 
+              <div class="footer-main-2">
+                <h2>Engage</h2>
+
+                <div>
+                  <ul class="main_column">
+                    <h3>Participants</h3>
+                    <li>
+                      <a href="#">Student Application</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <ul class="main_column">
+                    <h3>Volunteers</h3>
+                    <li>
+                      <a href="#">Volunteer Opportunities </a>
+                    </li>
+                    <li>
+                      <a href="#">Volunteer Application</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <ul class="main_column">
+                    <h3>Supporters</h3>
+                    <li>
+                      <a href="#">Join the Refcode Extended Professional Network</a>
+                    </li>
+                    <li>
+                      <a href="#">Subscribe to our Newsletter</a>
+                    </li>
+                    <li>
+                      <a href="#">Donate</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <ul class="main_column">
+                    <h3>Businesses</h3>
+                    <li>
+                      <a href="#">Partner with us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-main-3">
+                Refcode in partnership with
+                <a class="underline-footer" href="https://tektontraining.org/">
+                  Tekton Career Training
+                </a>
+                is a 501(c)3 nonprofit
+              </div>
             </footer>
           </div>
         </markup>
+        <style>
+          .footer {
+            background: white;
+            color: black;
+          }
+
+          .footer-container {
+            display: grid;
+            column-gap: 40px;
+          }
+
+          .footer-main-1,
+          .footer-main-2 {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 40px;
+            margin-left: 75px;
+          }
+
+          .footer-main-3 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+          }
+
+          .footer .underline-footer {
+            text-decoration: underline;
+            margin-left: 5px;
+            margin-right: 5px;
+          }
+
+          .footer li {
+            list-style-type: none;
+            margin: 0 0 12px 0;
+          }
+
+          .footer a {
+            text-decoration: none;
+            color: #444;
+          }
+
+          .footer h2 {
+            font-family: "Lexend Deca", sans-serif;
+          }
+
+          .footer .main_column {
+            font-family: Lato, sans-serif;
+          }
+
+          .footer .hr-1 {
+            width: 90%;
+            height: 1px;
+            background-color: #444;
+            border: none;
+          }
+
+          .footer a:hover {
+            border-bottom: solid 1px #444;
+          }
+        </style>
+      </div>
 
         <div class="component" title="image-column" version="1.1">
           <markup>
@@ -792,130 +862,7 @@
             }
           </style>
         </div>
-        <div class="component" title="image-carousel" version="1.1">
-          <style>
-            .carousel-wrapper {
-              height: 220px;
-              width: 100%;
-              position: relative;
-              overflow: hidden;
-            }
 
-            #carousel-image-wrapper {
-              display: grid;
-              grid-template-columns: repeat(3, 100%);
-              height: 100%;
-              transition: 50s;
-              transition-timing-function: linear;
-            }
-
-            #carousel-image-wrapper,
-            .carousel-image {
-              width: 100%;
-              height: 100%;
-            }
-
-            #carousel-image-1 {
-              background-image: url(./img/graduates3.jpg);
-              background-size: cover;
-              background-position: 50%;
-            }
-
-            #carousel-image-2 {
-              background-image: url(./img/graduates2.jpg);
-              background-size: cover;
-              background-position: 0% 32%;
-
-            }
-
-            #carousel-image-3 {
-              background-image: url(./img/graduates1.jpg);
-              background-size: cover;
-              background-position: 0% 32%;
-
-
-            }
-
-            .button-wrapper {
-              position: absolute;
-              bottom: 0;
-              left: 48%;
-            }
-
-            .dots {
-              display: inline-block;
-              width: 15px;
-              height: 15px;
-              border-radius: 50%;
-              background-color: black;
-            }
-
-
-            .carousel-txt {
-              color: brown;
-              margin: auto;
-              padding-top: 100px;
-            }
-
-            .carousel-txt h1,
-            .carousel-txt p {
-              margin: 0;
-              text-align: center;
-            }
-
-            .carousel-txt p {
-              color: white;
-            }
-
-            .ref {
-              background-color: black;
-              padding: 0 5px;
-            }
-
-            @media screen and (min-width:570px) {
-              .carousel-wrapper {
-                height: 420px;
-              }
-
-              .carousel-txt {
-                height: 200px;
-                width: 400px;
-                padding-top: 200px;
-              }
-
-              .carousel-txt h1 {
-                font-size: 4rem;
-              }
-
-              .carousel-txt p {
-                font-size: 2rem;
-              }
-            }
-          </style>
-
-          <markup>
-            <div class="carousel-wrapper">
-              <div id="carousel-image-wrapper">
-                <div id="carousel-image-1" class="carousel-image">
-                  <div class="carousel-txt">
-                    <h1>Welcome to</h1>
-                    <p><span class="ref">Refcode( Refugee Code)</span>
-                      <p>
-                  </div>
-                </div>
-                <div id="carousel-image-2" class="carousel-image"></div>
-                <div id="carousel-image-3" class="carousel-image"></div>
-              </div>
-              <div class="button-wrapper">
-                <span class="dots" id="0" onclick="slide(this)"></span>
-                <span class="dots" id="1" onclick="slide(this)"></span>
-                <span class="dots" id="2" onclick="slide(this)"></spna>
-              </div>
-            </div>
-          </markup>
-          <includes>
-          </includes>
-        </div>
         <div class="component" title="text-with-video" version="1.1">
           <style>
             .video-wrapper iframe {
@@ -959,150 +906,58 @@
             </div>
           </markup>
         </div>
+        <div class="component" title="image-column" version="1.1">
+            <markup>
+                <div class="column-wrapper">
+                    <div class="single-column">
+                            <img src="http://placeimg.com/940/480/nature">
+                            <h1>Lorum Ipsum 1</h1>
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <button>Learn More</button>
+                    </div>
+                    <div class="single-column">
+                            <img src="http://placeimg.com/940/480/nature">
+                            <h1>Lorum Ipsum 2</h1>
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <button>Learn More</button>
+                    </div>
+                    <div class="single-column">
+                        <img src="http://placeimg.com/940/480/nature">
+                        <h1>Lorum Ipsum 3</h1>
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p>
+                            <button>Learn More</button>
+                    </div>
+                </div>
+            </markup>
+            <style>
+                .column-wrapper {
+                    flex-wrap: wrap;
+                    display:flex;
+                    width:100%;
+                    height:500px;
+                    margin:6px;
 
-    </section>
+                }
+                .single-column {
+                    height:100%;
+                    flex: 1;
+                    margin:6px;
+                    background-color: aqua;
 
-    <section id="templates">
-      <h2>Templates</h2>
-      <div class="component" title="page_layout" version="1.1">
-        <style>
-          /* =================================
-  Base Styles
-==================================== */
+                }
+                .single-column img {
+                    width:100%;
 
-          * {
-            box-sizing: border-box;
-          }
+                }
 
-          body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            color: #3a3a3a;
-          }
-
-          p {
-            font-size: .95em;
-            margin-bottom: 1.5em;
-          }
-
-          h2,
-          h3,
-          a {
-            color: #093a58;
-          }
-
-          h2,
-          h3 {
-            margin-top: 0;
-          }
-
-          /* =================================
-  Base Layout Styles
-==================================== */
-
-          .container {
-            min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: minmax(100px, auto);
-            grid-gap: 50px;
-            grid-template-areas:
-              "header"
-              "main"
-              "aside"
-              "footer";
-          }
-
-          header {
-            grid-area: header;
-          }
-
-          main {
-            grid-area: main;
-            margin: 0 25px;
-          }
-
-          aside {
-            grid-area: aside;
-            margin: 0 25px;
-          }
-
-          footer {
-            grid-area: footer;
-          }
-
-          .header {
-            background-image: url(img/placeimg_968_190_nature.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          .content {
-            margin-left: 50px;
-          }
-
-          .main-footer {
-            text-align: center;
-            padding: 2em 0;
-            background: #d9e4ea;
-          }
-
-          /* =================================
-  media queries
-  ==================================== */
-
-          @media (min-width: 992px) {
-            .container {
-              grid-template-columns: 5fr 2fr;
-              grid-template-rows: 200px minmax(200px, 1fr) 100px;
-              grid-template-areas:
-                "header header"
-                "main aside"
-                "footer footer";
-            }
-
-            main {
-              margin: 0 50px;
-            }
-
-            aside {
-              margin: 0 10px;
-            }
-          }
-        </style>
-        <markup>
-          <div class="container">
-            <header class="header"></header>
-            <main class="content">
-              <h2>Lorem ipsum!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </main>
-
-            <aside>
-              <ul>
-                <li> 1 </li>
-                <li> 2 </li>
-                <li> 3 </li>
-                <li> 4 </li>
-                <li> 5 </li>
-                <li> 6 </li>
-                <li> 7 </li>
-              </ul>
-            </aside>
-            <footer class="main-footer">
-              <span>placeholder for footer</span>
-            </footer>
-          </div>
-          <!--/.container-->
-        </markup>
-      </div>
-
+            </style>
+        </div>
     </section>
   </main>
   <script src="patternlibrary.js"></script>

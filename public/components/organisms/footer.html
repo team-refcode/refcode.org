@@ -1,166 +1,163 @@
-<div class="component" title="footer" version="2"></div>
+<div class="component" title="footer" version="2.1">
+  <includes>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
+  </includes>
+  <markup>
+    <div class="footer">
+      <footer class="footer-container">
+        <div class="footer-main-1">
+          <h2>Explore</h2>
 
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link
-  href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lexend+Deca&display=swap"
-  rel="stylesheet"
-/>
+          <div>
+            <ul class="main_column">
+              <li>
+                <a href="#">Our Story</a>
+              </li>
+              <li>
+                <a href="#">Mission & Vision</a>
+              </li>
+              <li>
+                <a href="#">Partnership with Tekton</a>
+              </li>
+            </ul>
+          </div>
 
-<div class="footer">
-  <footer class="footer-container">
-    <div class="footer-main-1">
-      <h2>Explore</h2>
+          <div>
+            <ul class="main_column">
+              <li>
+                <a href="#">Cohorts and Graduates</a>
+              </li>
+              <li>
+                <a href="#">Photo Albums</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div>
-        <ul class="main_column">
-          <li>
-            <a href="#">Our Story</a>
-          </li>
-          <li>
-            <a href="#">Mission & Vision</a>
-          </li>
-          <li>
-            <a href="#">Partnership with Tekton</a>
-          </li>
-        </ul>
-      </div>
+        <div>
+          <hr class="hr-1" />
+        </div>
 
-      <div>
-        <ul class="main_column">
-          <li>
-            <a href="#">Cohorts and Graduates</a>
-          </li>
-          <li>
-            <a href="#">Photo Albums</a>
-          </li>
-        </ul>
-      </div>
+        <div class="footer-main-2">
+          <h2>Engage</h2>
+
+          <div>
+            <ul class="main_column">
+              <h3>Participants</h3>
+              <li>
+                <a href="#">Student Application</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="main_column">
+              <h3>Volunteers</h3>
+              <li>
+                <a href="#">Volunteer Opportunities </a>
+              </li>
+              <li>
+                <a href="#">Volunteer Application</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="main_column">
+              <h3>Supporters</h3>
+              <li>
+                <a href="#">Join the Refcode Extended Professional Network</a>
+              </li>
+              <li>
+                <a href="#">Subscribe to our Newsletter</a>
+              </li>
+              <li>
+                <a href="#">Donate</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="main_column">
+              <h3>Businesses</h3>
+              <li>
+                <a href="#">Partner with us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-main-3">
+          Refcode in partnership with
+          <a class="underline-footer" href="https://tektontraining.org/">
+            Tekton Career Training
+          </a>
+          is a 501(c)3 nonprofit
+        </div>
+      </footer>
     </div>
+  </markup>
+  <style>
+    .footer {
+      background: white;
+      color: black;
+    }
 
-    <div>
-      <hr class="hr-1" />
-    </div>
+    .footer-container {
+      display: grid;
+      column-gap: 40px;
+    }
 
-    <div class="footer-main-2">
-      <h2>Engage</h2>
+    .footer-main-1,
+    .footer-main-2 {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 40px;
+      margin-left: 75px;
+    }
 
-      <div>
-        <ul class="main_column">
-          <h3>Participants</h3>
-          <li>
-            <a href="#">Student Application</a>
-          </li>
-        </ul>
-      </div>
+    .footer-main-3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
 
-      <div>
-        <ul class="main_column">
-          <h3>Volunteers</h3>
-          <li>
-            <a href="#">Volunteer Opportunities </a>
-          </li>
-          <li>
-            <a href="#">Volunteer Application</a>
-          </li>
-        </ul>
-      </div>
+    .footer .underline-footer {
+      text-decoration: underline;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
 
-      <div>
-        <ul class="main_column">
-          <h3>Supporters</h3>
-          <li>
-            <a href="#">Join the Refcode Extended Professional Network</a>
-          </li>
-          <li>
-            <a href="#">Subscribe to our Newsletter</a>
-          </li>
-          <li>
-            <a href="#">Donate</a>
-          </li>
-        </ul>
-      </div>
+    .footer li {
+      list-style-type: none;
+      margin: 0 0 12px 0;
+    }
 
-      <div>
-        <ul class="main_column">
-          <h3>Businesses</h3>
-          <li>
-            <a href="#">Partner with us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    .footer a {
+      text-decoration: none;
+      color: #444;
+    }
 
-    <div class="footer-main-3">
-      Refcode in partnership with
-      <a class="underline-footer" href="https://tektontraining.org/">
-        Tekton Career Training
-      </a>
-      is a 501(c)3 nonprofit
-    </div>
-  </footer>
+    .footer h2 {
+      font-family: "Lexend Deca", sans-serif;
+    }
+
+    .footer .main_column {
+      font-family: Lato, sans-serif;
+    }
+
+    .footer .hr-1 {
+      width: 90%;
+      height: 1px;
+      background-color: #444;
+      border: none;
+    }
+
+    .footer a:hover {
+      border-bottom: solid 1px #444;
+    }
+  </style>
 </div>
-<style>
-  /* =================================
-    Base Layout Styles
-  ==================================== */
-  .footer {
-    background: white;
-    color: black;
-  }
-
-  .footer-container {
-    display: grid;
-    column-gap: 40px;
-  }
-
-  .footer-main-1,
-  .footer-main-2 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 40px;
-    margin-left: 75px;
-  }
-
-  .footer-main-3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-  }
-
-  .footer .underline-footer {
-    text-decoration: underline;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .footer li {
-    list-style-type: none;
-    margin: 0 0 12px 0;
-  }
-
-  .footer a {
-    text-decoration: none;
-    color: #444;
-  }
-
-  .footer h2 {
-    font-family: "Lexend Deca", sans-serif;
-  }
-
-  .footer .main_column {
-    font-family: Lato, sans-serif;
-  }
-
-  .footer .hr-1 {
-    width: 90%;
-    height: 1px;
-    background-color: #444;
-    border: none;
-  }
-
-  .footer a:hover {
-    border-bottom: solid 1px #444;
-  }
-</style>

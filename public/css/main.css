@@ -576,6 +576,7 @@ nav .nav-content {
 * Image Scrolling Banner v1.0
 */
 .image-banner {
+  background-image: url("http://placeimg.com/940/480/nature");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -585,18 +586,66 @@ nav .nav-content {
   align-items: center;
   justify-content: center;
 }
-
-.image-banner-1 {
-  background-image: url("http://placeimg.com/940/480/nature");
-}
-
 .banner-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 40px;
   font-weight: bolder;
-  color: #26a9c3;
-  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+/* Volunteer Application Page Styles*/
+.volunteerPage {
+  width: 100%; 
+  height: 300px;
+}
+.volunteerBannerImg{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/MVIMG_20190515_201211.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative; 
 }
 
+.volunteerBannerImg>h1{
+  position: absolute;
+  top: 100px; 
+  width: 100%; 
+  margin: 0 auto;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: white;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 1em;
+  margin-top: 100px;
+  }
+.twoColumnGridText{
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 20px;
+  margin-top: 0 auto;
+}
+.twoColumnGrid img {
+  width: 100%;
+  }
+
+@media(max-width: 500px){
+  .twoColumnGrid{
+    grid-template-columns: 1fr
+  }
+  }
+  .volunteer-form {
+    width: 100%;
+    margin-top: 100px;
+  }
 /*
 * Image Columns v1.1
 */

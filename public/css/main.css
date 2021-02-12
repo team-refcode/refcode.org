@@ -100,24 +100,29 @@ textarea {
    header,
    main,
    footer {
-     width: 980px;
+     max-width: 1000px;
      margin: 0 auto;
    }
+
    header {
      border-bottom: solid #444 1px;
    }
+
    footer {
      position: relative;
    }
+
    footer:after {
-     content: "after";
+     content: "";
      position: absolute;
      top: 0;
-     left: -50%;
-     right: -50%;
+     left: 0;
+     right: 0;
      height: 1px;
      background-color: #444;
    }
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

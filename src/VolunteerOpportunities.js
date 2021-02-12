@@ -21,15 +21,15 @@ function App() {
   return (
     <div className="App">
       <div>
-        <div>
+        <div className='filter-wrapper'>
           <div>Filter roles by category:</div>
-          <div>
+          <div className="buttons-wrapper">
             {data.categories.map((category, index) => <PillButton key={index} text={category.text} backgroundColor={category.backgroundColor} clickHandler = { filterByCategory }/>)}
           </div>
         </div>
-        <div>
+        <div  className='filter-wrapper' >
           <div>Filter roles by required skills or resources:</div>
-          <div>
+          <div className="buttons-wrapper">
             {data.skills.texts.map((text, index) => <PillButton key={index} text={text} backgroundColor={data.skills.backgroundColor} clickHandler = { filterBySkill }/>)}
           </div>
       </div>

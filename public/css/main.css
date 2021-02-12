@@ -105,9 +105,11 @@ textarea {
      width: 980px;
      margin-right: calc(50% - 490px);
    }
+
    header {
      border-bottom: solid #444 1px;
    }
+
    footer {
      border-top: solid 1px #444;
    }

@@ -1,15 +1,31 @@
 .pill-button{
   border: none;
   color: white;
-  padding: 5px 12px;
+  padding: 14px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin-right: 25px;
+  margin-bottom:25px;
   cursor: pointer;
   border-radius: 16px;
   font-size: 10px;
 }
+
+.card__pill-button{
+  border: none;
+  color: white;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 25px;
+  margin-bottom:25px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 10px;
+}
+
 
 .pill-button--306F9C{
   background-color: #306F9C;
@@ -33,6 +49,21 @@
 
 .pill-button--333333{
   background-color: #333333;
+}
+
+.pill-button:focus{
+  position: relative;
+  outline:none;
+  background-color: white;
+  color:#20B2AA;
+  border: 1px solid #20B2AA
+}
+
+.pill-button:focus::after{
+  content:"\2713";
+  position: absolute;
+  top:35%;
+  left:8px;
 }
 
 .fillout-button{

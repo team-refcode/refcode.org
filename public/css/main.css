@@ -114,6 +114,16 @@ textarea {
      border-top: solid 1px #444;
    }
 
+   @media only screen and (max-width: 1000px) {
+     header,
+     main,
+     footer {
+       margin-left: 20px;
+       width: calc(100% - 40px);
+       margin-right: 20px;
+     }
+   }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -182,46 +192,6 @@ textarea {
   visibility: hidden;
 }
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.

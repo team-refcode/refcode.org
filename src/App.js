@@ -12,7 +12,7 @@ export default function App() {
           <Route exact path="/" render={() => {
             window.location.href="index.html"
             }} />
-          <Route path="/react">
+          <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
           </Route>
         </Switch>

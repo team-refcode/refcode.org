@@ -136,6 +136,10 @@ textarea {
   display: none !important;
 }
 
+.full-width-in-main-body.full-width-in-main-body { /* EASB */
+  width: 100vw;
+  left: calc(-1 * (100vw - 980px)/2);
+}
 /*
  * create a vertical gap between sections
  */
@@ -286,6 +290,9 @@ html {
 /*
 * Typography
 */
+body {
+  font-family: Lato, sans-serif;
+}
 h1,
 h2,
 h3,

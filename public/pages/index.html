@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
   <link rel="stylesheet" href="../css/homepage.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -15,11 +16,37 @@
     header will go here
   </header>
   <main>
-    main page content will go here
+
+  <!-- image-carousel 1.2 -->
+  <div class="carousel-wrapper full-width-in-main-body">
+    <div class="carousel-image-wrapper">
+      <div id="carousel-image-1" class="carousel-image">
+        <p>
+          Refcode <b>introduces</b> refugees and immigrants to the world of coding and helps them discern whether it is a career they want to pursue.
+        </p>
+        <div class="right-arrow bounce" onclick="goToSlide(2)"></div>
+      </div>
+      <div id="carousel-image-2" class="carousel-image">
+        <p>
+          Refcode <b>supports</b> refugees and immigrants in their journey to programming careers with innovative training, talented mentorship, connections to opportunities, and a community of refugees and experienced programmers.
+        </p>
+        <div class="left-arrow bounce" onclick="goToSlide(1)"></div>
+        <div class="right-arrow bounce" onclick="goToSlide(3)"></div>
+      </div>
+      <div id="carousel-image-3" class="carousel-image">
+        <p>
+          Refcode <b>creates</b> new pathways for refugees and immigrants by partnering with businesses and organizations to give participants real world on-the-job experience.
+        </p>
+        <div class="left-arrow bounce" onclick="goToSlide(2)"></div>
+      </div>
+    </div>
+  </div>
   </main>
   <footer>
     footer will go here
   </footer>
+  <!-- image-carousel 1.2 -->
+  <script src="../js/image-carousel.js"></script>
   <script src="../js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>

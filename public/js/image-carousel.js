@@ -14,7 +14,7 @@ var goToNextSlide = function () {
   if (nextSlide === totalSlides) {
     visitedAllSlides = true;
   }
-  setTimeout(enableScroll, 1500);
+  setTimeout(enableScroll, 1000);
 }
 //
 // var autoplay = function () {

@@ -233,16 +233,18 @@ a.button {
   }
 }
 
-/* image-carousel 1.2 */
+/* image-carousel 1.3 */
 .carousel-wrapper {
-  height: 220px;
-  width: 100%;
+  height: 420px;
   position: relative;
   overflow: hidden;
+  width: 100vw;
+  left: calc(-1 * (100vw - 980px)/2);
 }
 .carousel-image-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 100%);
+
+  width: 100vw;
+  overflow-y: scroll;
   height: 100%;
   transition: .5s;
   transition-timing-function: linear;
@@ -278,6 +280,10 @@ a.button {
 .carousel-image-wrapper .left-arrow:after {
   content: "←";
 }
+
+.carousel-image {
+    width: 100vw;
+}
 .bounce {
   animation-name: bounce;
   animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
@@ -296,9 +302,11 @@ a.button {
 .carousel-image {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .carousel-image {
-  position: relative;
+  position: absolute;
+  top: 0;
 }
 .carousel-image > p {
   font-family: "Lexend Deca", sans-serif;
@@ -322,25 +330,43 @@ a.button {
   background-image: url("https://via.placeholder.com/800x420");
   background-size: cover;
   background-position: 50%;
+  left: 0;
 }
 
 #carousel-image-2 {
   background-image: url("https://via.placeholder.com/800x420");
   background-size: cover;
   background-position: 0% 32%;
+  left: 100vw;
 }
 
 #carousel-image-3 {
   background-image: url("https://via.placeholder.com/800x420");
   background-size: cover;
   background-position: 0% 32%;
+  left: 200vw;
 }
 
-@media screen and (min-width:570px) {
+@media screen and (max-width:1000px) {
   .carousel-wrapper {
-    height: 420px;
+    height: 600px;
+    width: 100vw;
+    left: 0;
+  }
+
+  #carousel-image-1 {
+    background-position: 50%;
+  }
+
+  #carousel-image-2 {
+    background-position: 10% 32%;
+  }
+
+  #carousel-image-3 {
+    background-position: 49% 32%;
   }
 }
+
 
 /* Journey Path 1.1 */
 .journeyPath {

@@ -1,18 +1,12 @@
 /* Carousel 1.2 details */
 #carousel-image-1 {
   background-image: url(../img/graduates3.jpg);
-  background-size: cover;
-  background-position: 50%;
 }
 
 #carousel-image-2 {
   background-image: url(../img/graduates2.jpg);
-  background-size: cover;
-  background-position: 0% 32%;
 }
 
 #carousel-image-3 {
   background-image: url(../img/graduates1.jpg);
-  background-size: cover;
-  background-position: 0% 32%;
 }

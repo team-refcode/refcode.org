@@ -1,60 +1,66 @@
 const carouselImageWrapper = document.querySelector('.carousel-image-wrapper')
+const totalSlides = carouselImageWrapper.childElementCount;
+const htmlElem = document.querySelector("html");
+const bodyElem = document.querySelector("body");
 var visitedAllSlides = false;
-var goToSlide = function (x) {
-  const offset = --x * 100;
-  carouselImageWrapper.style.transform = `translateX(-${offset}%)`;
+var scrolling = false;
+
+const goToSlide = function (x) {
+  const offset = --x * window.innerWidth;
+  carouselImageWrapper.scrollTo({
+    left: offset,
+    behavior: 'smooth'
+  });
 }
 
-var totalSlides = carouselImageWrapper.childElementCount;
-var goToNextSlide = function () {
-  var cStr = carouselImageWrapper.style.transform;
-  var currentSlide = (cStr === "" ? 0 : cStr.substring(cStr.indexOf('-'), cStr.indexOf('00')) * -1);
-  var nextSlide = 1 + ((currentSlide + 1) % totalSlides);
+const goToNextSlide = function () {
+  var currentSlide = getCurrentSlide();
+  var nextSlide = ((currentSlide + 1) % (totalSlides + 1));
   goToSlide(nextSlide);
-  if (nextSlide === totalSlides) {
+  if (nextSlide === totalSlides || nextSlide === 0) {
     visitedAllSlides = true;
   }
-  setTimeout(enableScroll, 1000);
+  setTimeout(enableScroll, 1400);
 }
-//
-// var autoplay = function () {
-//   setTimeout(goToNextSlide, 5000);
-// };
-//
-// autoplay();
 
-var htmlElem = document.querySelector("html");
-var bodyElem = document.querySelector("body");
+const getCurrentSlide = function () {
+  var currentScroll = carouselImageWrapper.scrollLeft;
+  if (currentScroll >= 0 && currentScroll < window.innerWidth) {
+    return 1;
+  } else if (currentScroll >= window.innerWidth && currentScroll < (window.innerWidth * 2)) {
+    return 2;
+  } else if (currentScroll >= (window.innerWidth * 2) && currentScroll < (window.innerWidth * 3)) {
+    return 3;
+  }
+  return 3;
+};
 
-function disableScroll() {
+const disableScroll = function () {
     htmlElem.style.margin = 0;
     htmlElem.style.height = "100%";
     htmlElem.style.overflow = "hidden";
     bodyElem.style.margin = 0;
     bodyElem.style.height = "100%";
     bodyElem.style.overflow = "hidden";
-
-    // window.onscroll = function() {
-    //     window.scrollTo({top: 0, behavior: "auto"});
-    // };
 }
-function enableScroll() {
-    //window.onscroll = function() {};
+
+const enableScroll = function () {
     htmlElem.style = null;
     bodyElem.style = null;
-    ticking = false;
+    scrolling = false;
 }
 
-let ticking = false;
-
+// Scrolljacker
 document.addEventListener('scroll', function(e) {
-  if(visitedAllSlides || ticking) {
+  if(visitedAllSlides || scrolling) {
     return;
   }
-  ticking = true;
+  scrolling = true;
   setTimeout(window.requestAnimationFrame(function() {
-    disableScroll();
-    goToNextSlide();
+    if (getCurrentSlide() !== totalSlides) {
+      disableScroll();
+      goToNextSlide();
+    }
   }), 0);
-  ticking = true;
+  scrolling = true;
 });

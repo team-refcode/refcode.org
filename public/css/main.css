@@ -106,13 +106,6 @@ textarea {
      margin-right: calc(50% - 490px);
    }
 
-   header {
-   }
-
-   footer {
-     border-top: solid 1px #444;
-   }
-
    @media only screen and (max-width: 1000px) {
     header,
     main,

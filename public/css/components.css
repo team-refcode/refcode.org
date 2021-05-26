@@ -464,11 +464,11 @@ a.button {
   padding-bottom: 0;
 }
 
-/* Footer 2.0 */
-
+/* footer 2.2 */
 .footer {
   background: white;
   color: black;
+  border-top: solid 1px #aaa;
 }
 
 .footer-container {
@@ -477,25 +477,28 @@ a.button {
 }
 
 .footer-main-1,
-.footer-main-2 {
+.footer-main-2{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 40px;
-  margin-left: 75px;
 }
 
-.footer-main-3 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.footer-main-centered {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.footer p {
   font-size: 12px;
 }
 
 .footer .underline-footer {
-  text-decoration: underline;
-  margin-left: 5px;
-  margin-right: 5px;
+  border-bottom: solid 1px #aaa;
+}
+.footer .footer-tekton-logo {
+  width: 35px;
 }
 
 .footer li {
@@ -514,18 +517,23 @@ a.button {
 
 .footer .main_column {
   font-family: Lato, sans-serif;
+  padding-left: 0;
 }
 
 .footer .hr-1 {
-  width: 90%;
+  width: 100%;
   height: 1px;
-  background-color: #444;
+  background-color: #aaa;
   border: none;
 }
 
 .footer a:hover {
-  border-bottom: solid 1px #444;
+  border-bottom: solid 1px lightseagreen;
 }
+.footer a.no-hover:hover {
+  border-bottom-width: 0;
+}
+
 
 
 /*

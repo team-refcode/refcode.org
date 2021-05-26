@@ -4,23 +4,39 @@ const htmlElem = document.querySelector("html");
 const bodyElem = document.querySelector("body");
 var visitedAllSlides = false;
 var scrolling = false;
+var slidingTo = null;
 
 const goToSlide = function (x) {
+  slidingTo = x;
+  watchSliding();
   const offset = --x * window.innerWidth;
   carouselImageWrapper.scrollTo({
     left: offset,
     behavior: 'smooth'
   });
 }
+var slidecount = 0;
+const watchSliding = function(){
+  //console.log("sliiiiide", slidecount++);
+  var currentSlide = getCurrentSlide();
+  if (slidingTo && (currentSlide + 1) === slidingTo) {
+    setTimeout(watchSliding, 100);
+  } else {
+    slidingTo = false;
+    setTimeout(enableScroll,0);
+  }
+}
 
 const goToNextSlide = function () {
+  if (slidingTo) {
+    return;
+  }
   var currentSlide = getCurrentSlide();
   var nextSlide = ((currentSlide + 1) % (totalSlides + 1));
-  goToSlide(nextSlide);
   if (nextSlide === totalSlides || nextSlide === 0) {
     visitedAllSlides = true;
   }
-  setTimeout(enableScroll, 1400);
+  goToSlide(nextSlide);
 }
 
 const getCurrentSlide = function () {
@@ -49,16 +65,22 @@ const enableScroll = function () {
     bodyElem.style = null;
     scrolling = false;
 }
-
+var scrollcount = 0;
+var lastScroll = new Date();
 // Scrolljacker
 document.addEventListener('scroll', function(e) {
-  if(visitedAllSlides || scrolling) {
+  //console.log("scroooool", scrollcount++);
+  var thisScroll = new Date();
+  var scrollInterval = thisScroll - lastScroll;
+  lastScroll = thisScroll;
+  console.log("scroll interval", scrollInterval);
+  if(visitedAllSlides || scrolling || slidingTo || scrollInterval < 100) {
     return;
   }
+  //disableScroll();
   scrolling = true;
   setTimeout(window.requestAnimationFrame(function() {
     if (getCurrentSlide() !== totalSlides) {
-      disableScroll();
       goToNextSlide();
     }
   }), 0);

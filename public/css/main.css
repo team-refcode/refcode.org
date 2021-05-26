@@ -107,7 +107,6 @@ textarea {
    }
 
    header {
-     border-bottom: solid #444 1px;
    }
 
    footer {
@@ -138,7 +137,11 @@ textarea {
 
 .full-width-in-main-body.full-width-in-main-body { /* EASB */
   width: 100vw;
+  position: relative;
   left: calc(-1 * (100vw - 980px)/2);
+}
+.whitespace {
+  margin: 100px 0;
 }
 /*
  * create a vertical gap between sections

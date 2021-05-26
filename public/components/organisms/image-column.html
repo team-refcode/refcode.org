@@ -1,4 +1,4 @@
-<div class="component" title="image-column" version="1.1">
+<div class="component" title="image-column" version="1.2">
     <markup>
         <div class="column-wrapper">
             <div class="single-column">
@@ -28,25 +28,31 @@
         </div>
     </markup>
     <style>
-        .column-wrapper {
-            flex-wrap: wrap;
-            display:flex;
-            width:100%;
-            height:500px;
-            margin:6px;
-        
-        }
-        .single-column { 
-            height:100%;
-            flex: 1;
-            margin:6px;
-            background-color: aqua;
-        
-        }
-        .single-column img {
-            width:100%;
-            
-        }
-        
+    .column-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 3em;
+      grid-row-gap: 3em;
+    }
+
+    @media (max-width: 960px) {
+      .column-wrapper {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .column-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .single-column h2 {
+      text-align: center;
+      margin: 1em 0;
+    }
+    .single-column img {
+      width: 100%;
+    }
     </style>
 </div>

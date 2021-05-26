@@ -1,5 +1,18 @@
-<div class="component" title="main-banner" id="main-banner" version="1.7">
+<div class="component" title="main-banner" id="main-banner" version="1.8">
   <style>
+    /* main-banner 1.8 */
+    .main-banner-container {
+      height: 93px;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      background: white;
+      width: 100%;
+      border-bottom: solid #aaa 1px;
+    }
+    .main-banner-container + * {
+      margin-top: 92px;
+    }
     .main-banner {
       height: 92px;
     }
@@ -38,7 +51,6 @@
       font-size: 20px;
       font-family: "Lexend Deca", sans-serif;
     }
-
 
     .main-banner-nav-list li a {
       text-decoration: none;
@@ -103,31 +115,34 @@
     }
   </style>
   <markup>
-    <header class="main-banner">
-      <nav class="nav-container">
-        <div class="nav-content content-container">
-          <a class="logo-link" href="">
-            <img class="logo" src="https://via.placeholder.com/50" alt="logo" />
-          </a>
+    <div class="main-banner-container">
+      <header class="main-banner">
+        <nav class="nav-container">
+          <div class="nav-content content-container">
+            <a class="logo-link" href="">
+              <img class="logo" src="https://via.placeholder.com/50" alt="logo" />
+            </a>
 
-          <div class="toggle">
-            <i class="fa fa-bars menu" aria-hidden="true"></i>
+            <div class="toggle">
+              <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+            <ul class="main-banner-nav-list">
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="" class="current">Current Link 3</a></li>
+              <li><a href="">Link 4</a></li>
+              <li><a href="">Link 5</a></li>
+            </ul>
           </div>
-          <ul class="main-banner-nav-list">
-            <li><a href="">Link 1</a></li>
-            <li><a href="">Link 2</a></li>
-            <li><a href="" class="current">Current Link 3</a></li>
-            <li><a href="">Link 4</a></li>
-            <li><a href="">Link 5</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
+    </div>
   </markup>
   <includes>
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap"
       rel="stylesheet"
     />
+    <script src="../js/main-banner.js" />
   </includes>
 </div>

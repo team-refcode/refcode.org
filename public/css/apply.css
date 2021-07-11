@@ -1,0 +1,5 @@
+.image-banner-1 {
+    background-image: url(../img/friends.jpg);
+    background-size: contain;
+    background-position-y: 25px;
+}

@@ -30,7 +30,7 @@ const data = {
       program: "Intro to Coding Class",
       categories: [ categories.teach, categories.mentor],
       skills: [skills.code],
-      description: "Meet on Zoom with a small group of students to check-in, ask questions about homework and review lessons from class."
+      description: "Meet on Zoom with a small group of students to check-in, ask questions about homework and review lessons from class.",
       requirements: "Some previous web development experience is required since you'll have less support than the class TAs. 1 hour per week.",
       buttonText: "Go to Volunteer Form",
       buttonHref: null,
@@ -39,7 +39,7 @@ const data = {
       program: "Intro to Coding Class",
       categories: [ categories.teach, categories.mentor],
       skills: [skills.code],
-      description: "Homework tutors will connect with a student one-on-one after class to help them with homework."
+      description: "Homework tutors will connect with a student one-on-one after class to help them with homework.",
       requirements: "Some previous web development experience is required since you'll have less support than the class TAs. 1 hour per week.",
       buttonText: "Go to Volunteer Form",
       buttonHref: null,
@@ -48,7 +48,7 @@ const data = {
         program: "Intro to Coding Class",
         categories: [ categories.teach, categories.mentor],
         skills: [skills.code],
-        description: "Ensure there is always someone available to answer student questions on Slack quickly."
+        description: "Ensure there is always someone available to answer student questions on Slack quickly.",
         requirements: "Ability to respond to slack messages with a sympathetic emoji or helpful clarification.",
         buttonText: "Go to Volunteer Form",
         buttonHref: null,

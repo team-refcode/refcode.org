@@ -12,3 +12,9 @@
   list-style: none;
   padding: 0;
 }
+
+main > h2:first-child {
+  margin-top: calc(50px + 92px);
+  margin-bottom: 50px;
+  text-align: center;
+}

@@ -76,19 +76,33 @@ a.button {
     text-decoration: none;
 }
 
-/* navigation-component 1.1 */
+/* navigation-component 1.2 */
+.aside-navigation > ul {
+  margin-top: 0;
+}
+.aside-navigation li:first-child {
+  padding-top: 0;
+}
 .aside-navigation li {
   list-style: none;
   font-size: 1.5em;
-  border-top: .5px solid #9aa4a5;
-  border-bottom: .5px solid #9aa4a5;
-  border-left: 1px solid #9aa4a5;
-  padding: 1rem;
+  padding: 25px 10px 25px 0;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .aside-navigation a {
   text-decoration: none;
   color: #070606;
+  padding-left: 10px;
+}
+
+.aside-navigation a.current {
+  border-left: black solid 1px;
+  padding-left: 9px;
+}
+.aside-navigation a:hover {
+  border-left: lightseagreen solid 1px;
+  padding-left: 9px;
 }
 
 .aside-navigation a:focus {

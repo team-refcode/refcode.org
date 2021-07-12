@@ -34,13 +34,13 @@ All volunteers must go through an application, screening, and orientation proces
     <div className="App">
       <div>
         <div className='filter-wrapper'>
-          <div>Filter roles by category:</div>
+          <h2>Filter roles by category:</h2>
           <div className="buttons-wrapper">
             {data.categories.map((category, index) => <PillButton key={index} text={category.text} backgroundColor={category.backgroundColor} clickHandler = { filterByCategory }/>)}
           </div>
         </div>
         <div  className='filter-wrapper' >
-          <div>Filter roles by required skills or resources:</div>
+          <h2>Filter roles by required skills or resources:</h2>
           <div className="buttons-wrapper">
             {data.skills.texts.map((text, index) => <PillButton key={index} text={text} backgroundColor={data.skills.backgroundColor} clickHandler = { filterBySkill }/>)}
           </div>

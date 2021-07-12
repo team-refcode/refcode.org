@@ -1,54 +1,58 @@
 .pill-button{
   border: none;
   color: white;
-  padding: 14px 20px;
+  padding: 14px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   margin-right: 25px;
   margin-bottom:25px;
   cursor: pointer;
-  border-radius: 16px;
-  font-size: 10px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-family: "Lexend Deca", sans-serif;
 }
 
-.card__pill-button{
+.card__pill-button {
   border: none;
-  color: white;
-  padding: 14px 20px;
+  color: #333;
+  padding: 4px 12px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-right: 25px;
-  margin-bottom:25px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
   border-radius: 16px;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 
 .pill-button--306F9C{
-  background-color: #306F9C;
+  background-color: #306F9C88;
 }
 
 .pill-button--0D7D18{
-  background-color: #0D7D18;
+  background-color: #0D7D1888;
 }
 
 .pill-button--B26F20{
-  background-color: #B26F20;
+  background-color: #B26F2088;
 }
 
 .pill-button--B22020{
-  background-color: #B22020;
+  background-color: #B2202088;
 }
 
 .pill-button--412986{
-  background-color: #412986;
+  background-color: #41298688;
 }
 
 .pill-button--333333{
-  background-color: #333333;
+  background-color: #333333CC;
+}
+.pill-button--333333.card__pill-button{
+  background-color: #99999988;
 }
 
 .pill-button:focus{
@@ -62,15 +66,6 @@
 .pill-button:focus::after{
   content:"\2713";
   position: absolute;
-  top:35%;
-  left:8px;
-}
-
-.fillout-button{
-  background-color: #20B2AA;
-  height: 38px;
-  width: 207px;
-  color: white;
-  border: none;
-  margin: auto;
+  top:28%;
+  left:20px;
 }

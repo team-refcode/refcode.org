@@ -22,7 +22,7 @@ const Card = ({ card }) => {
         </p>
         <h3 className="description-heading">Requirements</h3>
         <p>
-         Lorem ipsum dolor est mafano. sdlfkj saldfkj alsdfkjasfkjlfjklsakjl fasdjkl j lLorem ipsum dolor est mafano.Lorem ipsum dolor est mafano.Lorem ipsum dolor est mafano.Lorem ipsum dolor est mafano.
+         {card.requirements}
         </p>
       </div>
     </div>

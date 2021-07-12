@@ -11,7 +11,7 @@
   border-bottom: solid 1px #F0F0F0;
 }
 .card-pills {
-  padding: 20px 0 0 20px;
+  padding: 20px 0 10px 20px;
 }
 .card-body {
   padding: 0 20px;
@@ -42,8 +42,19 @@
 
 .description-heading {
   padding: 20px 0;
+  margin: 0;
   font-size: 14px;
   color: #999;
+}
+.description-heading:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+.description p {
+  margin: 0 0 5px 0;
+}
+.description p:last-child {
+  padding-bottom: 20px;
 }
 h1, h2, h3 {
   font-weight: normal;

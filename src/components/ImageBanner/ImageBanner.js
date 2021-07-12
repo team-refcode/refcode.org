@@ -2,8 +2,8 @@ import React from 'react'
 import './style.css'
 const ImageBanner = () => {
   return (
-    <div class="image-banner banner1">
-        <div class="banner-text">it's not about the code, it's about the connections</div>
+    <div class="image-banner image-banner-1 full-width-in-main-body">
+      <div class="banner-text">It's not about the code, it's about the connections.</div>
     </div>
   )
 }

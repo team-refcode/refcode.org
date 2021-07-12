@@ -10,7 +10,7 @@ export default function App() {
     <Router>
         <Switch>
           <Route exact path="/" render={() => {
-            window.location.href="index.html"
+            window.location.href="pages/index.html"
             }} />
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />

@@ -1,0 +1,13 @@
+.image-banner-1 {
+      background-image: url(../img/un-2.jpg);
+      background-size: contain;
+}
+
+
+.image-banner-2 {
+      background-image: url(../img/un.jpg);
+}
+
+.banner-text.programs {
+  font-size: 90px;
+}

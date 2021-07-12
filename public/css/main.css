@@ -105,6 +105,9 @@ textarea {
      width: 980px;
      margin-right: calc(50% - 490px);
    }
+   main {
+     margin-bottom: 50px;
+   }
 
    @media only screen and (max-width: 1000px) {
     header,
@@ -137,6 +140,9 @@ textarea {
  .full-width-in-main-body.full-width-in-main-body { /* EASB */
    left: 0;
  }
+}
+main > .whitespace:first-child {
+  margin-top: 93px;
 }
 .whitespace {
   margin: 100px 0;

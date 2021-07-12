@@ -12,6 +12,9 @@ export default function App() {
           <Route exact path="/" render={() => {
             window.location.href="pages/index.html"
             }} />
+          <Route exact path="/apply" render={() => {
+            window.location.href="/pages/apply.html"
+            }} />
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
           </Route>

@@ -1,0 +1,14 @@
+.circleImage {
+  max-width: 200px;
+}
+.student {
+  margin-bottom: 50px;
+}
+.student.twoColumnGrid {
+    grid-template-columns: 200px 40%;
+    gap: 50px;
+}
+.student ul {
+  list-style: none;
+  padding: 0;
+}

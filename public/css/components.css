@@ -4,7 +4,7 @@
   border: solid 5px #ebebeb;
 }
 
-/* Button 1.2 */
+/* Button 1.3 */
 .button {
   border-width: 1px;
   border-color: #ffffff;
@@ -28,6 +28,8 @@
 
 a.button {
   text-decoration: none;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /* Scrolling Image Banner 1.2 */

@@ -1,42 +1,253 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Refcode Community</title>
+  <title>TeamCode -  Refcode Program to give refugees real-world coding and collaboration experience</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
-  <link rel="stylesheet" href="../css/homepage.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/teamcode.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Lexend+Deca&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    header will go here
-  </header>
+  <!-- main-banner 1.9 -->
+  <div class="main-banner-container">
+    <header class="main-banner">
+      <nav class="nav-container">
+        <div class="nav-content content-container">
+          <a class="logo-link" href="/pages/index.html">
+            <img class="logo" src="../img/logo.png" alt="logo">
+          </a>
+
+          <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+          </div>
+          <ul class="main-banner-nav-list">
+              <li><a href="/pages/programs.html">Programs</a></li>
+              <li><a href="/pages/graduates-summer-2017.html">Graduates</a></li>
+              <li><a href="/volunteer-opportunities">Volunteer</a></li>
+              <li><a href="/pages/partner.html">Partner</a></li>
+              <li><a href="https://refcode.donorsecure.com/" rel="external">Donate</a></li>
+              <li><a href="/pages/apply.html">Apply</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
   <main>
-    <div>
-      <p><strong>TeamCode</strong> is a Refcode program for all graduates of the Refcode coding class to give them real-world experience collaborating as a team to build a website.
-        The initial TeamCode team was made from graduates from every Refcode cohort to date! The first project it to rebuild refcode.org from scratch, so check back soon to see a new and improved website built by Refcode grads!
+
+    <!-- Image Scrolling Banner v1.0 -->
+    <div class="image-banner image-banner-1 full-width-in-main-body whitespace">
+      <div class="banner-text">TeamCode</div>
+    </div>
+
+    <div class="txt-wrapper whitespace">
+      <p>
+        This program gives graduates of the discernment class an opportunity to
+        put what they have learned into practice. They form a team and
+        collaborate on a real-world project using Agile Methodology to plan each
+        sprint, refine and estimate the size of issues, divide the work and review
+        each other's code through PRs.
       </p>
-      <p>TeamCode collaborators met once per sprint for a sprint planning where we created tasks for work to be done, estimated them, and assigned them according to how much time each collaborator could commit to.
-        The team coordinated throughout the sprint using Slack, in-person office hours, and GitHub. All code was checked into GitHub and reviewed by other team members.
+      <p>
+        Much to the dismay of collaborators, the project is designed to give everyone
+        many chances to run into merge conflicts, miscommunication, and other common
+        problems that can emerge when working on a team. But they will also have
+        the support of seasoned professionals to work through the challenges and
+        learn from the mistakes.
+      </p>
+      <p>
+        The first TeamCode team was assembled from graduates from every Refcode cohort to date! They rebuilt the <code>refcode.org</code> website from the ground up.
       </p>
     </div>
-    <p><strong>The TeamCode team for Fall 2019 consisted of:</strong></p>
-    <ul>
-      <li><strong>Brenton Strine</strong> (Advisor)</li>
-      <li><strong>Mustafa Alsaeed</strong> (Developer)</li>
-      <li><strong>Sintayehu Mekonnen</strong> (Developer)</li>
-      <li><strong>Tariku Kebede</strong> (Developer)</li>
-      <li><strong>Nezira Usmael</strong> (Developer)</li>
-      <li><strong>Yohannes Bahta</strong> (Developer)</li>
-      <li><strong>Nai Sai Aung</strong> (Developer)</li>
-    </ul>
+
+    <div class="twoColumnGrid whitespace">
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>This video shows TeamCode collaborators at an early sprint planning meeting.</p>
+      </div>
+      <div>
+        <h3>Building communication and collaboration skills</h3>
+        <p>TeamCode collaborators met once per sprint for a sprint planning
+          where we created tasks for work to be done, estimated them, and
+          assigned them according to how much time each collaborator could
+          commit to.
+          The team coordinated throughout the sprint using Slack, in-person
+          office hours, and GitHub. All code was checked into GitHub and
+          reviewed by other team members.
+        </p>
+      </div>
+    </div>
+
+
+     <div class="twoColumnGrid whitespace">
+     <div>
+       <h4>The Project</h4>
+       <p>The TeamCode collaborators rebuilt the refcode.org website from the ground up using HTML, CSS, Javascript and React.</p>
+       <p>To enable many team-members collaborating on a complex site, they utilized Atomic Design and maintained a <a href="/pages/patternlibrary.html">pattern library</a> to keep track of the components as they were built and updated. Once individual components (comprised of Atoms, Molecules and Organisms)  were built,  the final pages were assembled using the components.</p>
+       <p>As the skills of the collaborators grew, we decided to increase the complexity of the code to match their skill level, resulting in some pages being built out using React. The final website is a hybrid of static HTML and React pages. </p>
+         <ul>
+           <li><a href="https://github.com/team-refcode/refcode.org">The GitHub Repository</a></li>
+           <li><a href="/pages/patternlibrary.html">The Pattern Library</a>
+           <li>PRs  merged: <b><a href="https://github.com/team-refcode/refcode.org/pulls?q=is%3Apr+is%3Aclosed">104</a></b></li>
+           <li>Issues completed: <b><a href="https://github.com/team-refcode/refcode.org/projects/3">70</a></b></li>
+           <li>Merge conflicts: <b>So, so many</b></li>
+         </ul>
+     </div>
+       <figure class="video-wrapper" style="max-width: 100%">
+         <img src="/img/pattern-library.png">
+         <figcaption>A screenshot from the refcode.org pattern library.</figcaption>
+       </figure>
+     </div>
+
+     <!-- Image Scrolling Banner v1.0 -->
+     <div class="image-banner image-banner-2 full-width-in-main-body whitespace">
+       <div class="banner-text">Collaborators became familiar with Agile Methodology, Atomic Design, code review and many, many merge conflicts!</div>
+     </div>
+
+     <h4>Collaborating with GitHub</h4>
+     <div class="txt-wrapper">
+       <p>
+         Merge conflicts. So  many  merge  conflicts. TeamCode  was designed to give
+         real-world experience with real team collaboration and communication, and
+         that's exactly what happened. Following Agilie Methodology, the team chose
+         their own set of sprint ceremonies to follow, which included sprint planning
+         stand-up meetings, and project refinement. Collaborators got familiar with
+         planning and tracking a project through GitHub Issues. They coordinated
+         their work using GitHub issues and used GitHub pull requests to review
+         each-other's code.
+       </p>
+       <p>
+         The <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">Git feature branch workflow</a>
+         was used to manage code contributions, which means each collaborator had
+         to fork the main repository ("upstream") and maintain it as their own
+         "origin" repo. For each new feature that was added, collaborators:
+         <ol>
+           <li>Pulled latest from <code>upstream</code> (to avoid merge conflicts!)</li>
+           <li>Created a new feature-branch</li>
+           <li>Coded the feature and committed it to that branch</li>
+           <li>Pushed their changes to their "origin" fork.</li>
+           <li>Created a pull-request and asked team-mates for code review and input</li>
+           <li>Made additional updates based on code review</li>
+           <li>Merged the branch into the main "upstream" repository</li>
+         </ol>
+       </p>
+
+       <p>
+         The best lessons were learned when things did not go smoothly. Not only
+         did the collaborators learn the importance of creating processees to avoid
+         accidental merge conflicts, but they were forced to deepen their knowledge
+         of git and GitHub as well.
+       </p>
+
+       <p><img src="/img/laughing.jpg" style="width: 90%"></p>
+  </div>
+
+  <h4>The Team</h4>
+    <p>Here are the collaborators for the first TeamCode cohort. More info can be found on the <a href="https://github.com/orgs/team-refcode/teams/teamcode/members">GitHub team page</a>.</p>
+    <div class="team-mates">
+      <style>
+      .team-mates {
+        text-align: center;
+      }
+      .student {
+        display: inline-block;
+        width: 33%;
+      }
+      .student img {
+        max-width: 200px;
+      }
+      </style>
+      <div class="student twoColumnGrid">
+        <div>
+          <img src="/img/contributor-mustafa.jpg" class="circleImage">
+        </div>
+        <div>
+          <h4>Mustafa Alsaeedi</h4>
+          <p>
+            From cohort: <a href="/pages/graduates-summer-2017.html" rel="external">Summer 2017</a>
+            <br>
+            <a href="https://github.com/team-refcode/refcode.org/commits?author=MustafaAlsaeedi">Contributions</a>
+          </p>
+        </div>
+      </div>
+      <div class="student twoColumnGrid">
+        <div>
+          <img src="../img/contributor-sintu.jpg" class="circleImage">
+        </div>
+        <div>
+          <h4>Sintayehu Mekonnen</h4>
+          <p>
+            From cohort: <a href="/pages/graduates-summer-2018.html" rel="external">Summer 2018</a>
+            <br>
+            <a href="https://github.com/team-refcode/refcode.org/commits?author=24sint">Contributions</a>
+          </p>
+        </div>
+      </div>
+      <div class="student twoColumnGrid">
+        <div>
+          <img src="../img/collaborator-tariku.jpg" class="circleImage">
+        </div>
+        <div>
+          <h4>Tariku Kebede</h4>
+          <p>
+            From cohort: <a href="/pages/graduates-spring-2019.html" rel="external">Spring 2019</a>
+            <br>
+            <a href="https://github.com/team-refcode/refcode.org/commits?author=ayabaknu">Contributions</a>
+          </p>
+        </div>
+      </div>
+      <div class="student twoColumnGrid">
+        <div>
+          <img src="../img/contributor-nezira.jpg" class="circleImage">
+        </div>
+        <div>
+          <h4>Nezira Usmael</h4>
+          <p>
+            From cohort: <a href="/pages/graduates-spring-2019.html" rel="external">Spring 2019</a>
+            <br>
+            <a href="https://github.com/team-refcode/refcode.org/commits?author=UmmuAyyub">Contributions</a>
+          </p>
+        </div>
+      </div>
+      <div class="student twoColumnGrid">
+        <div>
+          <img src="../img/contributor-yohannes.jpg" class="circleImage">
+        </div>
+        <div>
+          <h4>Yohannes Bahta</h4>
+          <p>
+            From cohort: <a href="/pages/graduates-summer-2018.html" rel="external">Summer 2018</a>
+            <br>
+            <a href="https://github.com/team-refcode/refcode.org/commits?author=Yohannesbb">Contributions</a>
+          </p>
+        </div>
+      </div>
+      <div class="student twoColumnGrid">
+        <div>
+          <img src="../img/contributor-nai.jpg" class="circleImage">
+        </div>
+        <div>
+          <h4>Nai Sai Aung</h4>
+          <p>
+            From cohort: <a href="/pages/graduates-summer-2019.html" rel="external">Summer 2019</a>
+            <br>
+            <a href="https://github.com/team-refcode/refcode.org/commits?author=nai-aung26">Contributions</a>
+          </p>
+        </div>
+      </div>
+  </div>
   </main>
 
 
-    <!-- footer 2.2.1 -->
+    <!-- footer 2.2.2 -->
     <div class="footer">
       <footer class="footer-container">
         <div class="footer-main-1">
@@ -60,6 +271,9 @@
             <ul class="main_column">
               <li>
                 <a href="/pages/graduates-summer-2017.html">Cohorts and Graduates</a>
+              </li>
+              <li>
+                <a class="button" href="/pages/teamcode.html">TeamCode</a>
               </li>
               <li>
                 <a href="#">Photo Albums</a>

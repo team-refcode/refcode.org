@@ -1,0 +1,16 @@
+.image-banner-1 {
+      background-image: url(../img/TeamCode-Planning2.jpg);
+      height: 500px;
+}
+
+.image-banner-1 .banner-text {
+  font-size: 90px;
+}
+
+.image-banner-2 {
+      background-image: url(../img/TeamCode-Planning.png);
+}
+
+.banner-text.programs {
+  font-size: 80px;
+}

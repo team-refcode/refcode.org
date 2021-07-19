@@ -13,9 +13,8 @@
   margin-bottom: 15px;
 }
 .image-banner-1 {
-  background-image: url(../../media/bannerBackgrounds/connections.jpg);
-  background-size: contain;
-  background-position-y: -20px;
+  background-size: cover;
+  background-position-y: -160px;
 }
 .banner-text {
    font-size: 50px;

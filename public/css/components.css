@@ -32,11 +32,11 @@ a.button {
   padding-right: 0;
 }
 
-/* Scrolling Image Banner 1.3 */
+/* Scrolling Image Banner 1.4 */
 .image-banner {
   background-image: url("http://placeimg.com/940/480/nature");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-attachment: fixed;
   height: 345px;

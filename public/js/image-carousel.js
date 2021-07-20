@@ -1,3 +1,4 @@
+/* image-carousel 1.4 */
 const carouselImageWrapper = document.querySelector('.carousel-image-wrapper')
 const totalSlides = carouselImageWrapper.childElementCount;
 const htmlElem = document.querySelector("html");

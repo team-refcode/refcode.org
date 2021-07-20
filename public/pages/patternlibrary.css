@@ -1,5 +1,6 @@
 .component {
   margin: 0 20px;
+  padding-top: 100px;
 }
 .demo-container {
     margin: 10px 0;
@@ -52,4 +53,15 @@
     border-width: 0;
     border-left: solid 1em #f0f0f0;
     white-space: nowrap;
+}
+
+.pl-sticky-nav {
+  position: fixed;
+  width: 20%;
+  top: 0;
+}
+.pl-moving-content {
+  width: 80%;
+  margin-left: 20%;
+  margin-top: 100px;
 }

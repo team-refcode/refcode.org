@@ -1,6 +1,28 @@
-<div class="component" title="main-banner" id="main-banner" version="1.8">
+<div class="component" title="main-banner" id="main-banner" version="1.9">
   <style>
-    /* main-banner 1.8 */
+
+    .stuck.main-banner-container,
+    .stuck .main-banner {
+      height: 50px;
+      transition: all 900ms ease-in;
+    }
+    .stuck .logo-link {
+      width:40px;
+      padding: 5px 15px;
+      transition: all 300ms ease-in;
+    }
+    .stuck .main-banner-nav-list {
+      padding: 0;
+    }
+    .stuck .main-banner-nav-list li {
+      padding: 11px 20px;
+      transition: all 900ms ease-in;
+    }
+    .stuck .main-banner .toggle {
+      padding-bottom: 40px;
+      transition: all 900ms ease-in;
+    }
+
     .main-banner-container {
       height: 93px;
       position: fixed;
@@ -89,15 +111,17 @@
         align-items: center;
         justify-content: flex-end;
         font-size: 2em;
+        color: #444;
+        z-index: 1;
       }
 
       .main-banner-nav-list {
         display: none;
         position: absolute;
-        background: black;
+        background: white;
         width: auto;
         right: 0;
-        top: 88px;
+        top: 50px;
       }
 
       .main-banner-nav-list.open {

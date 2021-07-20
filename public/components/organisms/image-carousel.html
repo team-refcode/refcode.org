@@ -1,141 +1,137 @@
-<div class="component" title="image-carousel" version="1.3">
+<div class="component" title="image-carousel" version="1.4">
   <style>
+
+    .carousel-wrapper {
+      height: 420px;
+      overflow: hidden;
+    }
+    .carousel-image-wrapper {
+
+      width: 100vw;
+      overflow-y: scroll;
+      height: 100%;
+      transition: .5s;
+      transition-timing-function: linear;
+    }
+    .carousel-image-wrapper .right-arrow,
+    .carousel-image-wrapper .left-arrow {
+      position: absolute;
+      height: 420px;
+      line-height: 420px;
+      vertical-align: middle;
+      font-size: 60px;
+      color: white;
+      text-shadow: 2px 4px #2229;
+      cursor: pointer;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+    }
+    .carousel-image-wrapper .right-arrow:hover,
+    .carousel-image-wrapper .left-arrow:hover {
+      text-shadow: 4px 6px lightseagreen;
+    }
+    .carousel-image-wrapper .right-arrow {
+      right: 1rem;
+    }
+    .carousel-image-wrapper .right-arrow:after {
+      content: "→";
+    }
+    .carousel-image-wrapper .left-arrow {
+      left: 1rem;
+      animation-duration: 4s;
+    }
+    .carousel-image-wrapper .left-arrow:after {
+      content: "←";
+    }
+
+    .carousel-image {
+        width: 100vw;
+    }
+    .bounce {
+      animation-name: bounce;
+      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+    }
+    @keyframes bounce {
+      0%   { transform: translateX(0); }
+      30%  { transform: translateX(0); }
+      10%  { transform: translateX(-10px); }
+      50%  { transform: translateX(0); }
+      57%  { transform: translateX(-3px); }
+      64%  { transform: translateX(0); }
+      100% { transform: translateX(0); }
+    }
+
+    .carousel-image-wrapper,
+    .carousel-image {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .carousel-image {
+      position: absolute;
+      top: 0;
+    }
+    .carousel-image > p {
+      font-family: "Lexend Deca", sans-serif;
+      color: #fff;
+      font-size: 25px;
+      padding: 0em 1em;
+      background-color: #2229;
+      position: absolute;
+      bottom: 0;
+      display: inline;
+      margin: 0;
+      left: 10%;
+      right: 10%;
+      bottom: 1em;
+    }
+    .carousel-image > p > b {
+      color: lightseagreen;
+    }
+
+    #carousel-image-1 {
+      background-image: url("https://via.placeholder.com/800x420");
+      background-size: cover;
+      background-position: 50%;
+      left: 0;
+    }
+
+    #carousel-image-2 {
+      background-image: url("https://via.placeholder.com/800x420");
+      background-size: cover;
+      background-position: 0% 32%;
+      left: 100vw;
+    }
+
+    #carousel-image-3 {
+      background-image: url("https://via.placeholder.com/800x420");
+      background-size: cover;
+      background-position: 0% 32%;
+      left: 200vw;
+    }
+
+    @media screen and (max-width:1000px) {
       .carousel-wrapper {
-        height: 420px;
-        position: relative;
-        overflow: hidden;
+        height: 600px;
         width: 100vw;
-        left: calc(-1 * (100vw - 980px)/2);
-      }
-      .carousel-image-wrapper {
-
-        width: 100vw;
-        overflow-y: scroll;
-        height: 100%;
-        transition: .5s;
-        transition-timing-function: linear;
-      }
-      .carousel-image-wrapper .right-arrow,
-      .carousel-image-wrapper .left-arrow {
-        position: absolute;
-        height: 420px;
-        line-height: 420px;
-        vertical-align: middle;
-        font-size: 60px;
-        color: white;
-        text-shadow: 2px 4px #2229;
-        cursor: pointer;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        transform-origin: bottom;
-      }
-      .carousel-image-wrapper .right-arrow:hover,
-      .carousel-image-wrapper .left-arrow:hover {
-        text-shadow: 4px 6px lightseagreen;
-      }
-      .carousel-image-wrapper .right-arrow {
-        right: 1rem;
-      }
-      .carousel-image-wrapper .right-arrow:after {
-        content: "→";
-      }
-      .carousel-image-wrapper .left-arrow {
-        left: 1rem;
-        animation-duration: 4s;
-      }
-      .carousel-image-wrapper .left-arrow:after {
-        content: "←";
-      }
-
-      .carousel-image {
-          width: 100vw;
-      }
-      .bounce {
-        animation-name: bounce;
-        animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-      }
-      @keyframes bounce {
-        0%   { transform: translateX(0); }
-        30%  { transform: translateX(0); }
-        10%  { transform: translateX(-10px); }
-        50%  { transform: translateX(0); }
-        57%  { transform: translateX(-3px); }
-        64%  { transform: translateX(0); }
-        100% { transform: translateX(0); }
-      }
-
-      .carousel-image-wrapper,
-      .carousel-image {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
-      .carousel-image {
-        position: absolute;
-        top: 0;
-      }
-      .carousel-image > p {
-        font-family: "Lexend Deca", sans-serif;
-        color: #fff;
-        font-size: 25px;
-        padding: 0em 1em;
-        background-color: #2229;
-        position: absolute;
-        bottom: 0;
-        display: inline;
-        margin: 0;
-        left: 10%;
-        right: 10%;
-        bottom: 1em;
-      }
-      .carousel-image > p > b {
-        color: lightseagreen;
-      }
-
-      #carousel-image-1 {
-        background-image: url("https://via.placeholder.com/800x420");
-        background-size: cover;
-        background-position: 50%;
         left: 0;
       }
 
+      #carousel-image-1 {
+        background-position: 50%;
+      }
+
       #carousel-image-2 {
-        background-image: url("https://via.placeholder.com/800x420");
-        background-size: cover;
-        background-position: 0% 32%;
-        left: 100vw;
+        background-position: 10% 32%;
       }
 
       #carousel-image-3 {
-        background-image: url("https://via.placeholder.com/800x420");
-        background-size: cover;
-        background-position: 0% 32%;
-        left: 200vw;
+        background-position: 49% 32%;
       }
-
-      @media screen and (max-width:1000px) {
-        .carousel-wrapper {
-          height: 600px;
-          width: 100vw;
-          left: 0;
-        }
-
-        #carousel-image-1 {
-          background-position: 50%;
-        }
-
-        #carousel-image-2 {
-          background-position: 10% 32%;
-        }
-
-        #carousel-image-3 {
-          background-position: 49% 32%;
-        }
-      }
+    }
   </style>
-
   <markup>
-
     <div class="carousel-wrapper">
       <div class="carousel-image-wrapper">
         <div id="carousel-image-1" class="carousel-image">
@@ -161,7 +157,9 @@
     </div>
    </markup>
    <includes>
-      <script src="./image-carousel.js"></script>
-      <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+        <!-- Does not work in the pattern library! -->
+        <script>function goToSlide() {alert("does not work in pattern library");}</script>
+        <!-- <script src="/js/image-carousel.js"></script> -->
    </includes>
 </div>

@@ -1,0 +1,53 @@
+<div class="component"  title="Aside Navigation" version="1">
+  <includes>
+     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
+   </includes>
+  <style>
+    /* navigation-component 1.2 */
+    .aside-navigation > ul {
+      margin-top: 0;
+    }
+    .aside-navigation li:first-child {
+      padding-top: 0;
+    }
+    .aside-navigation li {
+      list-style: none;
+      font-size: 1.5em;
+      padding: 25px 10px 25px 0;
+      font-family: "Lexend Deca", sans-serif;
+    }
+
+    .aside-navigation a {
+      text-decoration: none;
+      color: #070606;
+      padding-left: 10px;
+    }
+
+    .aside-navigation a.current {
+      border-left: black solid 1px;
+      padding-left: 9px;
+    }
+    .aside-navigation a:hover {
+      border-left: lightseagreen solid 1px;
+      padding-left: 9px;
+    }
+
+    .aside-navigation a:focus {
+      color: #9e9e9e;
+    }
+  </style>
+  <markup demoStyles="width: 300px;">
+    <aside class="aside-navigation">
+
+      <ul>
+        <li><a href="#page1">Page-1</a></li>
+        <li><a href="#page2">Page-2</a></li>
+        <li><a href="#page3">Page-3</a></li>
+        <li><a href="#page4">Page-4</a></li>
+        <li><a href="#page5">Page-5</a></li>
+        <li><a href="#page6">Page-6</a></li>
+        <li><a href="#page7">Page-7</a></li>
+      </ul>
+    </aside>
+  </markup>
+  </div>

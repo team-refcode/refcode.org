@@ -1,25 +1,82 @@
 <html>
 
 <head>
-  <link href="patternlibrary.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
-  </link>
+    <meta charset="utf-8">
+    <title>Refcode Community</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="patternlibrary.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Refcode Pattern Library</h1>
-  <nav>
+  <!-- main-banner 1.9 -->
+  <div class="main-banner-container">
+    <header class="main-banner">
+      <nav class="nav-container">
+        <div class="nav-content content-container">
+          <a class="logo-link" href="/pages/index.html">
+            <img class="logo" src="/img/logo.png" alt="logo">
+          </a>
+
+          <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+          </div>
+          <ul class="main-banner-nav-list">
+              <li><a href="/pages/programs.html">Programs</a></li>
+              <li><a href="/pages/graduates-summer-2017.html">Graduates</a></li>
+              <li><a href="/volunteer-opportunities">Volunteer</a></li>
+              <li><a href="/pages/partner.html">Partner</a></li>
+              <li><a href="https://refcode.donorsecure.com/" rel="external">Donate</a></li>
+              <li><a href="/pages/apply.html">Apply</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+
+  <nav class="pl-sticky-nav">
     <ul>
-      <li><a href="#atoms">Atoms</a></li>
-      <li><a href="#molecules">Molecules</a></li>
-      <li><a href="#organisms">Organisms</a></li>
+      <li><a href="#atoms">Atoms</a>
+        <ul>
+          <li><a href="#example">Example</a></li>
+          <li><a href="#circleImage">Circle Image</a></li>
+          <li><a href="#button">Button</a></li>
+          <li><a href="#scrollingImageBanner">Scrolling Image banner</a></li>
+        </ul>
+      </li>
+      <li><a href="#molecules">Molecules</a>
+        <ul>
+          <li><a href="#navigationComponent">Navigation Component</a></li>
+          <li><a href="#sideNav">Side Nav</a></li>
+          <li><a href="#twoColumnGrid">Two Column Grid</a></li>
+          <li><a href="#fourColumnGrid">Four Column Grid</a></li>
+          <li><a href="#mainBanner">Main Banner</a></li>
+          <li><a href="#imageCarousel">Image Carousel</a></li>
+          <li><a href="#journeyPath">Journe Path</a></li>
+        </ul>
+      </li>
+      <li><a href="#organisms">Organisms</a>
+        <ul>
+          <li><a href="#footer ">Footer</a></li>
+          <li><a href="#imageColumn">Image Column</a></li>
+          <li><a href="#textWithVideo">Text With Video</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
-  <main>
+  <main class="pl-moving-content">
+    <h1>Refcode Pattern Library</h1>
     <section id="atoms">
       <h2>Atoms</h2>
-      <div class="component" title="Example" version="1.2">
+
+      <div class="component" title="Example" version="1.2" id="example">
         <includes>
           <link href="" rel="stylesheet" />
           <script src=""></script>
@@ -31,7 +88,8 @@
           This is just an example.
         </markup>
       </div>
-      <div class="component" title="Circle Image" version="1.0">
+
+      <div class="component" title="Circle Image" version="1.1" id="circleImage">
         <style>
           .circleImage {
             border-radius: 50%;
@@ -39,13 +97,13 @@
           }
         </style>
         <markup demoStyles="width: 212px;">
-          <img src="components/200x200.png" class="circleImage">
+          <img src="https://via.placeholder.com/200x200" class="circleImage">
         </markup>
       </div>
-      <div class="component" title="Button" version="1.1">
-        <!-- Button v1.1 (Atom) -->
+
+      <div class="component" title="Button" version="1.3" id="button">
         <includes>
-          <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         </includes>
 
         <style>
@@ -53,14 +111,13 @@
             border-width: 1px;
             border-color: #ffffff;
             border-radius: 0;
-            background: #1ab2cf;
-            text-transform: uppercase;
+            background: lightseagreen;
             color: #ffffff;
             border-style: solid;
             padding: 9px 20px;
             line-height: 14px;
-            font-size: 12px;
-            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-family: 'Lexend Deca', sans-serif;
             font-weight: bold;
             display: inline-block;
             position: relative;
@@ -68,11 +125,15 @@
             border: 1px solid transparent;
             text-align: center;
             cursor: pointer;
+            width: 100%;
           }
 
           a.button {
             text-decoration: none;
+            padding-left: 0;
+            padding-right: 0;
           }
+
         </style>
 
         <markup>
@@ -81,7 +142,7 @@
         </markup>
       </div>
 
-      <div class="component"  title="Scrolling Image Banner" version="1.3">
+      <div class="component"  title="Scrolling Image Banner" version="1.3" id="scrollingImageBanner">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         <style>
           /* Scrolling Image Banner 1.3 */
@@ -119,57 +180,71 @@
         </markup>
       </div>
 
+      <div class="component" title="Figure" version="1.1" id="figure">
+        <style>
+        .figure {
+            display: grid;
+            margin: 0 auto;
+        }
 
-      <div class="component" title="figure" version="1.1">
-      <style>
-      .figure {
-          display: grid;
-          margin: 0 auto;
-      }
+        .figure img {
+            width: 100%;
+            margin-bottom: 1em;
+        }
 
-      .figure img {
-          width: 100%;
-          margin-bottom: 1em;
-      }
+        .figure figcaption {
+            text-align: center;
+        }
+        .figure figcaption a {
+            text-decoration: none;
+        }
+        </style>
 
-      .figure figcaption {
-          text-align: center;
-      }
-      .figure figcaption a {
-          text-decoration: none;
-      }
-      </style>
-
-      <markup demoStyles="width:150px;">
-        <figure class="figure">
-          <img src="https://via.placeholder.com/150">
-          <figcaption>
-              <span>Name</span>
-              <a href="#">Website: example.com</a>
-              <a href="#">GitHub Profile</a>
-              <a href="#">LinkedIn Profile</a>
-          </figcaption>
-        </figure>
-      </markup>
+        <markup demoStyles="width:150px;">
+          <figure class="figure">
+            <img src="https://via.placeholder.com/150">
+            <figcaption>
+                <span>Name</span>
+                <a href="#">Website: example.com</a>
+                <a href="#">GitHub Profile</a>
+                <a href="#">LinkedIn Profile</a>
+            </figcaption>
+          </figure>
+        </markup>
       </div>
     </section>
 
     <section id="molecules">
       <h2>Molecules</h2>
-      <div class="component" title="navigation-component" version="1.1">
+
+      <div class="component" title="Navigation Component" version="1.2" id="navigationComponent">
         <style>
+          .aside-navigation > ul {
+            margin-top: 0;
+          }
+          .aside-navigation li:first-child {
+            padding-top: 0;
+          }
           .aside-navigation li {
             list-style: none;
             font-size: 1.5em;
-            border-top: .5px solid #9aa4a5;
-            border-bottom: .5px solid #9aa4a5;
-            border-left: 1px solid #9aa4a5;
-            padding: 1rem;
+            padding: 25px 10px 25px 0;
+            font-family: "Lexend Deca", sans-serif;
           }
 
           .aside-navigation a {
             text-decoration: none;
             color: #070606;
+            padding-left: 10px;
+          }
+
+          .aside-navigation a.current {
+            border-left: black solid 1px;
+            padding-left: 9px;
+          }
+          .aside-navigation a:hover {
+            border-left: lightseagreen solid 1px;
+            padding-left: 9px;
           }
 
           .aside-navigation a:focus {
@@ -191,25 +266,62 @@
           </aside>
         </markup>
       </div>
-      <div class="component" title="twoColumnGrid" version="1.0">
+
+      <div class="component" title="Side Nav" version="1.2" id="sideNav">
+        <includes>
+          <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
+        </includes>
+        <style>
+          .side-nav li {
+             list-style: none;
+             font-size: 1.5em;
+             border-top: .5px solid #9aa4a5;
+             border-left: 1px solid #9aa4a5;
+             padding: 1rem;
+          }
+
+          .side-nav a {
+             text-decoration: none;
+             color: #070606;
+          }
+
+          .side-nav a:focus{
+             color: #9e9e9e;
+          }
+        </style>
+        <markup>
+          <aside class="side-nav">
+              <ul>
+                  <li><a href="#page1">Page-1</a></li>
+                  <li><a href="#page2">Page-2</a></li>
+                  <li><a href="#page3">Page-3</a></li>
+                  <li><a href="#page4">Page-4</a></li>
+                  <li><a href="#page5">Page-5</a></li>
+                  <li><a href="#page6">Page-6</a></li>
+                  <li><a href="#page7">Page-7</a></li>
+              </ul>
+          </aside>
+        </markup>
+      </div>
+
+      <div class="component" title="Two Column Grid" version="1.1" id="twoColumnGrid">
         <style>
             .twoColumnGrid {
                 display: grid;
                 grid-template-columns: 60% 40%;
                 gap: 1em;
-                }
+            }
 
             .twoColumnGrid img {
                 width: 100%;
-                }
+            }
 
             @media(max-width: 500px){
-                .twoColumnGrid{
+                .twoColumnGrid {
                   grid-template-columns: 1fr
                 }
-                }
+            }
         </style>
-
         <markup>
           <div class="twoColumnGrid">
             <div>
@@ -218,10 +330,11 @@
             <div>
               <img src="https://via.placeholder.com/80x100">
             </div>
+          </div>
         </markup>
       </div>
-      </div>
-      <div class="component" title="fourColumnGrid" version="1.1">
+
+      <div class="component" title="Four Column Grid" version="1.1" id="fourColumnGrid">
         <style>
         .fourColumnGrid {
           display: grid;
@@ -263,8 +376,42 @@
         </markup>
       </div>
 
-      <div class="component" title="main-banner" id="main-banner" version="1.7">
+      <div class="component" title="Main Banner" id="main-banner" version="1.9" id="mainBanner">
         <style>
+          .stuck.main-banner-container,
+          .stuck .main-banner {
+            height: 50px;
+            transition: all 900ms ease-in;
+          }
+          .stuck .logo-link {
+            width:40px;
+            padding: 5px 15px;
+            transition: all 300ms ease-in;
+          }
+          .stuck .main-banner-nav-list {
+            padding: 0;
+          }
+          .stuck .main-banner-nav-list li {
+            padding: 11px 20px;
+            transition: all 900ms ease-in;
+          }
+          .stuck .main-banner .toggle {
+            padding-bottom: 40px;
+            transition: all 900ms ease-in;
+          }
+
+          .main-banner-container {
+            height: 93px;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            background: white;
+            width: 100%;
+            border-bottom: solid #aaa 1px;
+          }
+          .main-banner-container + * {
+            margin-top: 92px;
+          }
           .main-banner {
             height: 92px;
           }
@@ -304,7 +451,6 @@
             font-family: "Lexend Deca", sans-serif;
           }
 
-
           .main-banner-nav-list li a {
             text-decoration: none;
             padding-bottom: 5px;
@@ -342,15 +488,17 @@
               align-items: center;
               justify-content: flex-end;
               font-size: 2em;
+              color: #444;
+              z-index: 1;
             }
 
             .main-banner-nav-list {
               display: none;
               position: absolute;
-              background: black;
+              background: white;
               width: auto;
               right: 0;
-              top: 88px;
+              top: 50px;
             }
 
             .main-banner-nav-list.open {
@@ -397,15 +545,11 @@
         </includes>
       </div>
 
-
-      <div class="component" title="image-carousel" version="1.3" id="imageCarousel">
+      <div class="component" title="Image Carousel" version="1.4" id="imageCarousel">
         <style>
           .carousel-wrapper {
             height: 420px;
-            position: relative;
             overflow: hidden;
-            width: 100vw;
-            left: calc(-1 * (100vw - 980px)/2);
           }
           .carousel-image-wrapper {
 
@@ -559,26 +703,21 @@
           </div>
          </markup>
          <includes>
-
             <!-- Does not work in the pattern library! -->
+            <script>function goToSlide() {alert("does not work in pattern library");}</script>
             <!-- <script src="/js/image-carousel.js"></script> -->
          </includes>
       </div>
 
-      <div class="component" title="Journey Path" version="1.2">
+      <div class="component" title="Journey Path" version="1.3" id="journeyPath">
         <includes>
         </includes>
         <style>
-          .journeyPath  * {
-            box-sizing: border-box;
-          }
+          /* Journey Path 1.3 */
           .journeyPath {
-            padding: 5em 0;
-            max-width: 960px;
-            margin: 0 auto;
           }
 
-          /* all steps */
+          /* journeypath all steps */
           .step {
             position: relative;
             padding: 2em 2em 1em 2em;
@@ -587,8 +726,11 @@
             margin-top: 1.5em;
             margin-bottom: 0;
           }
+          .step > h3 {
+            margin-top: 0;
+          }
 
-          /* right steps */
+          /*  journeypath right steps */
           .step:nth-child(odd) {
             width: 40%;
             margin-left: 50%;
@@ -606,9 +748,9 @@
             left: -18px;
           }
 
-          /* left steps */
+          /*  journeypath left steps */
           .step:nth-child(even) {
-            width: calc(50% + 6px);
+            width: calc(40% - 2em);
             border-right: solid 6px black;
             position: relative;
             text-align: right;
@@ -627,7 +769,7 @@
             right: -18px;
           }
 
-          /* first step */
+          /*  journeypath first step */
           .step:nth-child(1) {
             padding-top: 0;
           }
@@ -638,12 +780,12 @@
             top: 0;
           }
 
-          /* last step */
+          /*  journeypath last step */
           .step:nth-last-child(1) {
             padding-bottom: 0;
           }
-        </style>
 
+        </style>
         <markup>
           <div class="journeyPath">
             <div class="step">
@@ -675,7 +817,7 @@
     <section id="organisms">
       <h2>Organisms</h2>
 
-      <div class="component" title="footer" version="2.1">
+      <div class="component" title="Footer" version="2.2.2" id="footer">
         <includes>
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -703,7 +845,10 @@
                 <div>
                   <ul class="main_column">
                     <li>
-                      <a href="#">Cohorts and Graduates</a>
+                      <a href="/pages/graduates-summer-2017.html">Cohorts and Graduates</a>
+                    </li>
+                    <li>
+                      <a href="/pages/teamcode.html">TeamCode</a>
                     </li>
                     <li>
                       <a href="#">Photo Albums</a>
@@ -713,36 +858,36 @@
               </div>
 
               <div>
-                <hr class="hr-1" />
+                <hr class="hr-1">
               </div>
 
               <div class="footer-main-2">
                 <h2>Engage</h2>
 
                 <div>
+                  <h3>Participants</h3>
                   <ul class="main_column">
-                    <h3>Participants</h3>
                     <li>
-                      <a href="#">Student Application</a>
+                      <a href="/apply">Student Application</a>
                     </li>
                   </ul>
                 </div>
 
                 <div>
+                  <h3>Volunteers</h3>
                   <ul class="main_column">
-                    <h3>Volunteers</h3>
                     <li>
-                      <a href="#">Volunteer Opportunities </a>
+                      <a href="/volunteer-opportunities">Volunteer Opportunities </a>
                     </li>
                     <li>
-                      <a href="#">Volunteer Application</a>
+                      <a href="/pages/volunteer-application.html">Volunteer Application</a>
                     </li>
                   </ul>
                 </div>
 
                 <div>
+                  <h3>Supporters</h3>
                   <ul class="main_column">
-                    <h3>Supporters</h3>
                     <li>
                       <a href="#">Join the Refcode Extended Professional Network</a>
                     </li>
@@ -750,27 +895,24 @@
                       <a href="#">Subscribe to our Newsletter</a>
                     </li>
                     <li>
-                      <a href="#">Donate</a>
+                      <a href="https://refcode.donorsecure.com/">Donate</a>
                     </li>
                   </ul>
                 </div>
 
                 <div>
+                  <h3>Businesses</h3>
                   <ul class="main_column">
-                    <h3>Businesses</h3>
                     <li>
-                      <a href="#">Partner with us</a>
+                      <a href="/pages/partner.html">Partner with us</a>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <div class="footer-main-3">
-                Refcode in partnership with
-                <a class="underline-footer" href="https://tektontraining.org/">
-                  Tekton Career Training
-                </a>
-                is a 501(c)3 nonprofit
+              <div class="footer-main-centered">
+                <a href="https://tektontraining.org/" class="no-hover"><img src="../img/tekton_logo.png" class="footer-tekton-logo"/></a>
+                <p>Refcode in partnership with <a class="underline-footer" href="https://tektontraining.org/">Tekton Career Training</a> is a 501(c)3 nonprofit</p>
               </div>
             </footer>
           </div>
@@ -779,6 +921,7 @@
           .footer {
             background: white;
             color: black;
+            border-top: solid 1px #aaa;
           }
 
           .footer-container {
@@ -787,25 +930,29 @@
           }
 
           .footer-main-1,
-          .footer-main-2 {
+          .footer-main-2{
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             column-gap: 40px;
-            margin-left: 75px;
+            margin: 20px 0;
           }
 
-          .footer-main-3 {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+          .footer-main-centered {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            margin-top: 40px;
+          }
+
+          .footer p {
             font-size: 12px;
           }
 
           .footer .underline-footer {
-            text-decoration: underline;
-            margin-left: 5px;
-            margin-right: 5px;
+            border-bottom: solid 1px #aaa;
+          }
+          .footer .footer-tekton-logo {
+            width: 35px;
           }
 
           .footer li {
@@ -824,127 +971,149 @@
 
           .footer .main_column {
             font-family: Lato, sans-serif;
+            padding-left: 0;
           }
 
           .footer .hr-1 {
-            width: 90%;
+            width: 100%;
             height: 1px;
-            background-color: #444;
+            background-color: #aaa;
             border: none;
+            margin-bottom: 0;
           }
 
           .footer a:hover {
-            border-bottom: solid 1px #444;
+            border-bottom: solid 1px lightseagreen;
+          }
+          .footer a.no-hover:hover {
+            border-bottom-width: 0;
+          }
+          @media only screen and (max-width: 1000px) {
+            .step {
+              padding: 1em;
+            }
+            .step:nth-child(even) {
+              width: calc(40% - 1em);
+            }
+          }
+
+          @media only screen and (max-width: 1000px) {
+
+            .footer-main-1,
+            .footer-main-2 {
+              display: block;
+              text-align: center;
+            }
+            .main_column {
+              margin-bottom: 40px;
+            }
           }
         </style>
       </div>
 
-        <div class="component" title="image-column" version="1.2">
-          <markup>
-            <div class="column-wrapper">
-                <div class="single-column">
-                        <img src="http://placeimg.com/940/480/nature">
-                        <h1>Lorum Ipsum 1</h1>
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <button>Learn More</button>
-                </div>
-                <div class="single-column">
-                        <img src="http://placeimg.com/940/480/nature">
-                        <h1>Lorum Ipsum 2</h1>
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <button>Learn More</button>
-                </div>
-                <div class="single-column">
-                    <img src="http://placeimg.com/940/480/nature">
-                    <h1>Lorum Ipsum 3</h1>
-                        <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                        </p>
-                        <button>Learn More</button>
-                </div>
-            </div>
-          </markup>
-        <style>
-          .column-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 3em;
-            grid-row-gap: 3em;
-          }
-
-          @media (max-width: 960px) {
-            .column-wrapper {
-              grid-template-columns: 1fr 1fr;
-            }
-          }
-
-          @media (max-width: 480px) {
-            .column-wrapper {
-              grid-template-columns: 1fr;
-            }
-          }
-
-          .single-column h2 {
-            text-align: center;
-            margin: 1em 0;
-          }
-          .single-column img {
-            width: 100%;
-          }
-          </style>
-        </div>
-
-        <div class="component" title="text-with-video" version="1.1">
+      <div class="component" title="Image Column" version="1.4" id="imageColumn">
           <style>
-            .video-wrapper iframe {
-              height: 320px;
+            .column-wrapper {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              grid-column-gap: 3em;
+              grid-row-gap: 2em;
+            }
+
+            @media (max-width: 960px) {
+              .column-wrapper {
+                grid-template-columns: 1fr 1fr;
+              }
+            }
+
+            @media (max-width: 480px) {
+              .column-wrapper {
+                grid-template-columns: 1fr;
+              }
+            }
+
+            .single-column h2 {
+              text-align: center;
+              margin: 1em 0;
+            }
+            .single-column img {
               width: 100%;
             }
-
-            @media screen and (min-width:570px) {
-              .video-wrapper {
-                margin: auto;
-                width: 550px;
-                height: 350px;
-              }
-
-              .video-wrapper iframe {
-                width: 100%;
-                height: 100%;
-              }
-
-
-            }
           </style>
           <markup>
-            <div class="video-txt-wrapper">
-              <div class="txt-wrapper">
-                <h1>Refcode</h1>
-                <p>Refcode is a curriculum to introduce beginners to coding. It is put on by the Refugee Career Hub as part of their computer literacy program. After going through this curriculum, students will learn the basics of how to build a
-                  website, and students will know a little bit about what working as a professional developer is like.</p>
-                <p>Students will learn to use the tools that professional developers use to create websites. In this course, students will be introduced to Atom (an IDE or code editor), Chrome Inspect tools, GitHub Desktop, Cyberduck (an FTP client),
-                  and Freenom.com (a domain registrar).</p>
-                <h2>Professional Skills</h2>
-                <p>In this class we will learn about the strategies, workflows, and tools that professionals use to stay organized, communicate, and manage their time. We will learn about Agile Methodology, stand-up meetings, sprint cycles, kanban
-                  boards (with Trello), Slack chat, GitHub, and pair-programming.
-                  Each student will work towards creating a personal website by the end of the class. The student will register their own domain name and upload it to a web hosting server (provided by Refugee Career Hub).
-
-                </p>
+              <div class="column-wrapper">
+                  <div class="single-column">
+                          <img src="http://placeimg.com/940/480/nature">
+                          <h1>Lorum Ipsum 1</h1>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                          </p>
+                          <button>Learn More</button>
+                  </div>
+                  <div class="single-column">
+                          <img src="http://placeimg.com/940/480/nature">
+                          <h1>Lorum Ipsum 2</h1>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                          </p>
+                          <button>Learn More</button>
+                  </div>
+                  <div class="single-column">
+                      <img src="http://placeimg.com/940/480/nature">
+                      <h1>Lorum Ipsum 3</h1>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                          </p>
+                          <button>Learn More</button>
+                  </div>
               </div>
-              <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
           </markup>
-        </div>
+      </div>
+
+      <div class="component" title="Text With Video" version="1.2" id="textWithVideo">
+        <style>
+          .txt-wrapper {
+            column-count: 3;
+          }
+          .txt-wrapper p {
+            margin-top: 0;
+          }
+
+          .video-wrapper iframe{
+             height:320px;
+             width:100%;
+          }
+
+          @media screen and (min-width:570px){
+            .video-wrapper{
+              margin:auto;
+              width:550px;
+              height:350px;
+              }
+            .video-wrapper iframe {
+              width:100%;
+              height:100%;
+            }
+          }
+        </style>
+        <markup>
+          <div class="video-txt-wrapper">
+            <div class="txt-wrapper">
+                <h1>Heading goes here</h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                   <h2>Another Heading</h2>
+                    <p>Pascus alitum aute irure dolor in reprehenderit bolor in voluptate velit esse cillum dolore eu sept fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui non officia deserunt mollit anim id est laborum. Est patrica.</p>
+                  </div>
+              <div class="video-wrapper">
+                  <iframe src="https://www.youtube.com/embed/Sw4r03j1Oc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+          </div>
+        </markup>
+      </div>
+
     </section>
   </main>
   <script src="patternlibrary.js"></script>
-
 </body>
-
 </html>

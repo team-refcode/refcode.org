@@ -1,11 +1,11 @@
-<div class="component" title="image-column" version="1.2">
+<div class="component" title="image-column" version="1.4">
     <markup>
         <div class="column-wrapper">
             <div class="single-column">
                     <img src="http://placeimg.com/940/480/nature">
                     <h1>Lorum Ipsum 1</h1>
                     <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
                     <button>Learn More</button>
             </div>
@@ -13,7 +13,7 @@
                     <img src="http://placeimg.com/940/480/nature">
                     <h1>Lorum Ipsum 2</h1>
                     <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
                     <button>Learn More</button>
             </div>
@@ -21,38 +21,39 @@
                 <img src="http://placeimg.com/940/480/nature">
                 <h1>Lorum Ipsum 3</h1>
                     <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                     </p>
                     <button>Learn More</button>
             </div>
         </div>
     </markup>
     <style>
-    .column-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 3em;
-      grid-row-gap: 3em;
-    }
 
-    @media (max-width: 960px) {
       .column-wrapper {
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 3em;
+        grid-row-gap: 2em;
       }
-    }
 
-    @media (max-width: 480px) {
-      .column-wrapper {
-        grid-template-columns: 1fr;
+      @media (max-width: 960px) {
+        .column-wrapper {
+          grid-template-columns: 1fr 1fr;
+        }
       }
-    }
 
-    .single-column h2 {
-      text-align: center;
-      margin: 1em 0;
-    }
-    .single-column img {
-      width: 100%;
-    }
+      @media (max-width: 480px) {
+        .column-wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .single-column h2 {
+        text-align: center;
+        margin: 1em 0;
+      }
+      .single-column img {
+        width: 100%;
+      }
     </style>
 </div>

@@ -2,6 +2,29 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Getting Started
+This project uses Create React App, Git LFS, and the Netlify Dev environment. To get up and running, follow these steps:
+
+1. Set up the `NETLIFY_AUTH_TOKEN` environmental variable in your .bash_profile.
+  - Ask Brenton for the <site_id>
+  - Open `~/.bash_profile` with your favorite editor
+  - Add this to the end of it (replace <site_id> with the acdtual id)
+      `export NETLIFY_SITE_ID=<site_id>`
+2. Fork from upstream and clone your repo.
+  - git clone https://github.com/YOURUSERNAME/refcode.org.git
+3. CD into the correct directory
+  - `cd refcode.org`
+4. Install the Netlify CLI
+  - `npm install netlify-cli --save-dev`
+5. Install NPM
+  - `npm install`
+6. Set up Git LFS and Netlify Large Media
+  - `netlify lm:setup`
+7. Run the command it gives you e.g.:
+  - `source /Users/YOURNAME/Library/Preferences/netlify/helper/path.bash.inc`
+8. Start the dev environment:
+  - `netlify dev`
+
 ## Available Scripts
 
 In the project directory, you can run:

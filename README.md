@@ -18,12 +18,19 @@ This project uses Create React App, Git LFS, and the Netlify Dev environment. To
   - `npm install netlify-cli --save-dev`
 5. Install NPM
   - `npm install`
-6. Set up Git LFS and Netlify Large Media
+6. Initialize git LFS:
+  - `git lfs install`
+6. Set up Netlify Large Media
   - `netlify lm:setup`
 7. Run the command it gives you e.g.:
   - `source /Users/YOURNAME/Library/Preferences/netlify/helper/path.bash.inc`
 8. Start the dev environment:
   - `netlify dev`
+
+If you get an error when trying to push, run these commands:
+
+`brew tap netlify/git-credential-netlify`
+`brew install git-credential-netlify`
 
 ## Available Scripts
 

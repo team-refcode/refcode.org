@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <!-- main-banner 1.9 -->
+  <!-- main-banner 1.10 -->
   <div class="main-banner-container">
     <header class="main-banner">
       <nav class="nav-container">
@@ -376,7 +376,7 @@
         </markup>
       </div>
 
-      <div class="component" title="Main Banner" id="main-banner" version="1.9" id="mainBanner">
+      <div class="component" title="Main Banner" id="main-banner" version="1.10" id="mainBanner">
         <style>
           .stuck.main-banner-container,
           .stuck .main-banner {
@@ -431,6 +431,7 @@
             width: 100%;
           }
           .nav-content {
+            max-width: 980px;
             display: grid;
             grid-template-columns: 70px auto;
             align-items: center;
@@ -441,6 +442,10 @@
             padding: 10px;
             grid-area: main-banner-nav-list;
             margin: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            flex-direction: row;
           }
 
           .main-banner-nav-list li {
@@ -449,6 +454,10 @@
             padding: 20px;
             font-size: 20px;
             font-family: "Lexend Deca", sans-serif;
+          }
+
+          .main-banner-nav-list li:last-child {
+            padding-right: 0;
           }
 
           .main-banner-nav-list li a {

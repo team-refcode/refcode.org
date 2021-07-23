@@ -151,7 +151,7 @@ a.button {
 	}
 }
 
-/* main-banner 1.9 */
+/* main-banner 1.10 */
 .stuck.main-banner-container,
 .stuck .main-banner {
   height: 50px;
@@ -205,6 +205,7 @@ a.button {
   width: 100%;
 }
 .nav-content {
+  max-width: 980px;
   display: grid;
   grid-template-columns: 70px auto;
   align-items: center;
@@ -215,6 +216,10 @@ a.button {
   padding: 10px;
   grid-area: main-banner-nav-list;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 .main-banner-nav-list li {
@@ -223,6 +228,10 @@ a.button {
   padding: 20px;
   font-size: 20px;
   font-family: "Lexend Deca", sans-serif;
+}
+
+.main-banner-nav-list li:last-child {
+  padding-right: 0;
 }
 
 .main-banner-nav-list li a {

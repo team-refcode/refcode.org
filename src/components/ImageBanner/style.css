@@ -13,7 +13,7 @@
   margin-bottom: 15px;
 }
 .image-banner-1 {
-  background-size: cover;
+  background-size: contain;
   background-position-y: -160px;
 }
 .banner-text {

@@ -378,14 +378,18 @@ module.exports = function (webpackEnv) {
             // "url" loader works like "file" loader except that it embeds assets
             // smaller than specified limit in bytes as data URLs to avoid requests.
             // A missing `test` is equivalent to a match.
-            {
-              test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
-              loader: require.resolve('url-loader'),
-              options: {
-                limit: imageInlineSizeLimit,
-                name: 'static/media/[name].[hash:8].[ext]',
-              },
-            },
+              {
+        test: /\.(jpe?g|png|webp)$/i,
+        use: {
+          loader: "responsive-loader",
+          options: {
+            // If you want to enable sharp support:
+            adapter: require("responsive-loader/sharp"),
+            name:'static/media/[name]-[width].[ext]',
+            sizes: [320, 640, 960, 1200, 1800, 2400],
+          },
+        },
+      },
             // Process application JS with Babel.
             // The preset includes JSX, Flow, TypeScript, and some ESnext features.
             {

@@ -12,10 +12,20 @@
   text-align:left;
   margin-bottom: 15px;
 }
-.image-banner-1 {
+
+/* .image-banner-1 {
   background-size: contain;
   background-position-y: -160px;
+  background-image: url('../img/nasa-hat.jpg');
 }
+
+@media (min-width: 1000px) {
+  .image-banner-1 {
+    background: url("../img/nasa-hat.jpg?size=960");
+  }
+} */
+
 .banner-text {
    font-size: 50px;
 }
+

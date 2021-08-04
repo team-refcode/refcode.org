@@ -5,6 +5,8 @@ import {
   Route
 } from "react-router-dom";
 import VolunteerOpportunities from './VolunteerOpportunities'
+import GraduatesSummer2019 from './components/GraduatesSummer2019'
+
 export default function App() {
   return (
     <Router>
@@ -17,6 +19,9 @@ export default function App() {
             }} />
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
+          </Route>
+          <Route path="/pages/graduates-summer-2019">
+            <GraduatesSummer2019/>
           </Route>
         </Switch>
     </Router>

@@ -20,7 +20,7 @@ export default function App() {
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
           </Route>
-          <Route path="/pages/graduates-summer-2019">
+          <Route path="/graduates-summer-2019">
             <GraduatesSummer2019/>
           </Route>
         </Switch>

@@ -151,7 +151,7 @@ a.button {
 	}
 }
 
-/* main-banner 1.10 */
+/* main-banner 1.11 */
 .stuck.main-banner-container,
 .stuck .main-banner {
   height: 50px;
@@ -230,8 +230,10 @@ a.button {
   font-family: "Lexend Deca", sans-serif;
 }
 
-.main-banner-nav-list li:last-child {
-  padding-right: 0;
+@media (min-width: 1000px) {
+  .main-banner-nav-list li:last-child {
+    padding-right: 0;
+  }
 }
 
 .main-banner-nav-list li a {

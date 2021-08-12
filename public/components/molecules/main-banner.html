@@ -1,4 +1,4 @@
-<div class="component" title="main-banner" id="main-banner" version="1.10">
+<div class="component" title="main-banner" id="main-banner" version="1.11">
   <style>
 
     .stuck.main-banner-container,
@@ -79,8 +79,10 @@
       font-family: "Lexend Deca", sans-serif;
     }
 
-    .main-banner-nav-list li:last-child {
-      padding-right: 0;
+    @media (min-width: 1000px) {
+      .main-banner-nav-list li:last-child {
+        padding-right: 0;
+      }
     }
 
     .main-banner-nav-list li a {

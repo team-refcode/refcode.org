@@ -133,12 +133,23 @@
   </section>
 
   <style>
+
     .columns {
       display: grid;
-      grid-auto-flow: column;
-      grid-template-columns: 1fr 1fr;
       grid-column-gap: 50px;
       margin-bottom: 100px;
+    }
+    @media(min-width: 500px){
+      .columns {
+        grid-auto-flow: column;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media(max-width: 500px){
+        .columns {
+          grid-template-columns: 100%;
+          grid-auto-flow: unset;
+        }
     }
     .columns > h3:first-child {
       margin-top: 0;

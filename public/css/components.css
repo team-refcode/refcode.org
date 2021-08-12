@@ -32,7 +32,7 @@ a.button {
   padding-right: 0;
 }
 
-/* Scrolling Image Banner 1.5 */
+/* Scrolling Image Banner 1.6 */
 .image-banner {
   background-image: url("http://placeimg.com/940/480/nature");
   background-repeat: no-repeat;
@@ -41,6 +41,7 @@ a.button {
   background-attachment: fixed;
   height: 345px;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1000px) {
   .image-banner {
@@ -111,7 +112,7 @@ a.button {
   color: #9e9e9e;
 }
 
-/* twoColumnGrid 1.1 */
+/* twoColumnGrid 1.2 */
 .twoColumnGrid {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -124,7 +125,7 @@ a.button {
 
 @media(max-width: 500px){
     .twoColumnGrid {
-      grid-template-columns: 1fr
+      grid-template-columns: 100%;
     }
 }
 

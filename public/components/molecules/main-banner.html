@@ -1,4 +1,4 @@
-<div class="component" title="main-banner" id="main-banner" version="1.11">
+<div class="component" title="main-banner" id="main-banner" version="1.13">
   <style>
 
     .stuck.main-banner-container,
@@ -19,10 +19,9 @@
       transition: all 900ms ease-in;
     }
     .stuck .main-banner .toggle {
-      padding-bottom: 40px;
+      height: 50px;
       transition: all 900ms ease-in;
     }
-
     .main-banner-container {
       height: 93px;
       position: fixed;
@@ -137,6 +136,12 @@
 
       .main-banner-nav-list.open {
         display: block;
+        padding: 0 10% 0 10%;
+        line-height: 4em;
+      }
+
+      .main-banner-nav-list.open li {
+        text-align: center;
       }
 
       .main-banner-nav-list li {

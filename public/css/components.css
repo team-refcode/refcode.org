@@ -151,7 +151,7 @@ a.button {
 	}
 }
 
-/* main-banner 1.11 */
+/* main-banner 1.13 */
 .stuck.main-banner-container,
 .stuck .main-banner {
   height: 50px;
@@ -170,10 +170,9 @@ a.button {
   transition: all 900ms ease-in;
 }
 .stuck .main-banner .toggle {
-  padding-bottom: 40px;
+  height: 50px;
   transition: all 900ms ease-in;
 }
-
 .main-banner-container {
   height: 93px;
   position: fixed;
@@ -288,6 +287,17 @@ a.button {
 
   .main-banner-nav-list.open {
     display: block;
+    padding: 0 10% 0 10%;
+    line-height: 4em;
+  }
+
+  .main-banner-nav-list.open li {
+    text-align: center;
+  }
+
+  .main-banner-nav-list li {
+    display: block;
+    text-align: right;
   }
 
   .main-banner-nav-list li {

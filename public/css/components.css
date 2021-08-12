@@ -504,7 +504,7 @@ a.button {
   padding-bottom: 0;
 }
 
-/* footer 2.2.2 */
+/* footer 2.2.4 */
 .footer {
   background: white;
   color: black;
@@ -571,6 +571,10 @@ a.button {
 
 .footer a:hover {
   border-bottom: solid 1px lightseagreen;
+}
+.footer a[nohref]:hover {
+  border-bottom: none;
+  cursor: not-allowed;
 }
 .footer a.no-hover:hover {
   border-bottom-width: 0;

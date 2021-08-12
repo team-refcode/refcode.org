@@ -1,4 +1,4 @@
-<div class="component" title="footer" version="2.2.3">
+<div class="component" title="footer" version="2.2.4">
   <includes>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -12,13 +12,13 @@
           <div>
             <ul class="main_column">
               <li>
-                <a href="#">Our Story</a>
+                <a nohref="" title="Page not created yet.">Our Story</a>
               </li>
               <li>
-                <a href="#">Mission & Vision</a>
+                <a nohref="" title="Page not created yet.">Mission & Vision</a>
               </li>
               <li>
-                <a href="#">Partnership with Tekton</a>
+                <a nohref="" title="Page not created yet.">Partnership with Tekton</a>
               </li>
             </ul>
           </div>
@@ -32,7 +32,7 @@
                 <a href="/pages/teamcode.html">TeamCode</a>
               </li>
               <li>
-                <a href="#">Photo Albums</a>
+                <a nohref="" title="Page not created yet.">Photo Albums</a>
               </li>
             </ul>
           </div>
@@ -70,10 +70,10 @@
             <h3>Supporters</h3>
             <ul class="main_column">
               <li>
-                <a href="#">Join the Refcode Extended Professional Network</a>
+                <a nohref="" title="Page not created yet.">Join the Refcode Extended Professional Network</a>
               </li>
               <li>
-                <a href="#">Subscribe to our Newsletter</a>
+                <a nohref="" title="Page not created yet.">Subscribe to our Newsletter</a>
               </li>
               <li>
                 <a href="https://refcode.donorsecure.com/">Donate</a>
@@ -172,6 +172,12 @@
     .footer a:hover {
       border-bottom: solid 1px lightseagreen;
     }
+
+    .footer a[nohref]:hover {
+      border-bottom: none;
+      cursor: pointer;
+    }
+
     .footer a.no-hover:hover {
       border-bottom-width: 0;
     }

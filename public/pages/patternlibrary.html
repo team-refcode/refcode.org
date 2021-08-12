@@ -137,7 +137,7 @@
         </style>
 
         <markup>
-          <a href="#" class="button">Link</a>
+          <a nohref="" title="Page not created yet." class="button">Link</a>
           <button class="button">Button</button>
         </markup>
       </div>
@@ -205,9 +205,9 @@
             <img src="https://via.placeholder.com/150">
             <figcaption>
                 <span>Name</span>
-                <a href="#">Website: example.com</a>
-                <a href="#">GitHub Profile</a>
-                <a href="#">LinkedIn Profile</a>
+                <a nohref="" title="Page not created yet.">Website: example.com</a>
+                <a nohref="" title="Page not created yet.">GitHub Profile</a>
+                <a nohref="" title="Page not created yet.">LinkedIn Profile</a>
             </figcaption>
           </figure>
         </markup>
@@ -828,7 +828,7 @@
     <section id="organisms">
       <h2>Organisms</h2>
 
-      <div class="component" title="Footer" version="2.2.3" id="footer">
+      <div class="component" title="Footer" version="2.2.4" id="footer">
         <includes>
           <link rel="preconnect" href="https://fonts.gstatic.com">
           <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -842,13 +842,13 @@
                 <div>
                   <ul class="main_column">
                     <li>
-                      <a href="#">Our Story</a>
+                      <a nohref="" title="Page not created yet.">Our Story</a>
                     </li>
                     <li>
-                      <a href="#">Mission & Vision</a>
+                      <a nohref="" title="Page not created yet.">Mission & Vision</a>
                     </li>
                     <li>
-                      <a href="#">Partnership with Tekton</a>
+                      <a nohref="" title="Page not created yet.">Partnership with Tekton</a>
                     </li>
                   </ul>
                 </div>
@@ -862,7 +862,7 @@
                       <a href="/pages/teamcode.html">TeamCode</a>
                     </li>
                     <li>
-                      <a href="#">Photo Albums</a>
+                      <a nohref="" title="Page not created yet.">Photo Albums</a>
                     </li>
                   </ul>
                 </div>
@@ -900,10 +900,10 @@
                   <h3>Supporters</h3>
                   <ul class="main_column">
                     <li>
-                      <a href="#">Join the Refcode Extended Professional Network</a>
+                      <a nohref="" title="Page not created yet.">Join the Refcode Extended Professional Network</a>
                     </li>
                     <li>
-                      <a href="#">Subscribe to our Newsletter</a>
+                      <a nohref="" title="Page not created yet.">Subscribe to our Newsletter</a>
                     </li>
                     <li>
                       <a href="https://refcode.donorsecure.com/">Donate</a>
@@ -1001,6 +1001,10 @@
 
           .footer a:hover {
             border-bottom: solid 1px lightseagreen;
+          }
+          .footer a[nohref]:hover {
+            border-bottom: none;
+            cursor: not-allowed;
           }
           .footer a.no-hover:hover {
             border-bottom-width: 0;

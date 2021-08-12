@@ -10,13 +10,13 @@ const Footer = () => {
           <div>
             <ul className="main_column">
               <li>
-                <a href="#">Our Story</a>
+                <a nohref="" title="Page not created yet.">Our Story</a>
               </li>
               <li>
-                <a href="#">Mission & Vision</a>
+                <a nohref="" title="Page not created yet.">Mission & Vision</a>
               </li>
               <li>
-                <a href="#">Partnership with Tekton</a>
+                <a nohref="" title="Page not created yet.">Partnership with Tekton</a>
               </li>
             </ul>
           </div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <a href="/pages/teamcode.html">TeamCode</a>
               </li>
               <li>
-                <a href="#">Photo Albums</a>
+                <a nohref="" title="Page not created yet.">Photo Albums</a>
               </li>
             </ul>
           </div>
@@ -68,10 +68,10 @@ const Footer = () => {
             <h3>Supporters</h3>
             <ul className="main_column">
               <li>
-                <a href="#">Join the Refcode Extended Professional Network</a>
+                <a nohref="" title="Page not created yet.">Join the Refcode Extended Professional Network</a>
               </li>
               <li>
-                <a href="#">Subscribe to our Newsletter</a>
+                <a nohref="" title="Page not created yet.">Subscribe to our Newsletter</a>
               </li>
               <li>
                 <a href="https://refcode.donorsecure.com/">Donate</a>

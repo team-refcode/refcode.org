@@ -32,7 +32,7 @@ a.button {
   padding-right: 0;
 }
 
-/* Scrolling Image Banner 1.4 */
+/* Scrolling Image Banner 1.5 */
 .image-banner {
   background-image: url("http://placeimg.com/940/480/nature");
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ a.button {
 }
 @media only screen and (max-width: 1000px) {
   .image-banner {
-    height: 100vh;
+    height: 80vh;
   }
 }
 

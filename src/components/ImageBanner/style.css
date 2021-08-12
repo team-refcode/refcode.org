@@ -12,9 +12,11 @@
   text-align:left;
   margin-bottom: 15px;
 }
-.image-banner-1 {
-  background-size: contain;
-  background-position-y: -160px;
+@media only screen and (min-width: 1000px) {
+  .image-banner-1 {
+    background-size: contain;
+    background-position-y: -160px;
+  }
 }
 .banner-text {
    font-size: 50px;

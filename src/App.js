@@ -4,8 +4,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import VolunteerOpportunities from './VolunteerOpportunities'
-import OurStory from './OurStory'
+import VolunteerOpportunities from './VolunteerOpportunities';
+import OurStory from './OurStory';
+import './App.css';
 export default function App() {
   return (
     <Router>

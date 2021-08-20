@@ -32,7 +32,7 @@ a.button {
   padding-right: 0;
 }
 
-/* Scrolling Image Banner 1.5 */
+/* Scrolling Image Banner 1.6 */
 .image-banner {
   background-image: url("http://placeimg.com/940/480/nature");
   background-repeat: no-repeat;
@@ -41,6 +41,7 @@ a.button {
   background-attachment: fixed;
   height: 345px;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (max-width: 1000px) {
   .image-banner {
@@ -111,7 +112,7 @@ a.button {
   color: #9e9e9e;
 }
 
-/* twoColumnGrid 1.1 */
+/* twoColumnGrid 1.2 */
 .twoColumnGrid {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -124,7 +125,7 @@ a.button {
 
 @media(max-width: 500px){
     .twoColumnGrid {
-      grid-template-columns: 1fr
+      grid-template-columns: 100%;
     }
 }
 
@@ -151,7 +152,7 @@ a.button {
 	}
 }
 
-/* main-banner 1.11 */
+/* main-banner 1.13 */
 .stuck.main-banner-container,
 .stuck .main-banner {
   height: 50px;
@@ -170,10 +171,9 @@ a.button {
   transition: all 900ms ease-in;
 }
 .stuck .main-banner .toggle {
-  padding-bottom: 40px;
+  height: 50px;
   transition: all 900ms ease-in;
 }
-
 .main-banner-container {
   height: 93px;
   position: fixed;
@@ -288,6 +288,17 @@ a.button {
 
   .main-banner-nav-list.open {
     display: block;
+    padding: 0 10% 0 10%;
+    line-height: 4em;
+  }
+
+  .main-banner-nav-list.open li {
+    text-align: center;
+  }
+
+  .main-banner-nav-list li {
+    display: block;
+    text-align: right;
   }
 
   .main-banner-nav-list li {

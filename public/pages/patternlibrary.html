@@ -11,7 +11,16 @@
     <link rel="manifest" href="/manifest.json" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend+Deca&display=swap" rel="stylesheet">
-</head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SLMLQC1PX6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SLMLQC1PX6');
+    </script>
+    </head>
 
 <body>
   <!-- main-banner 1.10 -->
@@ -142,10 +151,10 @@
         </markup>
       </div>
 
-      <div class="component"  title="Scrolling Image Banner" version="1.5" id="scrollingImageBanner">
+      <div class="component"  title="Scrolling Image Banner" version="1.6" id="scrollingImageBanner">
         <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lexend+Deca&display=swap" rel="stylesheet">
         <style>
-          /* Scrolling Image Banner 1.5 */
+          /* Scrolling Image Banner 1.6 */
           .image-banner {
             background-image: url("http://placeimg.com/940/480/nature");
             background-repeat: no-repeat;
@@ -154,6 +163,7 @@
             background-attachment: fixed;
             height: 345px;
             position: relative;
+            overflow: scroll;
           }
           @media only screen and (max-width: 1000px) {
             .image-banner {
@@ -376,7 +386,7 @@
         </markup>
       </div>
 
-      <div class="component" title="Main Banner" id="main-banner" version="1.11" id="mainBanner">
+      <div class="component" title="Main Banner" id="main-banner" version="1.13" id="mainBanner">
         <style>
           .stuck.main-banner-container,
           .stuck .main-banner {
@@ -396,10 +406,9 @@
             transition: all 900ms ease-in;
           }
           .stuck .main-banner .toggle {
-            padding-bottom: 40px;
+            height: 50px;
             transition: all 900ms ease-in;
           }
-
           .main-banner-container {
             height: 93px;
             position: fixed;
@@ -514,6 +523,17 @@
 
             .main-banner-nav-list.open {
               display: block;
+              padding: 0 10% 0 10%;
+              line-height: 4em;
+            }
+
+            .main-banner-nav-list.open li {
+              text-align: center;
+            }
+
+            .main-banner-nav-list li {
+              display: block;
+              text-align: right;
             }
 
             .main-banner-nav-list li {

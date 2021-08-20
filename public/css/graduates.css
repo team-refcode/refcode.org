@@ -8,6 +8,13 @@
     grid-template-columns: 200px 40%;
     gap: 50px;
 }
+@media(max-width: 500px){
+  .student.twoColumnGrid {
+      grid-template-columns: 100%;
+      gap: 10px;
+      text-align: center;
+  }
+}
 .student ul {
   list-style: none;
   padding: 0;

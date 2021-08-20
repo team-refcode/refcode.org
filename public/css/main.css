@@ -64,6 +64,9 @@ svg,
 video {
   vertical-align: middle;
 }
+iframe {
+  max-width: 100%;
+}
 
 /*
  * Remove default fieldset styles.
@@ -155,7 +158,16 @@ main > .whitespace:first-child {
   margin-bottom: 50px;
 }
 
-
+@media (max-width: 960px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+@media (min-width: 960px) {
+  .hide-desktop {
+    display: none;
+  }
+}
 /*
 * Hide only visually, but have it available for screen readers:
 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility

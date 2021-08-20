@@ -15,6 +15,12 @@ export default function App() {
           <Route exact path="/apply" render={() => {
             window.location.href="/pages/apply.html"
             }} />
+          <Route exact path="/swapkown on gyrt.html" render={() => {
+            window.location.href="/pages/swapkown_on_gyrt.html"
+            }} />
+          <Route exact path="/swapkown%20on%20gyrt.html" render={() => {
+            window.location.href="/pages/swapkown_on_gyrt.html"
+            }} />
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
           </Route>

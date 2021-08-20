@@ -18,6 +18,9 @@ export default function App() {
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
           </Route>
+          <Route path="*"  render={() => {
+            window.location.href="/pages/404.html"
+            }} />
         </Switch>
     </Router>
   );

@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <ul className="main_column">
               <li>
-                <a nohref="" title="Page not created yet.">Our Story</a>
+                <a href="/our-story">Our Story</a>
               </li>
               <li>
                 <a nohref="" title="Page not created yet.">Mission & Vision</a>

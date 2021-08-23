@@ -1,0 +1,19 @@
+.image-banner-1 {
+      background-image: url(../img/laughing1.jpg);
+      background-position-y: -260px;
+}
+@media only screen and (min-width: 1000px) {
+  .image-banner-1 {
+        background-size: contain;
+  }
+}
+
+
+.image-banner-2 {
+      background-image: url(../img/photobomb1.jpg);
+      background-position-y: -400px;
+}
+
+.banner-text.programs {
+  font-size: 90px;
+}

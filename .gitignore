@@ -11,6 +11,8 @@
 
 # production
 /build
+/public/img/
+/public/sourceSets.json
 
 # misc
 .DS_Store
@@ -26,3 +28,5 @@ yarn-error.log*
 .eslintcache
 # Local Netlify folder
 .netlify
+
+

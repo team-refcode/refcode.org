@@ -27,7 +27,7 @@ const data = {
       buttonHref: null,
     }, {
       title:  "Lab Mini-lesson Teacher",
-      program: "Intro To Coding Class",
+      program: "Refcode Lab",
       categories: [categories.teach, categories.mentor, categories.code],
       skills: [skills.code],
       description: "Plan and teach a 30 minute lesson or workshop on a topic related to our Skills Matrix.",

@@ -17,9 +17,27 @@ const skills =  {
 const data = {
   cards: [
     {
+      title:  "Lab TA",
+      program: "Refcode Lab",
+      categories: [categories.teach, categories.mentor, categories.code],
+      skills: [skills.code],
+      description: "Attend walk-in lab and help one or more participants on an ad-hoc basis in their learning goals. ",
+      requirements: "Good with computers or some coding skills. 3 hours per week.",
+      buttonText: "Go to Volunteer Form",
+      buttonHref: null,
+    }, {
+      title:  "Lab Mini-lesson Teacher",
+      program: "Intro To Coding Class",
+      categories: [categories.teach, categories.mentor, categories.code],
+      skills: [skills.code],
+      description: "Plan and teach a 30 minute lesson or workshop on a topic related to our Skills Matrix.",
+      requirements: "Expertise in the topic you're interested in teaching.",
+      buttonText: "Go to Volunteer Form",
+      buttonHref: null,
+    }, {
       title:  "Class TA",
       program: "Intro To Coding Class",
-      categories: [categories.teach, categories.mentor],
+      categories: [categories.teach, categories.mentor, categories.code],
       skills: [skills.code],
       description: "Attend class with students and help them work through the in-class projects.",
       requirements: "A little coding experience is nice but not required as long as you're good with computers and a quick study. 3 hours per week.",
@@ -28,7 +46,7 @@ const data = {
     }, {
       title:  "Study group lead",
       program: "Intro to Coding Class",
-      categories: [ categories.teach, categories.mentor],
+      categories: [ categories.teach, categories.mentor, categories.code],
       skills: [skills.code],
       description: "Meet on Zoom with a small group of students to check-in, ask questions about homework and review lessons from class.",
       requirements: "Some previous web development experience is required since you'll have less support than the class TAs. 1 hour per week.",
@@ -37,7 +55,7 @@ const data = {
     }, {
       title:  "Homework Tutor",
       program: "Intro to Coding Class",
-      categories: [ categories.teach, categories.mentor],
+      categories: [ categories.teach, categories.mentor, categories.code],
       skills: [skills.code],
       description: "Homework tutors will connect with a student one-on-one after class to help them with homework.",
       requirements: "Some previous web development experience is required since you'll have less support than the class TAs. 1 hour per week.",
@@ -46,7 +64,7 @@ const data = {
     }, {
         title:  "Slack Oncall",
         program: "Intro to Coding Class",
-        categories: [ categories.teach, categories.mentor],
+        categories: [ categories.teach, categories.mentor, categories.code],
         skills: [skills.code],
         description: "Ensure there is always someone available to answer student questions on Slack quickly.",
         requirements: "Ability to respond to slack messages with a sympathetic emoji or helpful clarification.",

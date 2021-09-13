@@ -2,7 +2,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project also uses [Git LFS](https://git-lfs.github.com/).
+This project also uses [Git LFS](https://git-lfs.github.com/). One way to install it could be:
+
+```
+brew install git-lfs
+```
 
 In order to get set up to run this project you will need to run the following commands after cloning the repository the first time:
 

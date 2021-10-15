@@ -1,10 +1,8 @@
 .image-banner-1 {
     background-image: url(../img/media.jpg);
-    background-position-y: 25px;
+    background-position-y: 0;
 }
-
+/*
 @media only screen and (min-width: 1000px) {
-  .image-banner-1 {
-      background-size: contain;
-  }
-}
+  .image-banner-1 {}
+}*/

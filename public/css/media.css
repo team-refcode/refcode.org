@@ -6,3 +6,11 @@
 @media only screen and (min-width: 1000px) {
   .image-banner-1 {}
 }*/
+
+
+ .aside-navigation.aside-navigation-smaller li {
+   font-size: 1em;
+   padding-bottom: 0;
+   padding-top: 10px;
+
+ }

@@ -71,10 +71,10 @@ const Footer = () => {
                 <a nohref="" title="Page not created yet.">Join the Refcode Extended Professional Network</a>
               </li>
               <li>
-                <a nohref="" title="Page not created yet.">Subscribe to our Newsletter</a>
+                <a href="/pages/subscribe.html">Subscribe to our Newsletter</a>
               </li>
               <li>
-                <a href="https://refcode.donorsecure.com/">Donate</a>
+                <a href="https://donate.tektontraining.org/116411-refcode">Donate</a>
               </li>
             </ul>
           </div>

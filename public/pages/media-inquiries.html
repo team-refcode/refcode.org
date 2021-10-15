@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Join the Refcode Community</title>
+  <title>Refcode Media Inquiry Contact Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/components.css">
-  <link rel="stylesheet" href="../css/join-us.css">
+  <link rel="stylesheet" href="../css/media.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Lexend+Deca&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
 
     gtag('config', 'G-SLMLQC1PX6');
   </script>
-</head>
+  </head>
 
 <body>
   <!-- main-banner 1.10 -->
@@ -32,16 +32,17 @@
           <a class="logo-link" href="/pages/index.html">
             <img class="logo" src="../img/logo.png" alt="logo">
           </a>
+
           <div class="toggle">
             <i class="fa fa-bars menu" aria-hidden="true"></i>
           </div>
           <ul class="main-banner-nav-list">
-            <li><a href="/pages/programs.html">Programs</a></li>
-            <li><a href="/pages/graduates-summer-2017.html">Graduates</a></li>
-            <li><a href="/volunteer-opportunities">Volunteer</a></li>
-            <li><a href="/pages/partner.html">Partner</a></li>
-            <li><a href="https://donate.tektontraining.org/116411-refcode" rel="external">Donate</a></li>
-            <li><a href="/pages/join-us.html" class="current">Join Us</a></li>
+              <li><a href="/pages/programs.html">Programs</a></li>
+              <li><a href="/pages/graduates-summer-2017.html">Graduates</a></li>
+              <li><a href="/volunteer-opportunities">Volunteer</a></li>
+              <li><a href="/pages/partner.html">Partner</a></li>
+              <li><a href="https://donate.tektontraining.org/116411-refcode" rel="external">Donate</a></li>
+              <li><a href="/pages/join-us.html">Join Us!</a></li>
           </ul>
         </div>
       </nav>
@@ -49,17 +50,60 @@
   </div>
   <main>
     <!-- Image Scrolling Banner v1.0 -->
-    <div class="image-banner image-banner-1 full-width-in-main-body">
-      <div class="banner-text">Join us!</div>
+    <div class="image-banner image-banner-1 full-width-in-main-body whitespace">
+      <div class="banner-text">Get in touch</div>
     </div>
-    <h2>Volunteers</h2>
-    <p>Sign up using the <a href="/pages/volunteer-application.html">volunteer application page</a>.</p>
 
-    <h2>Participants</h2>
-    <p>Join us for Refcode Lab every Wednesday night, 6-9pm in the Tekton space. Come to learn to code, learn computer skills, and to prepare for a career in software engineering. You can come in any Wednesday night, and bring a friend. Help us prepare for you by signing up using the form below:</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDd_0Wad-_YHqsnE4y7D2iN-BFrpqhlRJqUqNBmewGp-lF_Q/viewform?embedded=true" width="980" height="1496" frameborder="0" marginheight="0" marginwidth="0" class="apply-form">Loading…</iframe>
+    <div class="twoColumnGrid whitespace">
+      <section>
+        <h1>Media inquiries</h1>
+        <form action="https://formspree.io/brenton.strin.e+refcode@gmail.com" method="POST">
+            <label class="quickinput">Your Name<br /> <input type="text" name="name"></label>
+            <label class="quickinput">Media Organization Name<br /> <input type="text" name="orgname"></label>
+            <label class="quickinput">Your Email<br /> <input type="email" name="email"></label>
+            <label class="quickinput">Your Phone (optional)<br /> <input type="tel" name="phone"></label>
+            <label class="quicklabel" for="comment">What are you reaching out about?</label>
+            <textarea class="quicktextarea" name="comment" id="comment"></textarea>
+            <div class="quickinput">
+              <input style="padding: 1em 2.5em" type="submit" value="Send" class="button">
+            </div>
+            <style scoped>
+             .quickinput {
+               margin: 0 2em 2em 0;
+               display: inline-block;
+               font-family: "Lexend Deca", sans-serif;
+             }
 
+             .quicklabel {
+               margin: 0 2em 0 0;
+               display: block;
+               font-family: "Lexend Deca", sans-serif;
+             }
 
+             .quicktextarea {
+               margin: 0 2em 2em 0;
+               width: calc(100% - 4em - 2px);
+               height: 5em;
+               display: block;
+               padding: 1em;
+             }
+
+             .quickinput-right {
+               float: right;
+             }
+            </style>
+          </form>
+      </section>
+      <!-- navigation-component 1.1 -->
+      <aside class="aside-navigation aside-navigation-smaller">
+        <h2>Media Resources</h2>
+        <ul>
+          <li><a href='/pages/brand-and-style-guide.html'>Brand Assets and Style Guide</a></li>
+                          <li><a href='/pages/press-releases.html'>Press Releases</a></li>
+          <li><a href='/pages/media-inquiries.html' class="current">Media Inquiries</a></li>
+        </ul>
+      </aside>
+    </div>
   </main>
 
     <!-- footer 2.2.2 -->
@@ -165,15 +209,13 @@
 
 
 
-  <!-- image-carousel 1.2 -->
-  <script src="../js/image-carousel.js"></script>
-  <script src="../js/main-banner.js"></script>
-  <script src="../js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>
-    window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')
-  </script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/main.js"></script>
-</body>
-</html>
+    <script src="../js/main-banner.js"></script>
+    <script src="../js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')
+    </script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+  </html>

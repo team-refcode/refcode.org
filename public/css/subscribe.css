@@ -1,0 +1,12 @@
+.image-banner-1 {
+    background-image: url(../img/lots-of-help.jpg);
+    height: auto;
+    background-size: contain;
+    background-position-x: calc(((100vw - 980px)/2) + 980px - 400px);
+}
+
+@media only screen and (min-width: 1000px) {
+  .image-banner-1 {
+      background-size: contain;
+  }
+}

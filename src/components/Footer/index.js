@@ -76,6 +76,9 @@ const Footer = () => {
               <li>
                 <a href="https://donate.tektontraining.org/116411-refcode">Donate</a>
               </li>
+              <li>
+                <a href="https://merch.refcode.org/store">Buy Merch</a>
+              </li>
             </ul>
           </div>
 

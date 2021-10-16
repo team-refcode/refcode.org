@@ -16,6 +16,26 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+a[rel="external"],
+a[nohref] {
+  position: relative;
+}
+a[rel="external"]:hover::after {
+  content: "↗";
+  width: 0;
+  display: inline-block;
+  position: relative;
+  left: .2em;
+  font-size: .8em;
+}
+a[nohref]:hover::after {
+  content: "🚧";
+  width: 0;
+  position: relative;
+  display: inline-block;
+  left: .2em;
+  font-size: .8em;
+}
 
 /*
  * Remove text-shadow in selection highlight:

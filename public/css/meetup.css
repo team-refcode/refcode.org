@@ -1,5 +1,6 @@
 .image-banner-1 {
       background-image: url(../img/un.jpg);
+      background-position-y: -140px;
 }
 
 .image-banner-2 {

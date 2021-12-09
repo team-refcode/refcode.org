@@ -61,16 +61,16 @@
     <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-      #mc_embed_signup{clear:left; font:14px Lato,sans-serif; }
-      .mc-field-group.first,
-      .mc-field-group.last {
+      #mc_embed_signup {clear:left; font:14px Lato,sans-serif; }
+      #mc_embed_signup .mc-field-group.first,
+      #mc_embed_signup .mc-field-group.last {
         display: inline-block;
         width: 240px;
       }
-      .events {
+      #mc_embed_signup .events {
         padding-left: 1em;
       }
-      .events li input { padding-right: .5em }
+      #mc_embed_signup .events li input { padding-right: .5em }
     </style>
     <div id="mc_embed_signup">
       <form action="https://refcode.us13.list-manage.com/subscribe/post?u=16dcb41a262da70f1702ed7cd&amp;id=614a5a6800" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
@@ -80,13 +80,15 @@
               <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
               <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
             </div>
-            <div class="mc-field-group first">
-              <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
-              <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
-            </div>
-            <div class="mc-field-group last">
-              <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
-              <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+            <div>
+              <div class="mc-field-group first">
+                <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+              </div>
+              <div class="mc-field-group last">
+                <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
+                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+              </div>
             </div>
             <div class="mc-field-group size1of2 goesby">
               <label for="mce-MMERGE5">What should we call you (if not your first name) </label>

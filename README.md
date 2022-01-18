@@ -24,7 +24,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. All images will be broken when you do this. Read the next section for why.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -32,10 +32,9 @@ You will also see any lint errors in the console.
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It correctly bundles React in production mode and optimizes the build and images for the best performance. No images will work at all until this command is run. So if you run `npm start` without ever having run this command, all images will be broken. This command will also need to be run again to see any subsequent image changes. Added a new image? Run `npm run build`. Edited an image? Run `npm run build`. Some image isn't working in the dev environment?  Run `npm run build`!
 
 The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 

@@ -35,3 +35,14 @@
 .boxed-in p {
   margin: 40px 0;
 }
+
+.big {
+  font-size: 5em;
+}
+
+.imgcontain {
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+}
+.imgcontain img {width: 100%;}

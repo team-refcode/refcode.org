@@ -1,0 +1,37 @@
+.image-banner-1 {
+      background-image: url(../img/zoom-call.png);
+      background-position-y: -10px;
+      background-size: contain;
+}
+.banner-text h3 {
+  background-color: #00000066;
+}
+
+.circleImage {
+  max-width: 200px;
+}
+.speaker {
+  margin-bottom: 50px;
+}
+.speaker.twoColumnGrid {
+    grid-template-columns: 200px 40%;
+    gap: 50px;
+}
+@media(max-width: 500px){
+  .speaker.twoColumnGrid {
+      grid-template-columns: 100%;
+      gap: 10px;
+      text-align: center;
+  }
+}
+
+.boxed-in {
+  border: solid 1px #444;
+  margin: 10px 0;
+  padding: 50px 20%;
+  text-align: center;
+  min-height: 240px;
+}
+.boxed-in p {
+  margin: 40px 0;
+}

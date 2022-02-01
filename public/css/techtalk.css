@@ -46,3 +46,15 @@
   margin: auto;
 }
 .imgcontain img {width: 100%;}
+
+.aside-navigation.patch li > a {
+  display: inline-block;
+}
+.aside-navigation.small ul {
+  padding-left: 0;
+}
+.aside-navigation.small li {
+  font-size: 1em;
+  padding-top: 0;
+  padding-bottom: 20px;
+}

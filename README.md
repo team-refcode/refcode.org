@@ -1,10 +1,10 @@
 # Getting Started
 
 ## Prerequisites
-You will need *Node*, *Homebrew*, *Git* and *Git LFS* installed to complete setup. 
+You will need *Node*, *Homebrew*, *Git* and *Git LFS* installed to complete setup.
 
 ### Homebrew
-You can test to see if you already have Homebrew installed by running 
+You can test to see if you already have Homebrew installed by running
 
 ```
 brew -v
@@ -49,11 +49,11 @@ This project also requires [Git LFS](https://git-lfs.github.com/). You can insta
 brew install git-lfs
 ```
 
-## First-time Development Environmenet Setup
+## First-time Development Environment Setup
 
-Once all prerequisites are installed, you can set up the Refcode Development Environment. 
+Once all prerequisites are installed, you can set up the Refcode Development Environment.
 
-Clone the repository to a local directory and navigate to that directory with your terminal. 
+Clone the repository to a local directory and navigate to that directory with your terminal.
 
 Run the following commands:
 
@@ -66,7 +66,7 @@ Once you've run those two commands, the repository should be ready to run using 
 
 ## Available Scripts
 
-Once you are set up you will have the following scripts available for use. 
+Once you are set up you will have the following scripts available for use.
 
 ### Start the Development Environment
 
@@ -82,7 +82,7 @@ You'll use this command to spin up the development environment for doing work on
 
 ### Build the app similar to a production build
 
-This command does a full build and is sometimes necessary to get things configured correctly, e.g. when changes to images have been made, they won't show up in the Development Environment until after this command is run. 
+This command does a full build and is sometimes necessary to get things configured correctly, e.g. when changes to images have been made, they won't show up in the Development Environment until after this command is run.
 
 `npm run build`
 
@@ -94,7 +94,7 @@ This command does a full build and is sometimes necessary to get things configur
 
 
 # More information about Create-React-App
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The following is the standard information that every Create-React-App project contains. You usually won't need to refer to these links, but they may be helpful. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The following is the standard information that every Create-React-App project contains. You usually won't need to refer to these links, but they may be helpful.
 
 ## Learn More
 

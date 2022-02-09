@@ -1,7 +1,28 @@
 .image-banner-1 {
-      background-image: url(../img/zoom-call-1200.png);
+
+        /* Fallback */
+      background-image: url(../img/zoom-call-960.png);
+
+      /* Chrome/Edge/Opera/Samsung, Safari will fallback to this as well */
+      background-image: -webkit-image-set(url("../img/zoom-call-960.png") 1x, url("../img/zoom-call-1200.png") 2x);
+
+      /* Standard use */
+      background-image: image-set("../img/zoom-call-960.png" 1x, "../img/zoom-call-1200.png" 2x);
+
       background-position-y: -10px;
       background-size: contain;
+}
+@media(max-width: 1000px){
+  .image-banner-1 {
+    background-image: url(../img/zoom-call_square-960.png);
+    background-size: cover;
+  }
+}
+@media(max-width: 500px){
+  .image-banner-1 {
+    background-image: url(../img/zoom-call_square-640.png);
+    background-size: cover;
+  }
 }
 .banner-text h3 {
   background-color: #00000066;

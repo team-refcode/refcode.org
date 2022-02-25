@@ -137,8 +137,8 @@ textarea {
     main,
     footer {
       margin: 0;
-      padding: 0;
-      width: 100vw;
+      padding: 0 4vw;
+      width: 92vw;
     }
    }
 

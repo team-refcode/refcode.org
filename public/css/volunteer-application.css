@@ -7,11 +7,11 @@
 
 .boxed-in {
   border: solid 1px #444;
-  margin: 10px 0;
   padding: 50px 20%;
   text-align: center;
   min-height: 240px;
 }
 .boxed-in p {
-  margin: 40px 0;
+  align-self: center;
+  width: 100%;
 }

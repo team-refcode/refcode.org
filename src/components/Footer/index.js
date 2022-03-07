@@ -59,7 +59,7 @@ const Footer = () => {
                 <a href="/volunteer-opportunities">Volunteer Opportunities </a>
               </li>
               <li>
-                <a href="/pages/volunteer-application.html">Volunteer Application</a>
+                <a href="https://internal.refcode.org/volunteer">Volunteer Application</a>
               </li>
             </ul>
           </div>

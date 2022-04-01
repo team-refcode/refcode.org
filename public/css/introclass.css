@@ -8,3 +8,8 @@
       background-size: contain;
   }
 }
+@media only screen and (max-width:999px ) {
+  .mobile-only{
+    display: none;
+  }
+}

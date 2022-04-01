@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 const FilloutButton = () => {
   return (
-    <a className="button" href="/pages/volunteer-application.html">
+    <a className="button" href="https://internal.refcode.org/volunteer">
       Fill out volunteer form
     </a>
   )

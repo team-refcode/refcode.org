@@ -28,26 +28,115 @@
   <div class="main-banner-container">
     <header class="main-banner">
       <nav class="nav-container">
-        <div class="nav-content content-container">
-          <a class="logo-link" href="/pages/index.html">
-            <img class="logo" src="../img/logo.png" alt="logo">
-          </a>
-
-          <div class="toggle">
-            <i class="fa fa-bars menu" aria-hidden="true"></i>
-          </div>
-          <ul class="main-banner-nav-list">
-              <li><a href="/pages/programs.html">Programs</a></li>
-              <li><a href="/pages/graduates-summer-2017.html">Graduates</a></li>
-              <li><a href="/volunteer-opportunities">Volunteer</a></li>
-              <li><a href="/pages/partner.html">Partner</a></li>
-              <li><a href="https://donate.tektontraining.org/116411-refcode" rel="external" rel="external">Donate</a></li>
-              <li><a href="/pages/join-us.html">Join Us!</a></li>
+        <div class="pre-banner-container">
+          <ul class="main-banner-nav-list pre-banner small-banner main-width">
+              <li><a href="">Updates</a></li>
+              <li><a href="">Subscribe</a></li>
+              <li><a href="">Calendar</a></li>
+              <li><a href="">Merch</a></li>
+              <li><a href="">Donate</a></li>
           </ul>
         </div>
+        <div class="nav-content content-container main-width">
+            <a class="logo-link" href="/pages/index.html">
+              <img class="logo" src="../img/logo.png" alt="logo">
+            </a>
+            <div class="column">
+              <div class="row">
+                <div class="toggle">
+                  <i class="fa fa-bars menu" aria-hidden="true"></i>
+                </div>
+                <ul class="main-banner-nav-list">
+                    <li><a href="/pages/graduates-summer-2017.html" class="current">Community Programs</a></li>
+                    <li><a href="/volunteer-opportunities">Bootcamp</a></li>
+                    <li><a href="/pages/partner.html">Software Agency</a></li>
+                    <li><a href="https://donate.tektontraining.org/116411-refcode">Incubator</a></li>
+                    <li><a href="/pages/join-us.html">Volunteer</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                  <ul class="main-banner-nav-list under-banner small-banner">
+                      <li><a href="">Overview</a></li>
+                      <li><a href="">Intro Class</a></li>
+                      <li><a href="">Lab</a></li>
+                      <li><a href="">Meetup</a></li>
+                      <li><a href="">Mentorships</a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
       </nav>
     </header>
   </div>
+
+
+<style>
+.main-banner-container {
+  height: 99px;
+}
+.pre-banner-container {
+  border-bottom: solid 1px #cecece;
+}
+.pre-banner.pre-banner {
+  padding: 0;
+  border-bottom: 0;
+}
+.pre-banner.pre-banner li a {
+  padding: 5px 10px;
+  display: block;
+  color: #888;
+}
+
+.main-banner-nav-list.main-banner-nav-list li:hover a {
+  padding-bottom: 4px;
+}
+
+.pre-banner li {
+  border: solid 1px #cecece;
+  border-top: none;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  font-size: 12px;
+}
+.under-banner {
+  width: fit-content;
+  column-gap: 20px;
+}
+.under-banner.under-banner a {
+  color: #777;
+}
+.small-banner {
+    justify-content: flex-end;
+}
+.small-banner li {
+  font-size: 14px;
+  padding: 0 5px;
+}
+.main-banner-nav-list {
+  padding-bottom: 4px;
+  border-bottom: solid 1px #cecece;
+  align-self: flex-start;
+  padding-top: 4px;
+}
+.main-banner-nav-list li {
+  white-space: nowrap;
+}
+
+.main-banner-nav-list li a.current {
+}
+
+.main-banner-nav-list li {
+  padding: 0;
+}
+/*
+.nav-content {
+  border-right: solid 1px green;
+  border-left: solid 1px green;
+
+}
+*/
+</style>
+
   <main>
 
   <!-- image-carousel 1.4 -->

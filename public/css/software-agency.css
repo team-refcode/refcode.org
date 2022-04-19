@@ -5,10 +5,6 @@
   background-image: url("../img/health-toolkit-meeting.png");
 
 }
-.container.software-agency{
-  background:none;
-
-}
 .form {
 <style scoped>
  .quickinput {
@@ -34,8 +30,6 @@
  .quickinput-right {
    float: right;
  }
-</style>
-<style>
 
   .columns {
     display: grid;
@@ -61,5 +55,4 @@
     position: relative;
     top: -100px;
   }
-</style>
 }

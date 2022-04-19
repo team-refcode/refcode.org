@@ -5,6 +5,10 @@
   background-image: url("../img/health-toolkit-meeting.png");
 
 }
+.container.software-agency{
+  background:none;
+
+}
 .form {
 <style scoped>
  .quickinput {

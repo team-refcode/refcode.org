@@ -1,0 +1,65 @@
+.banner-text.software-agency {
+  font-size: 70px;
+}
+.image-banner.banner-software-agency{
+  background-image: url("../img/health-toolkit-meeting.png");
+
+}
+.container.software-agency{
+  background:none;
+
+}
+.form {
+<style scoped>
+ .quickinput {
+   margin: 0 2em 2em 0;
+   display: inline-block;
+   font-family: "Lexend Deca", sans-serif;
+ }
+
+ .quicklabel {
+   margin: 0 2em 0 0;
+   display: block;
+   font-family: "Lexend Deca", sans-serif;
+ }
+
+ .quicktextarea {
+   margin: 0 2em 2em 0;
+   width: calc(100% - 4em - 2px);
+   height: 5em;
+   display: block;
+   padding: 1em;
+ }
+
+ .quickinput-right {
+   float: right;
+ }
+</style>
+<style>
+
+  .columns {
+    display: grid;
+    grid-column-gap: 50px;
+    margin-bottom: 100px;
+  }
+  @media(min-width: 500px){
+    .columns {
+      grid-auto-flow: column;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media(max-width: 500px){
+      .columns {
+        grid-template-columns: 100%;
+        grid-auto-flow: unset;
+      }
+  }
+  .columns > h3:first-child {
+    margin-top: 0;
+  }
+  .fragment-destination {
+    position: relative;
+    top: -100px;
+  }
+</style>
+}

@@ -167,7 +167,7 @@ a.button {
   padding: 0;
 }
 .stuck .main-banner-nav-list li {
-  padding: 11px 20px;
+  padding: 11px 15px;
   transition: all 900ms ease-in;
 }
 .stuck .main-banner .toggle {

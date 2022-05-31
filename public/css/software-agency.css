@@ -1,12 +1,10 @@
 .banner-text.software-agency {
   font-size: 70px;
 }
+
 .image-banner.banner-software-agency{
   background-image: url("../img/health-toolkit-meeting.png");
-
 }
-.form {
-<style scoped>
  .quickinput {
    margin: 0 2em 2em 0;
    display: inline-block;

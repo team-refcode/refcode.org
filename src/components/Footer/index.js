@@ -94,7 +94,7 @@ const Footer = () => {
 
         <div className="footer-main-centered">
           <a href="https://tektontraining.org/" className="no-hover"><img src="../img/tekton_logo.png" className="footer-tekton-logo"/></a>
-          <p>Refcode is a program of <a className="underline-footer" href="https://tektontraining.org/">Tekton Career Training</a>, a 501(c)3 nonprofit.</p>
+          <p>Refcode is a program of <a className="underline-footer" href="https://tektontraining.org/our-program/refcode-is-a-program-of-tekton/">Tekton Career Training</a>, a 501(c)3 nonprofit.</p>
         </div>
       </footer>
     </div>

@@ -110,18 +110,29 @@
     <div class="banner-text programs">Partner with us</div>
   </div>
 
-  <h2>Reach out about a partnership</h2>
+  <h2>Reach out about a partnership</h2> 
   <section>
     <div class="columns">
-      <p>Join the list of organizations that have partnered with Refcode to help realize our vision of connecting refugees and immigrants to software engineering careers. There are many ways that you can partner with us, but we are always open to new ideas, so please get in touch!</p>
+      <div class="partnership-levels">
+        <p>Join the list of organizations that have partnered with Refcode to help realize our vision of connecting refugees and immigrants to software engineering careers. There are many ways that you can partner with us, but we are always open to new ideas, so please get in touch!</p>
+        <h2>Levels of Partnership</h2>
+        <ol>
+          <li>Send Volunteers!</li>
+          <li>Host our “dip jar” for a month</li>
+          <li>Donate Laptops</li>
+          <li>Sponsor a Refcode Bootcamp student</li>
+          <li>Hire a Refcode graduate</li>
+          <li>Host an apprenticeship</li>
+        </ol>
+      </div>
       <form action="https://formspree.io/brenton.strin.e+refcode@gmail.com" method="POST">
         <label class="quickinput">Name<br /> <input type="text" name="name"></label>
         <label class="quickinput">Your Email<br /> <input type="email" name="email"></label>
         <label class="quicklabel" for="comment">What are you reaching out about?</label>
         <textarea class="quicktextarea" name="comment" id="comment"></textarea>
         <div class="quickinput quickinput-right">
-          <input style="padding: 1em 2.5em" type="submit" value="Send" class="button">
-        </div>
+          <input style="padding: 1em 2.5em" type="submit" value="Send" class="button">   
+        </div>   
         <style scoped>
          .quickinput {
            margin: 0 2em 2em 0;
@@ -149,14 +160,11 @@
         </style>
       </form>
     </div>
-  </section>
-
+  </section>  
   <style>
-
     .columns {
       display: grid;
-      grid-column-gap: 50px;
-      margin-bottom: 100px;
+      grid-column-gap: 50px;    
     }
     @media(min-width: 500px){
       .columns {
@@ -176,6 +184,10 @@
     .fragment-destination {
       position: relative;
       top: -100px;
+    }
+    .partnership-levels{
+      margin: auto;
+      margin-bottom: 100px;
     }
   </style>
   </main>

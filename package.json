@@ -10,7 +10,6 @@
     "npm": "^8.11.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "5.0.0",
     "sharp": "^0.30.5",
     "web-vitals": "^0.2.4"
   },
@@ -41,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1"
   }
 }

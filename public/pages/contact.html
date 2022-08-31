@@ -50,40 +50,49 @@
       </header>
     </div>
     <main>
-      <section class="student threeColumnGrid">
-        <aside class="aside-navigation aside-navigation-smaller">
-          <ul>
-            <li><a href='/pages/team.html'>Refcode Team</a></li>
-            <li><a href='/pages/founder.html' class="current">Meet the Founder</a></li>
-            <li><a href='/our-story'>Refcode History</a></li>
-          </ul>
-        </aside>
-        <div class="student-photo">
-          <img src="../img/brenton_1.jpg" />
-          <p>Brenton Strine has over 20 years of experience writing code, most of that building enterprise websites for many millions of users at companies like NASA, Amazon, and Mailchimp. He has been deeply involved with non-traditional software engineering education, as a learner, a teacher, a creator, and an innovator.</p>
-          <p><a href="/pages/contact.html">Contact Brenton</a></p>
-        </div>
-        <div class="text-column">
-          <h1 class="student-name">Brenton Strine</h1>
-          <h2 class="student-name">Refcode Founder, Director</h2>
-          <ul class="student-links">
-            <li><a href="https://www.linkedin.com/in/brentonstrine" rel="external">LinkedIn Profile</a></li>
-            <li><a href="/pages/contact.html">Contact Brenton</a></li>
-          </ul>
-          <p>Brenton Strine knows firsthand the life-transforming power of a career in software engineering. He never studied computer science in school or took any programming classes, yet throughout high school and college he taught himself how to build websites in his spare time. He found, after graduating college, that his Philosophy and English degrees weren't very employable, but that his idle hobby perfectly qualified him to become a Web  Developer.</p>
-          <p>He founded Refcode in 2017 after moving to Atlanta and learning about the population of refugees who had been resettled in Clarkston from all over the world. People who were displaced from their homes and left behind distinguished backgrounds, education, and careers, and are hungry and motivated to start fresh and move beyond the menial work at the chicken factory.</p>
-          <p>Brenton is passionate about teaching and believes that foundational skills in communication, creativity, and problem solving are far more important to long-term success than understanding programming syntax or the latest programming trend.</p>
-          <p>Learn more about Brenton’s story in <a href="https://tyrannosaurustech.com/podcast/redefining-the-refugee-story-with-brenton-strine-of-refcode/">this podcast interview</a> by The Digital Footprint.</p>
-          <p>Learn more about the founding of Refcode on the <a href="/pages/team.html">Our Team</a> page.
-        </div>
-      </section>
-      <section style="margin-left: 250px;">
-        <h3>Redefining the Refugee Story with Brenton Strine</h3>
-        <p>Richard Simms, co-founder of <a href="https://tyrannosaurustech.com/" rel="external">Tyrannosaurus Tech</a> and host of <a href="https://tyrannosaurustech.com/podcast/redefining-the-refugee-story-with-brenton-strine-of-refcode/" rel="external">The Digital Footprint</a> podcast interviews Brenton.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/W6lNOtfNYF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+      <div class="twoColumnGrid whitespace">
+        <section>
+          <h1>Contact Refcode Staff</h1>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xbjblekn" method="POST">
+              <label class="quickinput">Your Name<br /> <input type="text" name="name"></label>
+              <label class="quickinput">Organization Name (optional)<br /> <input type="text" name="orgname"></label>
+              <label class="quickinput">Your Email<br /> <input type="email" name="email"></label>
+              <label class="quickinput">Your Phone (optional)<br /> <input type="tel" name="phone"></label>
+              <label class="quicklabel" for="comment">What are you reaching out about?</label>
+              <textarea class="quicktextarea" name="comment" id="comment"></textarea>
+              <div class="quickinput">
+                <input style="padding: 1em 2.5em" type="submit" value="Send" class="button">
+              </div>
+              <style scoped>
+               .quickinput {
+                 margin: 0 2em 2em 0;
+                 display: inline-block;
+                 font-family: "Lexend Deca", sans-serif;
+               }
 
-  </main>
+               .quicklabel {
+                 margin: 0 2em 0 0;
+                 display: block;
+                 font-family: "Lexend Deca", sans-serif;
+               }
+
+               .quicktextarea {
+                 margin: 0 2em 2em 0;
+                 width: calc(100% - 4em - 2px);
+                 height: 5em;
+                 display: block;
+                 padding: 1em;
+               }
+
+               .quickinput-right {
+                 float: right;
+               }
+              </style>
+            </form>
+        </section>
+      </div>
+    </main>
 
 
   <!-- footer 2.2.2 -->

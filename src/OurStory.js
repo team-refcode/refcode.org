@@ -10,7 +10,7 @@ function OurStory(){
         <aside class="aside-navigation aside-navigation-smaller">
           <ul>
             <li><a href='/pages/team.html'>Our Team</a></li>
-            <li><a href='/pages/founder.html'>Our Founder</a></li>
+            <li><a href='/pages/founder.html'>Meet the Founder</a></li>
             <li><a href='/our-story' class="current">Our History</a></li>
           </ul>
         </aside>

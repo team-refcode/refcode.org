@@ -6,5 +6,5 @@ $(window).click(() => {
 
 $('.main-banner .toggle').click((e) => {
   e.stopPropagation();
-  navList.addClass('open');
+  navList.toggleClass('open');
 });

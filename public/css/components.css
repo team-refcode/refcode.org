@@ -182,27 +182,29 @@ a.button {
 	}
 }
 
-/* main-banner 1.13 */
+/* main-banner 2 */
+
+/* note: this entire component is throwaway code. don't try to edit it, just trash it and start over */
 .stuck.main-banner-container,
 .stuck .main-banner {
   height: 50px;
-  transition: all 900ms ease-in;
+  transition: all 100ms ease-in;
 }
 .stuck .logo-link {
   width:40px;
   padding: 5px 15px;
-  transition: all 300ms ease-in;
+  transition: all 30ms ease-in;
 }
 .stuck .main-banner-nav-list {
   padding: 0;
 }
 .stuck .main-banner-nav-list li {
-  padding: 11px 15px;
-  transition: all 900ms ease-in;
+  padding: 11px 20px;
+  transition: all 100ms ease-in;
 }
 .stuck .main-banner .toggle {
   height: 50px;
-  transition: all 900ms ease-in;
+  transition: all 100ms ease-in;
 }
 .main-banner-container {
   height: 93px;
@@ -233,7 +235,6 @@ a.button {
   position: absolute;
   z-index: 1;
   width: 100%;
-
 }
 .nav-content {
   max-width: 980px;
@@ -245,12 +246,14 @@ a.button {
 
 .main-banner-nav-list {
   padding: 10px;
-  grid-area: main-banner-nav-list;
   margin: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
+}
+ .primary-links {
+  grid-area: main-banner-nav-list;
 }
 
 .main-banner-nav-list li {
@@ -266,12 +269,13 @@ a.button {
     padding-right: 0;
   }
 }
+
 .main-banner-nav-list li a {
   text-decoration: none;
   padding-bottom: 5px;
   color: #333;
-  white-space: nowrap;
 }
+
 .main-banner-nav-list a.current {
   border-bottom: 1px solid #444;
 }
@@ -338,6 +342,143 @@ a.button {
 
   .active {
     display: block;
+  }
+}
+@media (max-width: 768px) {
+  .nav-container.nav-container {
+    position: static;
+  }
+  .nav-content.nav-content.nav-content {
+    margin: 0;
+    width: 100%;
+    grid-template-areas:
+    "logo-link toggle"
+    "main-banner-nav-list main-banner-nav-list";
+  }
+
+  .main-banner-nav-list.small-banner.open {
+    margin: 0;
+    padding: 2em 0;
+    width: 40vw;
+    left: 0;
+    right: unset;
+    z-index: 100;
+  }
+  .main-banner-nav-list.big-banner.open {
+    margin: 0;
+    padding: 2em 0;
+    width: 60vw;
+    right: 4vw;
+    padding-left: 40vw;
+    z-index: 10;
+  }
+  .main-banner-nav-list.open {
+    margin-top: 43px;
+    line-height: 1.5em;
+  }
+  .main-banner-nav-list.open li {
+    padding: 0;
+    font-size: 15px;
+  }
+  .main-banner-nav-list.open a {
+    padding: .5em;
+    font-size: 15px;
+    display: block;
+  }
+
+  .main-banner-nav-list a.current.current {
+    border: none;
+  }
+
+}
+@media (min-width: 768px) {
+  .nav-content.nav-content {
+    grid-template-columns: 90px auto;
+    background-color: white;
+  }
+  .main-banner-container {
+    height: 99px;
+  }
+  .pre-banner-container {
+    border-bottom: solid 1px #cecece;
+    margin-left: calc((50% - 490px) * -1);
+    margin-right: 0;
+  }
+  .pre-banner.pre-banner {
+    padding: 0;
+    border-bottom: 0;
+    width: calc(100% - ((50% - 490px) * 2));
+    margin-left: calc(50vw - 490px);
+  }
+  .pre-banner.pre-banner li a {
+    padding: 5px 10px;
+    display: block;
+    color: #888;
+  }
+
+  .main-banner-nav-list.main-banner-nav-list li:hover a {
+    padding-bottom: 4px;
+  }
+
+  .pre-banner li {
+    border: solid 1px #cecece;
+    border-top: none;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    font-size: 12px;
+  }
+  .under-banner {
+    width: fit-content;
+    column-gap: 20px;
+  }
+  .under-banner.under-banner a {
+    color: #777;
+  }
+  .small-banner {
+      justify-content: flex-end;
+  }
+  .small-banner li {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  .main-banner-nav-list {
+    padding-bottom: 4px;
+    align-self: flex-start;
+    padding: 4px 0;
+
+    /*border-bottom: solid 1px #cecece;*/
+  }
+  .main-banner-nav-list li {
+    white-space: nowrap;
+  }
+
+  .main-banner-nav-list li a.current {
+  }
+
+  .main-banner-nav-list li {
+    padding: 0;
+  }
+  .stuck .main-banner-nav-list.small-banner {
+
+  }
+  .stuck .main-banner-nav-list.pre-banner li {
+    padding: 0;
+  }
+  .stuck .main-banner-nav-list.pre-banner a {
+    padding: 0 10px;
+  }
+
+  .stuck .main-banner-nav-list.big-banner li {
+    padding: 5px 0 0 0;
+    background-color: white;
+    font-size: 14px;
+  }
+  .stuck.stuck .logo-link {
+    width: 25px;
+    padding: 0 15px;
+  }
+  .logo-link.logo-link {
+    width: 68px;
   }
 }
 

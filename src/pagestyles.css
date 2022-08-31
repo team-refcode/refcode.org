@@ -1,0 +1,68 @@
+@media only screen and (min-width: 600px) {
+  .longcopy p, .longcopy h1 {
+    max-width: 500px;
+    margin-left: 250px;
+  }
+
+  .longcopy figure {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 750px;
+  }
+}
+
+.longcopy figcaption {
+  font-style: italic;
+}
+
+.text-column { margin-left: 30px;}
+.text-column p{ margin-left: 0; margin-right: 0}
+
+@media only screen and (min-width: 800px) {
+  .threeColumnGrid .student-photo {
+    grid-area: imageArea;
+    margin-top: 1.5em;
+  }
+  .threeColumnGrid .text-column {
+    grid-area: textArea;
+  }
+  .threeColumnGrid .aside-navigation {
+    grid-area: navArea;
+    margin-top: 1.5em;
+  }
+  .threeColumnGrid {
+    display: grid;
+    grid-template-areas: "imageArea textArea navArea";
+  }
+  .second-content {
+    margin-left: 250px;
+  }
+  .text-column figure {
+    margin-left: -250px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  img {
+    max-width: 600px;
+  }
+}
+
+
+
+/* threeColumnGrid 1.0 */
+.threeColumnGrid {
+    display: grid;
+    grid-template-columns: 200px 400px 1fr;
+    gap: 20px
+}
+
+.threeColumnGrid img {
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .threeColumnGrid {
+      grid-template-columns: 100%;
+    }
+}

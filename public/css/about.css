@@ -1,0 +1,30 @@
+
+.text-column { margin-left: 30px;}
+.text-column p{ margin-left: 0; margin-right: 0}
+
+@media only screen and (min-width: 800px) {
+  .threeColumnGrid .student-photo {
+    grid-area: imageArea;
+    margin-top: 1.5em;
+  }
+  .threeColumnGrid .text-column {
+    grid-area: textArea;
+  }
+  .threeColumnGrid .aside-navigation {
+    grid-area: navArea;
+    margin-top: 1.5em;
+  }
+  .threeColumnGrid {
+    display: grid;
+    grid-template-areas: "imageArea textArea navArea";
+  }
+  .second-content {
+    margin-left: 250px;
+  }
+}
+@media only screen and (max-width: 800px) {
+
+  img {
+    max-width: 600px;
+  }
+}

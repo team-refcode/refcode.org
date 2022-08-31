@@ -80,7 +80,7 @@ a.button {
     text-decoration: none;
 }
 
-/* navigation-component 1.2 */
+/* navigation-component 1.3 */
 .aside-navigation > ul {
   margin-top: 0;
 }
@@ -113,6 +113,18 @@ a.button {
   color: #9e9e9e;
 }
 
+.aside-navigation-smaller li {
+  padding: 0;
+}
+
+.aside-navigation-smaller a {
+  font-size: 12px;
+}
+
+
+
+
+
 /* twoColumnGrid 1.3 */
 .twoColumnGrid {
     display: grid;
@@ -126,6 +138,23 @@ a.button {
 
 @media(max-width: 800px){
     .twoColumnGrid {
+      grid-template-columns: 100%;
+    }
+}
+
+/* threeColumnGrid 1.0 */
+.threeColumnGrid {
+    display: grid;
+    grid-template-columns: 200px 400px 1fr;
+    gap: 20px
+}
+
+.threeColumnGrid img {
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .threeColumnGrid {
       grid-template-columns: 100%;
     }
 }

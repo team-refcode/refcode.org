@@ -65,16 +65,23 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3>Supporters</h3>
+            <h3>Connect</h3>
             <ul className="main_column">
               <li>
-                <a nohref="" title="Page not created yet.">Join the Refcode Extended Professional Network</a>
+                <a href="contact.html">Contact Form</a>
               </li>
               <li>
                 <a href="/pages/subscribe.html">Subscribe to our Newsletter</a>
               </li>
               <li>
-                <a href="https://donate.tektontraining.org/116411-refcode" rel="external">Donate</a>
+              <li><a href="https://donate.tektontraining.org/116411-refcode" rel="external">Donate</a></li>
+            <li>
+              <a href="https://www.facebook.com/refcodecommunity">Facebook</a> /
+              <a href="https://www.instagram.com/refcodecommunity">Instagram</a> /
+              <a href="https://twitter.com/refcode_tweets">Twitter</a> /
+              <a href="https://www.linkedin.com/school/refcode/">LinkedIn</a> /
+              <a href="https://www.youtube.com/channel/UCH_hIEFPTFJ7RzptXwdTwWA">YouTube</a>
+            </li>
               </li>
               <li>
                 <a href="https://merch.refcode.org/store" rel="external">Buy Merch</a>

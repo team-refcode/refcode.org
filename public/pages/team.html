@@ -51,33 +51,185 @@
     </div>
     <main>
       <style>
-      
+.team img {
+  width: 200px
+}
+.people {
+  margin: 0 -20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.person {
+  display: inline-block;
+  margin: 0 20px 40px 20px;
+  width: 200px;
+}
+.person p {
+  margin: 1em 0;
+}
+.person h4,
+.person h5 { margin: .5em 0;}
+.person > a {
+  color: #222;
+  text-decoration: none;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 640px 330px;
+}
+
+@media only screen and (max-width: 800px) {
+  .split {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .team-staff {margin-top: -4em;}
+  .aside-navigation {margin-top: 1.5em;}
+}
+
       </style>
-      <section>
+      <div class="split">
+        <div>
+          <h1>The Refcode Team</h1>
+        </div>
+        <aside class="aside-navigation aside-navigation-smaller">
+          <ul>
+            <li><a href='/pages/team.html' class="current">Our Team</a></li>
+            <li><a href='/pages/founder.html'>Our Founder</a></li>
+            <li><a href='/our-story'>Our History</a></li>
+          </ul>
+        </aside>
+      </div>
+      <section class="team team-staff">
         <h2>Staff</h2>
-        <div class="person">
-          <img src="../img/brenton_square.png">
-          <div>
-            <h4>Advisor</h4>
-            <h5>Name_Name</h5>
+        <div class="people">
+          <div class="person">
+            <a href="/pages/founder.html">
+              <img src="../img/brenton_square.png">
+              <div>
+                <h4>Founder, Director</h4>
+                <h5>Brenton Strine</h5>
+                <p>(Volunteer)</p>
+              </div>
+            </a>
+          </div>
+          <div class="person">
+            <a href="https://www.linkedin.com/in/malek-alarmash/">
+              <img src="../img/malek_square.png">
+              <div>
+                <h4>Program Manager</h4>
+                <h5>Malek Alarmash</h5>
+              </div>
+            </a>
+          </div>
+          <div class="person">
+            <a href="https://www.linkedin.com/in/lucastkeller/">
+              <img src="../img/luke_square.jpg">
+              <div>
+                <h4>Executive Director of Tekton</h4>
+                <h5>Luke Keller</h5>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
-        <section>
+        <section class="team">
           <h2>Board of Advisors</h2>
-          <div class="person">
-            <img src="../img/brenton_square.png">
-            <div>
-              <h4>Advisor</h4>
-              <h5>Name_Name</h5>
+          <div class="people">
+            <div class="person">
+              <a href="https://www.linkedin.com/in/yohannes-b-3a2baa165/">
+                <img src="../img/yohannes_square.jpg">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Yohannes Bahta</h5>
+                  <p>Sr. Software Engineer, Home Depot</p>
+                  <p>Refcode Graduate</p>
+                </div>
+              </a>
             </div>
-          </div>
-          <div class="person">
-            <img src="../img/brenton_square.png">
-            <div>
-              <h4>Advisor</h4>
-              <h5>Name_Name</h5>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/lauraggreen/">
+                <img src="../img/laura_square.jpg">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Laura Green</h5>
+                  <p>Non Profit Strategist</p>
+                  <p>Former Tekton Executive Director</p>
+                </div>
+              </a>
+            </div>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/kyliestradley/">
+                <img src="../img/kylie_square.png">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Kylie Stradley</h5>
+                  <p>Security Software Engineer, GitHub</p>
+                  <p>&nbsp;</p>
+                </div>
+              </a>
+            </div>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/morganjlopes/">
+                <img src="../img/morgan_square.jpg">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Morgan Lopes</h5>
+                  <p>CTO, New Story Charity</p>
+                  <p>Author of Code School Book</p>
+                </div>
+              </a>
+            </div>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/hwstovall/">
+                <img src="../img/harrison_square.png">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Harrison Stovall</h5>
+                  <p>Staff Engineer, Greenlight</p>
+                  <p>&nbsp;</p>
+                </div>
+              </a>
+            </div>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/mustafaalsaeedi/">
+                <img src="../img/mustafa_square.jpg">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Mustafa Alsaeedi</h5>
+                  <p>Sr. Data Analyst, Cox Communications</p>
+                  <p>Former Refcode Program Manager, Refcode Graduate</p>
+                </div>
+              </a>
+            </div>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/lanehenderson/">
+                <img src="../img/lane_square.jpg">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Lane Henderson</h5>
+                  <p>Advertising Account Manager, GTM</p>
+                  <p>Former Corporate Relations, MUST Ministries</p>
+                </div>
+              </a>
+            </div>
+            <div class="person">
+              <a href="https://www.linkedin.com/in/nicole-williams-9a13b350/">
+                <img src="../img/nicole_square.jpg">
+                <div>
+                  <h4>Advisor</h4>
+                  <h5>Nicole Williams</h5>
+                  <p>Sr. Tax Manager, GHJ</p>
+                  <p>Chair of the Board, Atlanta Hospitality House</p>
+                </div>
+              </a>
             </div>
           </div>
         </section>

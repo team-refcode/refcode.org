@@ -20,7 +20,7 @@ let sourceSets = {}
       let fileName = path.parse(file).name
       let fileExt = path.parse(file).ext
       let sizes = [320, 640, 960, 1200, 1800, 2400];
-      //console.log("Optimizing " + fileName);
+      console.log("Optimizing " + fileName);
 
       if(!sourceSets[fileName]){
         let destPath = `public/img/${file}`

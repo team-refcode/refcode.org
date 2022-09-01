@@ -134,6 +134,7 @@ just put it before the other scripts in the bottom of the page:
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+  <script src="../js/createSrcSet.js"></script>
 </body>
 ```
 

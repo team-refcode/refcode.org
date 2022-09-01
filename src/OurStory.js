@@ -23,7 +23,7 @@ function OurStory(){
             After a lot of planning and thinking, a pilot program was put together to teach the first cohort in Summer 2017.
           </p>
           <figure>
-            <img src={Teaching_4} alt={'Brenton is teaching'} className="storyImage"/>
+            <img data-src={Teaching_4} alt={'Brenton is teaching'} className="storyImage"/>
             <figcaption>
               Brenton teaching in front of a monitor propped up on chairs.
             </figcaption>
@@ -61,7 +61,7 @@ function OurStory(){
             (By the way, if you’re interested in that, please reach out <a href="/pages/partner.html#reach-out">here</a>!)
           </p>
           <figure>
-            <img src={brenton_speaking} alt={"First meetup"} className="storyImage"/>
+            <img data-src={brenton_speaking} alt={"First meetup"} className="storyImage"/>
             <figcaption>
               A graduation ceremony
             </figcaption>
@@ -88,7 +88,7 @@ function OurStory(){
             Delayed a bit by the pandemic, this partnership will give these two organizations a chance to feel out what working together can look like and whether the collaboration makes sense in the long term.
           </p>
           <figure>
-            <img src={PXL_20210527_210141107} alt={"First meetup"} className="storyImage"/>
+            <img data-src={PXL_20210527_210141107} alt={"First meetup"} className="storyImage"/>
             <figcaption>
               Refcode’s first meetup in their new location at the Tekton space.
             </figcaption>

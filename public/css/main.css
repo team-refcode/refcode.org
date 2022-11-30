@@ -344,6 +344,9 @@ p {
   font-size: 14px;
   color: #000;
 }
+.readmaxwith {
+  max-width: 560px;
+}
 @media only screen and (max-width: 1000px) {
   p {
     margin: 1em;

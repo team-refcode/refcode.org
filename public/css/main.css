@@ -343,6 +343,7 @@ p {
   font-family: Lato, sans-serif;
   font-size: 14px;
   color: #000;
+  max-width: 560px;
 }
 .readmaxwith {
   max-width: 560px;

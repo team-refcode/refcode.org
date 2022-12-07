@@ -1,8 +1,16 @@
 .image-banner-1 {
       background-image: url(../img/un-2.jpg);
 }
+.image-banner-meetup {
+      background-image: url(../img/meetup-a.jpg);
+      background-position-y: -90px;
+}
 @media only screen and (min-width: 1000px) {
   .image-banner-1 {
+        background-size: contain;
+  }
+
+  .image-banner-meetup {
         background-size: contain;
   }
 }

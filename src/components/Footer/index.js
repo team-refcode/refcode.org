@@ -73,7 +73,6 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/school/refcode/">LinkedIn</a> /
                 <a href="https://www.youtube.com/channel/UCH_hIEFPTFJ7RzptXwdTwWA">YouTube</a>
               </li>
-              <li><a href="https://merch.refcode.org/store" rel="external">Buy Merch</a></li>
             </ul>
           </div>
 

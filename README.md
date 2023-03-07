@@ -97,7 +97,12 @@ This repository uses an image optimizer that automatically creates multiple size
 
 In order to have an image use this, the page must include the `createSrcSet.js` script, and the image must use the attribute `data-src` instead of `src`. For example, instead of `<img src="../img/myImage.jpg">` it should be `<img data-src="../img/myImage.jpg">`.
 
-This won't work until `npm run build` is run, which will look through all images and create the multiple sizes. If there is ever an error running this script, it may be due to a non-supported file (such as `.DS_Store`) accidentally being placed in the images folder.
+## Problems
+This won't work until `npm run build` is run, which will look through all images and create the multiple sizes. If there is ever an error running this script, it may be due to a non-supported file (such as `.DS_Store`) accidentally being placed in the /img folder.
+
+Note, images should be placed in `/img` not `/public/img`, which is the output.
+
+Images that have a `/` or `.` character in them will break this script.
 
 
 # More information about Create-React-App

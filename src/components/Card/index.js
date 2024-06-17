@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { PillButton, FilloutButton} from '../Buttons'
+import { PillButton } from '../Buttons'
 import data from '../data'
 
 const Card = ({ card }) => {
@@ -12,7 +12,6 @@ const Card = ({ card }) => {
     </div>
     <div className='card-pills'>
       {card.categories.map((category, index) => <PillButton  key={index} text={category} backgroundColor={ findBackgroundColor(category)}/>)}
-      {card.skills.map((skill,index) => <PillButton key={index} text={skill} backgroundColor = { data.skills.backgroundColor }/>)}
     </div>
     <div className="card-body">
       <div className='description'>
@@ -25,9 +24,6 @@ const Card = ({ card }) => {
          {card.requirements}
         </p>
       </div>
-    </div>
-    <div className='card-footer'>
-      <FilloutButton/>
     </div>
   </div>
   )

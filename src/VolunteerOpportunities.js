@@ -1,23 +1,11 @@
-import { useState } from 'react'
 import './App.css';
 import Card from  './components/Card'
 import ImageBanner from './components/ImageBanner/ImageBanner'
-import { PillButton } from './components/Buttons'
 import data from './components/data'
 
 function App() {
 
-  const [cards, setCards ] = useState(data.cards)
-
-  const filterByCategory = (text) =>{
-   let filtered = data.cards.filter(card => card.categories.includes(text))
-   setCards(filtered)
-  }
-
-  const filterBySkill = (text) =>{
-    let filtered = data.cards.filter(card => card.skills.includes(text))
-    setCards(filtered)
-   }
+  const cards = data.cards
 
   return (
   <div className="App-container">
@@ -26,31 +14,30 @@ function App() {
         <div className="volunteer-text">
           <h2>Volunteer Opportunities</h2>
           <p>Volunteers are the reason that any of the Refcode students succeed--both in the short term and in the long term. For every student who graduates, there is a whole team of volunteers who gave freely of their time, knowledge, expertise, and social capital in order to improve the life of someone who came into this country at a disadvantage.</p>
-          <p>Use the interactive tool below to learn more about different ways that you can help out. </p>
-          <p>All volunteers must go through an application, screening, and orientation process before officially joining up, but we have worked hard to streamline the process and avoid wasting your valuable time. You will fill out an application form to give us a little more information about you and your background, you will submit or transfer a background check, and participate in an orientation and any applicable onboarding trainings.</p>
+          <p>All volunteers are screened and complete volunteer orientation and training process prior to working with students.</p>
         </div>
-    </div>
-    <div className="App">
-      <div>
-        <div className='filter-wrapper'>
-          <h2>Filter roles by category:</h2>
-          <div className="buttons-wrapper">
-            {data.categories.map((category, index) => <PillButton key={index} text={category.text} backgroundColor={category.backgroundColor} clickHandler = { filterByCategory }/>)}
-          </div>
+      <div className="App">
+        <h2>Volunteer Roles</h2>
+        <div className='grid'>
+          { cards.map( (card, index) => <Card key={index} card = { card }/>)}
         </div>
-        <div  className='filter-wrapper' >
-          <h2>Filter roles by required skills or resources:</h2>
-          <div className="buttons-wrapper">
-            {data.skills.texts.map((text, index) => <PillButton key={index} text={text} backgroundColor={data.skills.backgroundColor} clickHandler = { filterBySkill }/>)}
+        <form className="volunteer-form" action="https://formspree.io/f/xxxxxx" method="POST">
+          <h2>Volunteer Interest Form</h2>
+          <label className="quickinput">Name<br /> <input type="text" name="name" /></label>
+          <label className="quickinput">Email<br /> <input type="email" name="email" /></label>
+          <label className="quickinput">Phone (optional)<br /> <input type="tel" name="phone" /></label>
+          <label className="quicktextarea">How did you hear about Refcode?<br /> <textarea name="referred-by" /></label>
+          <label className="quicktextarea">If not in the Atlanta/Clarkston area, where are you located?<br /> <textarea name="location" /></label>
+          <label className="quicktextarea">What motivates you to volunteer at Refcode? What background do you have that would be useful? Anything else you want to tell us, put it here!<br /> <textarea name="about" /></label>
+          <label className="quicktextarea">What technical skills do you have? (You may want to share education, work experience, projects, etc.)<br /> <textarea name="tech-skills" /></label>
+          <label className="quicktextarea">Are you able to come to Clarkston to volunteer in person?<br /> <textarea name="in-person" /></label>
+          <div>
+            <input type="submit" value="Submit" className="button" />
           </div>
-      </div>
-      </div>
-
-      <div className='grid'>
-        { cards.map( (card, index) => <Card key={index} card = { card }/>)}
+        </form>
       </div>
     </div>
-    </div>
+  </div>
   );
 }
 

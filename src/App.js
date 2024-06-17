@@ -17,6 +17,9 @@ export default function App() {
           <Route exact path="/apply" render={() => {
             window.location.href="/pages/apply.html"
             }} />
+          <Route exact path="/pages/contact" render={() => {
+            window.location.href="/pages/contact.html"
+            }} />
           <Route path="/volunteer-opportunities">
             <VolunteerOpportunities />
           </Route>

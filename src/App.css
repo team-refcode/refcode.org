@@ -38,3 +38,36 @@
 .storyImage{
   width: 100%;
 }
+.quickinput {
+  margin: 0 2em 2em 0;
+  display: inline-block;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.quicklabel {
+  margin: 0 2em 0 0;
+  display: block;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.quicktextarea {
+  margin: 0 2em 2em 0;
+  display: block;
+  font-family: "Lexend Deca", sans-serif;
+  width: 100%;
+}
+
+.quicktextarea > textarea {
+  width: 100%;
+}
+
+.volunteer-form {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.quickinput-right {
+  float: right;
+}

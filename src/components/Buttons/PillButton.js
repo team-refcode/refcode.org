@@ -7,9 +7,9 @@ const PillButton = ( { text, backgroundColor, clickHandler }) => {
       { text }
     </button>
   : 
-  <button className= {`card__pill-button pill-button--${backgroundColor}`} >
+  <div className= {`card__pill-button pill-button--${backgroundColor}`} >
       { text }
-  </button>
+  </div>
 }
 
 export default PillButton

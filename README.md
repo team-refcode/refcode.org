@@ -95,7 +95,7 @@ This command does a full build and is sometimes necessary to get things configur
 This repository uses an image optimizer that automatically creates multiple sizes of images and then uses JavasScript to insert
 `srcset` attributes into the image so that the browser can automatically retrieve the best image size. This improves the performance of the website, especially on mobile devices.
 
-In order to have an image use this, the page must include the `createSrcSet.js` script, and the image must use the attribute `data-src` instead of `src`. For example, instead of `<img src="../img/myImage.jpg">` it should be `<img data-src="../img/myImage.jpg">`.
+In order to have an image use this, the page must include the `createSrcSet.js` script, and the image must use the attribute `data-src` instead of `src`. For example, instead of `<img src="/img/myImage.jpg">` it should be `<img data-src="/img/myImage.jpg">`.
 
 ## Problems
 This won't work until `npm run build` is run, which will look through all images and create the multiple sizes. If there is ever an error running this script, it may be due to a non-supported file (such as `.DS_Store`) accidentally being placed in the /img folder.

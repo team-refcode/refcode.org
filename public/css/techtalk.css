@@ -4,10 +4,10 @@
       background-image: url(../img/zoom-call-960.png);
 
       /* Chrome/Edge/Opera/Samsung, Safari will fallback to this as well */
-      background-image: -webkit-image-set(url("../img/zoom-call-960.png") 1x, url("../img/zoom-call-1200.png") 2x);
+      background-image: -webkit-image-set(url("/img/zoom-call-960.png") 1x, url("/img/zoom-call-1200.png") 2x);
 
       /* Standard use */
-      background-image: image-set("../img/zoom-call-960.png" 1x, "../img/zoom-call-1200.png" 2x);
+      background-image: image-set("/img/zoom-call-960.png" 1x, "/img/zoom-call-1200.png" 2x);
 
       background-position-y: -10px;
       background-size: contain;
